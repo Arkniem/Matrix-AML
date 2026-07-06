@@ -128,9 +128,9 @@ even their oracle is only 0.80–0.91), NOT cleverer combining.
 
 ---
 
-## 6. UDON for RNA (boss request)
+## 6. UDON for RNA (nathan request)
 
-- **Question (boss):** is RNA using UDON clusters + control-normalized fold-change vectors? They're most
+- **Question (nathan):** is RNA using UDON clusters + control-normalized fold-change vectors? They're most
   relevant for RNA.
 - **Finding (code-grounded):** the RNA modality used only the UDON marker **gene list** to subset, on **raw
   log1p expression**. The control-normalized **fold vectors** (`RNA/clusters/udon_result.h5ad`, verified
@@ -149,7 +149,7 @@ even their oracle is only 0.80–0.91), NOT cleverer combining.
 
 ---
 
-## 7. Healthy-vs-diseased control + control gate (boss request)
+## 7. Healthy-vs-diseased control + control gate (nathan request)
 
 - **First control** — `control_healthy_vs_disease.py`. 24 Control vs 263 diseased, donor-grouped CV.
   AUC 0.90–0.985 across 7/8 modalities (Lipid 0.985 best; **LSC fails 0.46**; ADT 0.902). spec(controls→healthy)
@@ -253,9 +253,9 @@ AUC SE ≈ 0.2 → those rows are not individually trustworthy and the combiner 
   The lever is data/feature quality (more positives; real non-imputed measurements), not the model or fusion
   method. Model + architecture space is exhausted.
 
-- **2026-06-30 13:29 EDT** — **Trumpp/Waclawiczek venetoclax-AML cohort ingestion (boss task).** 16 scRNA
+- **2026-06-30 13:29 EDT** — **Trumpp/Waclawiczek venetoclax-AML cohort ingestion (nathan task).** 16 scRNA
   samples (8 paired Diagnosis+Refractory; Waclawiczek et al., Cell Stem Cell 2025; LSC subtypes + mutations
-  + VEN/HMA response in `Trumpp.xlsx` Table S4). Submitted boss's cellHarmony_lite alignment to the
+  + VEN/HMA response in `Trumpp.xlsx` Table S4). Submitted nathan's cellHarmony_lite alignment to the
   Hs-BM-titrated 89-state reference → integrated h5ad. Job **777433 `h5ad_combine`** (12h/128G), script
   `/data/salomonis2/LabFiles/Frank-Li/scTriangulate/Hs_AML_UDON/run_cellHarmony_Trumpp.lsf`, out → that
   dir's `output/`. Pre-flight: all 16 soupX inputs (matrix.mtx+barcodes+genes) populated; caught CRLF in
