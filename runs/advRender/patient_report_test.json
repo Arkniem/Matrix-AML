@@ -1,0 +1,26 @@
+{
+  "mode": "patient_panel",
+  "sample_key": "K",
+  "annotation": "a",
+  "dataset": "d",
+  "provenance": {},
+  "panel": [],
+  "consensus": {
+    "subtype_call": "TP53 (genetic-anchored: direct mutation observation)",
+    "leading_hypothesis": "TP53",
+    "leading_confirmed_by_genetics": true,
+    "concordance": 0.5,
+    "per_witness_consistency": {
+      "genetic": "agree"
+    },
+    "conflicts": "",
+    "ranked_therapy_hypotheses": [],
+    "surface_therapy_hypotheses": [],
+    "recommended_validations": [],
+    "descriptive_findings": [],
+    "overall_confidence": "high",
+    "rationale": "x",
+    "knowledge_version": "v1"
+  },
+  "deliberation": null
+}

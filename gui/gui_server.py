@@ -1,0 +1,352 @@
+#!/usr/bin/env python3
+"""MATRIX-AML decision-board GUI server (stdlib only — no pip installs).
+
+Serves the single-file front-end `matrix_board.html` plus a tiny JSON API that
+auto-discovers per-patient reports under a `runs/` tree:
+
+    python gui_server.py [runs_dir] [port]
+
+  runs_dir  directory to scan for */patient_report*.json   (default: ../runs)
+  port      TCP port on 127.0.0.1                           (default: 8765)
+
+Endpoints
+  GET  /                      -> the board HTML
+  GET  /api/runs              -> roster summary rows (one per run with a report)
+  GET  /api/report?run=NAME   -> the full patient_report.json (+ ledger evidence hash)
+  GET  /api/capabilities      -> {ingest, lsf, inbox, python} — what this host can do
+  GET  /api/jobs              -> in-flight + finished ingests (from each run's status.json)
+  GET  /api/samples           -> candidate inputs in the inbox dir
+  POST /api/ingest            -> {name, sample, mutations?, dataset?} : dispatch
+                                 ingest_patient.py for a NEW scRNA sample (bsub on the
+                                 cluster, detached locally) -> a new run/report
+
+Binds to localhost only. Viewing is read-only; ingest dispatches the pipeline's own
+`ingest_patient.py` (argv list, no shell) for an uploaded sample. Run this ON the cluster
+(login node) so ingest jobs reach LSF + the atlas/bundles, and reach it via
+`ssh -L 8765:127.0.0.1:8765 ...`.
+"""
+import json
+import os
+import re
+import shutil
+import socketserver
+import subprocess
+import sys
+import time
+import webbrowser
+from http.server import BaseHTTPRequestHandler, HTTPServer
+from pathlib import Path
+from urllib.parse import urlparse, parse_qs
+
+
+# stdlib-only + works on the stock RHEL python3 (3.6.8) that's on every cluster node —
+# http.server.ThreadingHTTPServer only exists on 3.7+, so define the same thing here.
+class ThreadingHTTPServer(socketserver.ThreadingMixIn, HTTPServer):
+    daemon_threads = True
+
+HERE = Path(__file__).resolve().parent
+HTML_PATH = HERE / "matrix_board.html"
+DEFAULT_RUNS = HERE.parent / "runs"
+REPORT_GLOB = "patient_report.json"   # canonical pipeline output (ignore *_test stubs)
+
+# --- ingest (upload a new patient) wiring ---------------------------------------------------
+# The board can dispatch `ingest_patient.py` (scRNA -> composition -> arbiter -> report). On the
+# cluster this submits an LSF job (compute node); with no `bsub` it runs detached locally.
+PIPELINE_DIR = Path(os.environ.get("AMLMM_PIPELINE") or (HERE.parent / "pipeline")).resolve()
+INGEST_SCRIPT = PIPELINE_DIR / "ingest_patient.py"
+INBOX_DIR = Path(os.environ.get("AMLMM_INBOX") or (HERE.parent / "inbox")).resolve()
+LSF_MEM = os.environ.get("AMLMM_LSF_MEM", "8000")
+USE_LSF = (shutil.which("bsub") is not None) and os.environ.get("AMLMM_NO_LSF") != "1"
+# The SERVER is stdlib-only and runs under ANY python3 (incl. the stock 3.6.8). The INGEST JOB
+# needs the analysis python (anndata/scanpy/sklearn). Under LSF the job runs on a COMPUTE node,
+# so default to the cluster analysis python there; locally fall back to whatever runs the server.
+CLUSTER_PY = "/usr/local/anaconda3-2020/bin/python"
+PYTHON = os.environ.get("AMLMM_PYTHON") or (CLUSTER_PY if USE_LSF else sys.executable)
+
+
+def _runs_dir() -> Path:
+    # forgiving arg order: any non-integer arg is the runs dir; a bare integer is the port.
+    for a in sys.argv[1:]:
+        if not a.isdigit():
+            return Path(a).expanduser().resolve()
+    return DEFAULT_RUNS.resolve()
+
+
+def _port() -> int:
+    for a in sys.argv[1:]:
+        if a.isdigit():
+            return int(a)
+    return 8765
+
+
+RUNS_DIR = _runs_dir()
+
+
+def _load_json(p: Path):
+    try:
+        return json.loads(p.read_text(encoding="utf-8"))
+    except Exception as e:  # noqa: BLE001 — surface a readable stub, never crash the scan
+        return {"_error": f"{type(e).__name__}: {e}"}
+
+
+def _report_file(run: str) -> "Path | None":
+    """Resolve a run name to its report file, refusing anything outside RUNS_DIR."""
+    d = (RUNS_DIR / run).resolve()
+    try:
+        d.relative_to(RUNS_DIR)              # path-traversal guard
+    except ValueError:
+        return None
+    if not d.is_dir():
+        return None
+    hits = sorted(d.glob(REPORT_GLOB))
+    return hits[0] if hits else None
+
+
+# Only real reports belong on the board — the held-out sealed test, the Trumpp validation cohort, and
+# genuine uploads. Everything else under runs/ (probe/regression/discovery/diagnostic scratch dirs) is
+# hidden so the roster is the actual patient set, not development placeholders. Set AMLMM_SHOW_ALL=1 to
+# override (show every dir with a report).
+BOARD_GROUPS = [("predict_", "Held-out validation (sealed test)"),
+                ("trumpp_", "Trumpp/Waclawiczek cohort"),
+                ("ingest_", "Uploaded patients")]
+SHOW_ALL = os.environ.get("AMLMM_SHOW_ALL") == "1"
+
+
+def _board_group(name: str):
+    for pre, label in BOARD_GROUPS:
+        if name.startswith(pre):
+            return label
+    return "Other" if SHOW_ALL else None
+
+
+def scan_runs() -> "list[dict]":
+    """One summary row per REAL patient/validation run dir (placeholders filtered out)."""
+    out = []
+    if not RUNS_DIR.is_dir():
+        return out
+    for d in sorted(p for p in RUNS_DIR.iterdir() if p.is_dir()):
+        group = _board_group(d.name)
+        if group is None:                       # a dev/scratch dir — keep it off the board
+            continue
+        hits = sorted(d.glob(REPORT_GLOB))
+        if not hits:
+            continue
+        rep = _load_json(hits[0])
+        con = rep.get("consensus", {}) if isinstance(rep, dict) else {}
+        preds = rep.get("mutation_predictions") if isinstance(rep, dict) else None
+        n_correct = n_labeled = None
+        if isinstance(preds, list):             # validation accuracy at a glance (predicted call vs known)
+            labeled = [p for p in preds if p.get("true_label")]
+            n_labeled = len(labeled)
+            n_correct = sum(1 for p in labeled if p.get("true_label") == p.get("call"))
+        out.append({
+            "run": d.name,
+            "group": group,
+            "sample_key": rep.get("sample_key"),
+            "annotation": rep.get("annotation"),
+            "dataset": rep.get("dataset"),
+            "specimen_class": rep.get("specimen_class") if isinstance(rep, dict) else None,
+            "validation": rep.get("validation") if isinstance(rep, dict) else None,
+            "n_drivers": (len(preds) if isinstance(preds, list) else None),
+            "n_labeled": n_labeled, "n_correct": n_correct,
+            "leading_hypothesis": con.get("leading_hypothesis"),
+            "overall_confidence": con.get("overall_confidence"),
+            "leading_confirmed_by_genetics": con.get("leading_confirmed_by_genetics"),
+            "has_deliberation": bool(rep.get("deliberation")) if isinstance(rep, dict) else False,
+            "knowledge_version": con.get("knowledge_version"),
+            "error": rep.get("_error") if isinstance(rep, dict) else None,
+        })
+    return out
+
+
+def report_for(run: str) -> "dict | None":
+    f = _report_file(run)
+    if f is None:
+        return None
+    rep = _load_json(f)
+    # merge the reproducibility hash from the sibling ledger, if any
+    led = f.parent / "ledger.json"
+    if isinstance(rep, dict) and led.is_file():
+        lj = _load_json(led)
+        if isinstance(lj, dict) and lj.get("deterministic_evidence_hash"):
+            rep.setdefault("_ledger", {})["deterministic_evidence_hash"] = \
+                lj["deterministic_evidence_hash"]
+            rep["_ledger"]["stop_reason"] = lj.get("stop_reason")
+            rep["_ledger"]["rounds_run"] = lj.get("rounds_run")
+    if isinstance(rep, dict):
+        rep["_run"] = run
+    return rep
+
+
+def _slug(name: str) -> str:
+    s = re.sub(r"[^0-9A-Za-z]+", "_", str(name)).strip("_") or "patient"
+    return f"ingest_{s}"
+
+
+def _set_status(run_dir: Path, state, step, message=""):
+    try:
+        run_dir.mkdir(parents=True, exist_ok=True)
+        (run_dir / "status.json").write_text(
+            json.dumps({"state": state, "step": step, "message": message, "ts": time.time()}),
+            encoding="utf-8")
+    except Exception:
+        pass
+
+
+def dispatch_ingest(name, sample, mutations="", dataset="uploaded"):
+    """Kick off ingest_patient.py for a new sample. Returns {run_id, job_id, mode} or {error}.
+    argv is a list (no shell) so the user-supplied name/sample/mutations cannot inject commands."""
+    if not INGEST_SCRIPT.is_file():
+        return {"error": f"ingest script not found: {INGEST_SCRIPT}"}
+    run_id = _slug(name)
+    run_dir = RUNS_DIR / run_id
+    _set_status(run_dir, "queued", "submitting", name)
+    cmd = [PYTHON, str(INGEST_SCRIPT), "--sample", sample, "--name", name,
+           "--dataset", dataset, "--run-id", run_id, "--out-root", str(RUNS_DIR)]
+    if mutations.strip():
+        cmd += ["--mutations", mutations.strip()]
+    log = str(run_dir / "_job.log")
+    try:
+        if USE_LSF:
+            bsub = ["bsub", "-q", "normal", "-J", f"aml_{run_id}", "-M", LSF_MEM,
+                    "-R", f"rusage[mem={LSF_MEM}]", "-o", log, "-e", log] + cmd
+            p = subprocess.run(bsub, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                               universal_newlines=True, timeout=90)
+            if p.returncode != 0:
+                _set_status(run_dir, "error", "submit", (p.stderr or p.stdout or "bsub failed")[:300])
+                return {"error": (p.stderr or p.stdout or "bsub failed")[:300], "run_id": run_id}
+            m = re.search(r"Job <(\d+)>", p.stdout or "")
+            return {"run_id": run_id, "job_id": (m.group(1) if m else None), "mode": "lsf"}
+        # local fallback: detached background process
+        fh = open(log, "w", encoding="utf-8")
+        subprocess.Popen(cmd, stdout=fh, stderr=subprocess.STDOUT, cwd=str(PIPELINE_DIR))
+        return {"run_id": run_id, "job_id": None, "mode": "local"}
+    except Exception as e:  # noqa: BLE001
+        _set_status(run_dir, "error", "submit", f"{type(e).__name__}: {e}")
+        return {"error": f"{type(e).__name__}: {e}", "run_id": run_id}
+
+
+def list_jobs() -> "list[dict]":
+    """Every run dir that has a status.json (in-flight or finished ingests)."""
+    out = []
+    if not RUNS_DIR.is_dir():
+        return out
+    for d in sorted(p for p in RUNS_DIR.iterdir() if p.is_dir()):
+        sp = d / "status.json"
+        if not sp.is_file():
+            continue
+        st = _load_json(sp)
+        out.append({"run": d.name, "state": st.get("state"), "step": st.get("step"),
+                    "message": st.get("message"), "ts": st.get("ts"),
+                    "has_report": (d / REPORT_GLOB).is_file()})
+    return out
+
+
+def list_samples() -> "list[dict]":
+    """Candidate inputs dropped into the inbox dir (10x dirs / .h5ad / 10x .h5)."""
+    out = []
+    if INBOX_DIR.is_dir():
+        for p in sorted(INBOX_DIR.iterdir()):
+            if p.is_dir() and (p / "filtered_feature_bc_matrix.h5").is_file():
+                out.append({"path": str(p), "label": p.name, "kind": "10x dir"})
+            elif p.suffix.lower() in (".h5ad", ".h5"):
+                out.append({"path": str(p), "label": p.name, "kind": p.suffix.lower().lstrip(".")})
+    return out
+
+
+class Handler(BaseHTTPRequestHandler):
+    server_version = "MatrixAMLBoard/1.0"
+
+    def _send(self, code, body: bytes, ctype: str):
+        self.send_response(code)
+        self.send_header("Content-Type", ctype)
+        self.send_header("Content-Length", str(len(body)))
+        self.send_header("Cache-Control", "no-store")
+        self.end_headers()
+        if self.command != "HEAD":
+            self.wfile.write(body)
+
+    def _json(self, obj, code=200):
+        self._send(code, json.dumps(obj, default=str).encode("utf-8"),
+                   "application/json; charset=utf-8")
+
+    def do_GET(self):  # noqa: N802
+        u = urlparse(self.path)
+        path, qs = u.path, parse_qs(u.query)
+        if path in ("/", "/index.html", "/matrix_board.html"):
+            if not HTML_PATH.is_file():
+                return self._send(500, b"matrix_board.html not found next to gui_server.py",
+                                  "text/plain; charset=utf-8")
+            return self._send(200, HTML_PATH.read_bytes(), "text/html; charset=utf-8")
+        if path == "/api/runs":
+            return self._json({"runs_dir": str(RUNS_DIR), "runs": scan_runs()})
+        if path == "/api/report":
+            run = (qs.get("run") or [""])[0]
+            rep = report_for(run) if run else None
+            if rep is None:
+                return self._json({"error": f"no report for run {run!r}"}, code=404)
+            return self._json(rep)
+        if path == "/api/capabilities":
+            return self._json({"ingest": INGEST_SCRIPT.is_file(), "lsf": USE_LSF,
+                               "inbox": str(INBOX_DIR), "inbox_exists": INBOX_DIR.is_dir(),
+                               "python": PYTHON})
+        if path == "/api/jobs":
+            return self._json({"jobs": list_jobs()})
+        if path == "/api/samples":
+            return self._json({"inbox": str(INBOX_DIR), "samples": list_samples()})
+        return self._send(404, b"not found", "text/plain; charset=utf-8")
+
+    def do_POST(self):  # noqa: N802
+        u = urlparse(self.path)
+        if u.path != "/api/ingest":
+            return self._send(404, b"not found", "text/plain; charset=utf-8")
+        try:
+            n = int(self.headers.get("Content-Length") or 0)
+            body = json.loads(self.rfile.read(n) or b"{}")
+        except Exception as e:  # noqa: BLE001
+            return self._json({"error": f"bad request: {e}"}, code=400)
+        name = str(body.get("name") or "").strip()
+        sample = str(body.get("sample") or "").strip()
+        if not name or not sample:
+            return self._json({"error": "name and sample are required"}, code=400)
+        res = dispatch_ingest(name, sample, str(body.get("mutations") or ""),
+                              str(body.get("dataset") or "uploaded"))
+        return self._json(res, code=200 if res.get("run_id") and not res.get("error") else 400)
+
+    do_HEAD = do_GET
+
+    def log_message(self, fmt, *args):   # quieter console
+        if "/api/" in (args[0] if args else ""):
+            sys.stderr.write("  %s\n" % (fmt % args))
+
+
+def main():
+    port = _port()
+    if not RUNS_DIR.is_dir():
+        print(f"[warn] runs dir not found: {RUNS_DIR}\n"
+              f"       pass one:  python gui_server.py /path/to/runs", file=sys.stderr)
+    n = len(scan_runs())
+    httpd = ThreadingHTTPServer(("127.0.0.1", port), Handler)
+    url = f"http://127.0.0.1:{port}/"
+    print(f"MATRIX-AML board -> {url}")
+    print(f"  runs dir : {RUNS_DIR}")
+    print(f"  reports  : {n} found")
+    if INGEST_SCRIPT.is_file():
+        print(f"  ingest   : enabled ({'LSF/bsub' if USE_LSF else 'local detached'}) "
+              f"via {INGEST_SCRIPT.name}; inbox {INBOX_DIR}")
+    else:
+        print(f"  ingest   : disabled (no {INGEST_SCRIPT})")
+    print("  Ctrl-C to stop.")
+    try:
+        webbrowser.open(url)
+    except Exception:
+        pass
+    try:
+        httpd.serve_forever()
+    except KeyboardInterrupt:
+        print("\nstopped.")
+        httpd.server_close()
+
+
+if __name__ == "__main__":
+    main()

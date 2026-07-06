@@ -1,0 +1,20 @@
+Composition  done (90 feat)
+RNA          done (2000 feat)
+ADT          done (129 feat)
+Lipid        done (625 feat)
+Metabolite   done (1084 feat)
+GRN          done (7486 feat)
+LSC          done (4 feat)
+Cell-comm    done (141101 feat)
+
+modality       nfeat  fullAUC   FS-500   FS-100    500-full  100-full
+Composition       90    0.643    0.643    0.643      +0.000    +0.000  [<=500: FS=full]
+RNA             2000    0.841    0.818    0.817      -0.023    -0.023
+ADT              129    0.757    0.757    0.757      +0.000    +0.001  [<=500: FS=full]
+Lipid            625    0.809    0.806    0.773      -0.003    -0.035
+Metabolite      1084    0.815    0.817    0.778      +0.002    -0.037
+GRN             7486    0.825    0.812    0.794      -0.013    -0.031 (full=top6000 proxy)
+LSC                4    0.546    0.546    0.546      +0.000    +0.000  [<=500: FS=full]
+Cell-comm     141101    0.764    0.683    0.659      -0.081    -0.105 (full=top6000 proxy)
+
+FS COMPARE ALL OK

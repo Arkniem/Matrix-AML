@@ -1,0 +1,117 @@
+{
+  "strategy": "donor_kfold",
+  "n_samples": 97,
+  "n_classes": 5,
+  "classes": [
+    "FLT3",
+    "Inv16",
+    "NPM1",
+    "TET2",
+    "TP53"
+  ],
+  "class_counts": {
+    "FLT3": 14,
+    "Inv16": 18,
+    "NPM1": 43,
+    "TET2": 12,
+    "TP53": 10
+  },
+  "balanced_accuracy": 0.6456,
+  "macro_f1": 0.6248,
+  "per_class_f1": {
+    "FLT3": 0.5185,
+    "Inv16": 0.8333,
+    "NPM1": 0.675,
+    "TET2": 0.5517,
+    "TP53": 0.5455
+  },
+  "balanced_accuracy_fold_mean": 0.6311,
+  "balanced_accuracy_fold_std": 0.1446,
+  "confusion_matrix": [
+    [
+      7,
+      0,
+      4,
+      3,
+      0
+    ],
+    [
+      1,
+      15,
+      1,
+      1,
+      0
+    ],
+    [
+      3,
+      3,
+      27,
+      4,
+      6
+    ],
+    [
+      1,
+      0,
+      3,
+      8,
+      0
+    ],
+    [
+      1,
+      0,
+      2,
+      1,
+      6
+    ]
+  ],
+  "model_wins": {
+    "rf": 1,
+    "logreg": 4
+  },
+  "per_fold": [
+    {
+      "fold": 0,
+      "n_test": 20,
+      "balanced_accuracy": 0.711111111111111,
+      "model": "logreg",
+      "inner_score": 0.5912,
+      "test_cohort": null
+    },
+    {
+      "fold": 1,
+      "n_test": 20,
+      "balanced_accuracy": 0.5722222222222222,
+      "model": "rf",
+      "inner_score": 0.6911,
+      "test_cohort": null
+    },
+    {
+      "fold": 2,
+      "n_test": 19,
+      "balanced_accuracy": 0.5055555555555555,
+      "model": "logreg",
+      "inner_score": 0.6746,
+      "test_cohort": null
+    },
+    {
+      "fold": 3,
+      "n_test": 19,
+      "balanced_accuracy": 0.875,
+      "model": "logreg",
+      "inner_score": 0.6759,
+      "test_cohort": null
+    },
+    {
+      "fold": 4,
+      "n_test": 19,
+      "balanced_accuracy": 0.4916666666666666,
+      "model": "logreg",
+      "inner_score": 0.6021,
+      "test_cohort": null
+    }
+  ],
+  "permutation_balanced_accuracy_p95": 0.2994,
+  "permutation_balanced_accuracy_mean": 0.2102,
+  "permutation_pvalue": 0.024390243902439025,
+  "n_permutations": 40
+}

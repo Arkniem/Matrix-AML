@@ -1,0 +1,13 @@
+# Large expression matrices — shared as data, not committed (per project decision)
+*.h5ad
+
+# Regenerable cache blocks (and GitHub rejects files >100 MB, e.g. _sl_Cell-comm.pkl = 212 MB)
+runs/single_modality/_sl_*.pkl
+
+# Python / OS
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+.ipynb_checkpoints/
+.env

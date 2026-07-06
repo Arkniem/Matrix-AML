@@ -1,0 +1,32 @@
+# Held-out TEST set (29 samples, user-highlighted in AML_metadata_CLEAN-selected.xlsx 2026-06-25).
+# Excluded from Discovery training (labels masked -> not in any training combo or Deploy reference);
+# used to test mutation/metadata prediction. One sample_key (Dataset::Sample) per line.
+Colorado::AML-04
+Colorado::AML-05
+Colorado::AML-06
+Colorado::AML-07
+Colorado::AML-14
+Colorado::AML-17
+Columbia::AML1
+Columbia::AML10
+Columbia::AML5
+WashU::10DD-1002__Treatment
+WashU::10DD-1003__Diagnosis
+WashU::10DD-1010__Diagnosis
+WashU::10DD-1062__Treatment
+WashU::220882__Diagnosis
+WashU::452198__Diagnosis
+WashU::875663__Diagnosis
+CCHMC::1009_AfInv16_29M
+CCHMC::1102_E_N1c
+CCHMC::287_AfInv_P53F_N1c
+CCHMC::3410_AfST8_P64M
+CCHMC::568_AfInv16_P24M
+NYU-1::AML0024
+NYU-1::AML0114
+NYU-1::AML0310
+NYU-1::AML0612
+NYU-1::AML2910
+Milan::PT01__D14
+Milan::PT08__D14
+Milan::PT13__Diagnosis

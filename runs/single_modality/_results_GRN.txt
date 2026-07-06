@@ -1,0 +1,6 @@
+modality: GRN | loading its block only ...
+  GRN: loaded cached sample-level matrix (7486 features, 387 samples)
+  testable mutations: 17 | models: 11
+
+  cyto_complex  pos= 4 done
+  cyto_inv16    pos= 4 done

@@ -1,0 +1,10 @@
+target	kind	n_labeled	n_classes_usable	classes_usable	majority_frac	cramers_v_vs_dataset	verdict	note
+subtype	multiclass	142	5.0	NPM1;Inv16;FLT3;TET2;TP53	0.303	0.822	yes	high cohort confounding (V=0.82) — use leave_one_cohort_out
+disease_category	multiclass	287	3.0	AML;Control;MDS	0.861	0.48	yes	
+WHO_classification	multiclass	39	1.0	NPM1	0.564	1.0	no	high cohort confounding (V=1.00) — use leave_one_cohort_out
+FAB	multiclass	48	1.0	M4	0.25	0.557	no	
+ELN_risk	multiclass	70	3.0	Favorable;Adverse;Intermediate	0.386	0.222	yes	
+sex	binary	171	2.0	M;F	0.573	0.191	yes	
+is_pediatric	binary	334	1.0	FALSE	1.0		no	
+overall_survival	numeric	19					no	regression target (not classified by this pipeline)
+age	numeric	96					yes	regression target (not classified by this pipeline)

@@ -1,0 +1,23 @@
+samples total: 387 | sealed held-out: 29
+layout: local
+
+modality          nfeat    nsamp   held/29   fid>=.3   fidelity p10/50/90
+composition          90      387        26         -
+RNA               35702      387        26     35702   (no fidelity var)
+GRN                7486      387        26      7486   (no fidelity var)
+Metabolite         2486      387        26      1084   -0.05 / 0.27 / 0.52
+Lipid              1009      387        26       625   0.11 / 0.36 / 0.60
+ADT                 129      387        26       129   (no fidelity var)
+cell-comm        141101      383        26         -
+
+held-out covered by composition alone: 26/29
+held-out covered by ANY non-RNA modality: 26/29
+held-out covered by RNA: 26/29
+held-out covered by composition AND all 4 imputed:
+  26/29 in composition+GRN+Metab+Lipid+ADT all
+  GRN          held-out coverage: 26/29
+  Metabolite   held-out coverage: 26/29
+  Lipid        held-out coverage: 26/29
+  ADT          held-out coverage: 26/29
+
+PROBE OK

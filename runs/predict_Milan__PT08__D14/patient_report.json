@@ -1,0 +1,1606 @@
+{
+ "mode": "mutation_panel",
+ "sample_key": "Milan::PT08__D14",
+ "dataset": "Milan",
+ "specimen_class": "diseased",
+ "control_gate": {
+  "call": "diseased",
+  "p_diseased": 0.9797,
+  "threshold": 0.056,
+  "cv_auc": 0.9649873257287706,
+  "modality": "Composition"
+ },
+ "mutation_predictions": [
+  {
+   "probability": 0.924,
+   "call": "present",
+   "threshold": 0.796,
+   "n_modalities": 8,
+   "contributions": [
+    {
+     "modality": "RNA",
+     "weight": 0.379,
+     "score": 0.953,
+     "oof_auc": 0.936
+    },
+    {
+     "modality": "Metabolite",
+     "weight": 0.27,
+     "score": 0.925,
+     "oof_auc": 0.933
+    },
+    {
+     "modality": "Lipid",
+     "weight": 0.258,
+     "score": 0.895,
+     "oof_auc": 0.933
+    },
+    {
+     "modality": "GRN",
+     "weight": 0.094,
+     "score": 0.886,
+     "oof_auc": 0.914
+    },
+    {
+     "modality": "Composition",
+     "weight": 0.0,
+     "score": 0.975,
+     "oof_auc": 0.572
+    },
+    {
+     "modality": "ADT",
+     "weight": 0.0,
+     "score": 0.393,
+     "oof_auc": 0.602
+    },
+    {
+     "modality": "LSC",
+     "weight": 0.0,
+     "score": 0.543,
+     "oof_auc": 0.568
+    },
+    {
+     "modality": "Cell-comm",
+     "weight": 0.0,
+     "score": 0.333,
+     "oof_auc": 0.721
+    }
+   ],
+   "heldout_auc": 0.807,
+   "mutation": "TP53",
+   "true_label": "absent",
+   "confidence": "ok"
+  },
+  {
+   "probability": 0.913,
+   "call": "present",
+   "threshold": 0.751,
+   "n_modalities": 8,
+   "contributions": [
+    {
+     "modality": "Lipid",
+     "weight": 0.949,
+     "score": 0.945,
+     "oof_auc": 0.765
+    },
+    {
+     "modality": "GRN",
+     "weight": 0.033,
+     "score": 0.371,
+     "oof_auc": 0.665
+    },
+    {
+     "modality": "ADT",
+     "weight": 0.013,
+     "score": 0.017,
+     "oof_auc": 0.502
+    },
+    {
+     "modality": "Metabolite",
+     "weight": 0.006,
+     "score": 0.903,
+     "oof_auc": 0.677
+    },
+    {
+     "modality": "RNA",
+     "weight": 0.0,
+     "score": 0.64,
+     "oof_auc": 0.56
+    },
+    {
+     "modality": "Composition",
+     "weight": 0.0,
+     "score": 0.792,
+     "oof_auc": 0.511
+    },
+    {
+     "modality": "LSC",
+     "weight": 0.0,
+     "score": 0.576,
+     "oof_auc": 0.54
+    },
+    {
+     "modality": "Cell-comm",
+     "weight": 0.0,
+     "score": 0.653,
+     "oof_auc": 0.584
+    }
+   ],
+   "heldout_auc": 0.924,
+   "mutation": "trisomy8",
+   "true_label": "absent",
+   "confidence": "ok"
+  },
+  {
+   "probability": 0.871,
+   "call": "present",
+   "threshold": 0.795,
+   "n_modalities": 8,
+   "contributions": [
+    {
+     "modality": "RNA",
+     "weight": 0.561,
+     "score": 0.823,
+     "oof_auc": 0.891
+    },
+    {
+     "modality": "GRN",
+     "weight": 0.318,
+     "score": 0.964,
+     "oof_auc": 0.864
+    },
+    {
+     "modality": "Cell-comm",
+     "weight": 0.121,
+     "score": 0.849,
+     "oof_auc": 0.8
+    },
+    {
+     "modality": "Composition",
+     "weight": 0.0,
+     "score": 0.778,
+     "oof_auc": 0.697
+    },
+    {
+     "modality": "ADT",
+     "weight": 0.0,
+     "score": 0.986,
+     "oof_auc": 0.793
+    },
+    {
+     "modality": "Lipid",
+     "weight": 0.0,
+     "score": 0.978,
+     "oof_auc": 0.82
+    },
+    {
+     "modality": "Metabolite",
+     "weight": 0.0,
+     "score": 0.931,
+     "oof_auc": 0.857
+    },
+    {
+     "modality": "LSC",
+     "weight": 0.0,
+     "score": 0.186,
+     "oof_auc": 0.551
+    }
+   ],
+   "heldout_auc": 0.952,
+   "mutation": "NPM1",
+   "true_label": "present",
+   "confidence": "ok"
+  },
+  {
+   "probability": 0.862,
+   "call": "present",
+   "threshold": 0.724,
+   "n_modalities": 8,
+   "contributions": [
+    {
+     "modality": "ADT",
+     "weight": 0.826,
+     "score": 0.873,
+     "oof_auc": 0.836
+    },
+    {
+     "modality": "Metabolite",
+     "weight": 0.143,
+     "score": 0.884,
+     "oof_auc": 0.763
+    },
+    {
+     "modality": "Lipid",
+     "weight": 0.031,
+     "score": 0.471,
+     "oof_auc": 0.755
+    },
+    {
+     "modality": "RNA",
+     "weight": 0.0,
+     "score": 0.789,
+     "oof_auc": 0.707
+    },
+    {
+     "modality": "Composition",
+     "weight": 0.0,
+     "score": 0.571,
+     "oof_auc": 0.601
+    },
+    {
+     "modality": "GRN",
+     "weight": 0.0,
+     "score": 0.884,
+     "oof_auc": 0.74
+    },
+    {
+     "modality": "LSC",
+     "weight": 0.0,
+     "score": 0.199,
+     "oof_auc": 0.637
+    },
+    {
+     "modality": "Cell-comm",
+     "weight": 0.0,
+     "score": 0.894,
+     "oof_auc": 0.635
+    }
+   ],
+   "heldout_auc": 0.694,
+   "mutation": "FLT3",
+   "true_label": "absent",
+   "confidence": "ok"
+  },
+  {
+   "probability": 0.797,
+   "call": "present",
+   "threshold": 0.629,
+   "n_modalities": 8,
+   "contributions": [
+    {
+     "modality": "ADT",
+     "weight": 0.516,
+     "score": 0.992,
+     "oof_auc": 0.668
+    },
+    {
+     "modality": "RNA",
+     "weight": 0.253,
+     "score": 0.213,
+     "oof_auc": 0.635
+    },
+    {
+     "modality": "Composition",
+     "weight": 0.231,
+     "score": 1.0,
+     "oof_auc": 0.613
+    },
+    {
+     "modality": "Lipid",
+     "weight": 0.0,
+     "score": 0.939,
+     "oof_auc": 0.52
+    },
+    {
+     "modality": "Metabolite",
+     "weight": 0.0,
+     "score": 0.945,
+     "oof_auc": 0.501
+    },
+    {
+     "modality": "GRN",
+     "weight": 0.0,
+     "score": 0.95,
+     "oof_auc": 0.572
+    },
+    {
+     "modality": "LSC",
+     "weight": 0.0,
+     "score": 0.175,
+     "oof_auc": 0.51
+    },
+    {
+     "modality": "Cell-comm",
+     "weight": 0.0,
+     "score": 0.709,
+     "oof_auc": 0.515
+    }
+   ],
+   "heldout_auc": 0.65,
+   "mutation": "IDH2",
+   "true_label": "present",
+   "confidence": "ok"
+  },
+  {
+   "probability": 0.764,
+   "call": "present",
+   "threshold": 0.697,
+   "n_modalities": 8,
+   "contributions": [
+    {
+     "modality": "Metabolite",
+     "weight": 0.566,
+     "score": 0.637,
+     "oof_auc": 0.898
+    },
+    {
+     "modality": "Composition",
+     "weight": 0.211,
+     "score": 0.953,
+     "oof_auc": 0.811
+    },
+    {
+     "modality": "GRN",
+     "weight": 0.186,
+     "score": 0.931,
+     "oof_auc": 0.846
+    },
+    {
+     "modality": "Lipid",
+     "weight": 0.036,
+     "score": 0.795,
+     "oof_auc": 0.847
+    },
+    {
+     "modality": "RNA",
+     "weight": 0.0,
+     "score": 0.934,
+     "oof_auc": 0.778
+    },
+    {
+     "modality": "ADT",
+     "weight": 0.0,
+     "score": 0.753,
+     "oof_auc": 0.72
+    },
+    {
+     "modality": "LSC",
+     "weight": 0.0,
+     "score": 0.349,
+     "oof_auc": 0.529
+    },
+    {
+     "modality": "Cell-comm",
+     "weight": 0.0,
+     "score": 0.678,
+     "oof_auc": 0.72
+    }
+   ],
+   "heldout_auc": null,
+   "mutation": "del5",
+   "true_label": "absent",
+   "confidence": "ok"
+  },
+  {
+   "probability": 0.672,
+   "call": "present",
+   "threshold": 0.626,
+   "n_modalities": 8,
+   "contributions": [
+    {
+     "modality": "RNA",
+     "weight": 0.437,
+     "score": 0.922,
+     "oof_auc": 0.878
+    },
+    {
+     "modality": "Lipid",
+     "weight": 0.303,
+     "score": 0.169,
+     "oof_auc": 0.85
+    },
+    {
+     "modality": "Metabolite",
+     "weight": 0.259,
+     "score": 0.837,
+     "oof_auc": 0.86
+    },
+    {
+     "modality": "Composition",
+     "weight": 0.0,
+     "score": 0.102,
+     "oof_auc": 0.743
+    },
+    {
+     "modality": "ADT",
+     "weight": 0.0,
+     "score": 0.205,
+     "oof_auc": 0.705
+    },
+    {
+     "modality": "GRN",
+     "weight": 0.0,
+     "score": 0.648,
+     "oof_auc": 0.797
+    },
+    {
+     "modality": "LSC",
+     "weight": 0.0,
+     "score": 0.346,
+     "oof_auc": 0.566
+    },
+    {
+     "modality": "Cell-comm",
+     "weight": 0.0,
+     "score": 0.692,
+     "oof_auc": 0.726
+    }
+   ],
+   "heldout_auc": null,
+   "mutation": "CEBPA",
+   "true_label": "absent",
+   "confidence": "ok"
+  },
+  {
+   "probability": 0.664,
+   "call": "absent",
+   "threshold": 0.899,
+   "n_modalities": 8,
+   "contributions": [
+    {
+     "modality": "ADT",
+     "weight": 0.947,
+     "score": 0.701,
+     "oof_auc": 0.919
+    },
+    {
+     "modality": "RNA",
+     "weight": 0.053,
+     "score": 0.011,
+     "oof_auc": 0.78
+    },
+    {
+     "modality": "Composition",
+     "weight": 0.0,
+     "score": 0.601,
+     "oof_auc": 0.675
+    },
+    {
+     "modality": "Lipid",
+     "weight": 0.0,
+     "score": 0.05,
+     "oof_auc": 0.772
+    },
+    {
+     "modality": "Metabolite",
+     "weight": 0.0,
+     "score": 0.679,
+     "oof_auc": 0.743
+    },
+    {
+     "modality": "GRN",
+     "weight": 0.0,
+     "score": 0.302,
+     "oof_auc": 0.706
+    },
+    {
+     "modality": "LSC",
+     "weight": 0.0,
+     "score": 0.629,
+     "oof_auc": 0.544
+    },
+    {
+     "modality": "Cell-comm",
+     "weight": 0.0,
+     "score": 0.961,
+     "oof_auc": 0.592
+    }
+   ],
+   "heldout_auc": null,
+   "mutation": "GATA2",
+   "true_label": "absent",
+   "confidence": "ok"
+  },
+  {
+   "probability": 0.618,
+   "call": "absent",
+   "threshold": 0.734,
+   "n_modalities": 8,
+   "contributions": [
+    {
+     "modality": "ADT",
+     "weight": 0.499,
+     "score": 0.914,
+     "oof_auc": 0.853
+    },
+    {
+     "modality": "Lipid",
+     "weight": 0.322,
+     "score": 0.144,
+     "oof_auc": 0.832
+    },
+    {
+     "modality": "Composition",
+     "weight": 0.179,
+     "score": 0.645,
+     "oof_auc": 0.804
+    },
+    {
+     "modality": "RNA",
+     "weight": 0.0,
+     "score": 0.92,
+     "oof_auc": 0.677
+    },
+    {
+     "modality": "Metabolite",
+     "weight": 0.0,
+     "score": 0.837,
+     "oof_auc": 0.679
+    },
+    {
+     "modality": "GRN",
+     "weight": 0.0,
+     "score": 0.936,
+     "oof_auc": 0.75
+    },
+    {
+     "modality": "LSC",
+     "weight": 0.0,
+     "score": 0.216,
+     "oof_auc": 0.723
+    },
+    {
+     "modality": "Cell-comm",
+     "weight": 0.0,
+     "score": 0.938,
+     "oof_auc": 0.685
+    }
+   ],
+   "heldout_auc": 0.902,
+   "mutation": "FLT3-ITD",
+   "true_label": "absent",
+   "confidence": "ok"
+  },
+  {
+   "probability": 0.58,
+   "call": "absent",
+   "threshold": 0.701,
+   "n_modalities": 8,
+   "contributions": [
+    {
+     "modality": "GRN",
+     "weight": 0.496,
+     "score": 0.795,
+     "oof_auc": 0.752
+    },
+    {
+     "modality": "Cell-comm",
+     "weight": 0.44,
+     "score": 0.403,
+     "oof_auc": 0.735
+    },
+    {
+     "modality": "RNA",
+     "weight": 0.065,
+     "score": 0.141,
+     "oof_auc": 0.706
+    },
+    {
+     "modality": "Composition",
+     "weight": 0.0,
+     "score": 0.396,
+     "oof_auc": 0.527
+    },
+    {
+     "modality": "ADT",
+     "weight": 0.0,
+     "score": 0.709,
+     "oof_auc": 0.594
+    },
+    {
+     "modality": "Lipid",
+     "weight": 0.0,
+     "score": 0.911,
+     "oof_auc": 0.651
+    },
+    {
+     "modality": "Metabolite",
+     "weight": 0.0,
+     "score": 0.845,
+     "oof_auc": 0.65
+    },
+    {
+     "modality": "LSC",
+     "weight": 0.0,
+     "score": 0.371,
+     "oof_auc": 0.525
+    }
+   ],
+   "heldout_auc": 0.785,
+   "mutation": "DNMT3A",
+   "true_label": "present",
+   "confidence": "ok"
+  },
+  {
+   "probability": 0.559,
+   "call": "absent",
+   "threshold": 0.781,
+   "n_modalities": 8,
+   "contributions": [
+    {
+     "modality": "Metabolite",
+     "weight": 0.35,
+     "score": 0.139,
+     "oof_auc": 0.95
+    },
+    {
+     "modality": "RNA",
+     "weight": 0.333,
+     "score": 0.773,
+     "oof_auc": 0.938
+    },
+    {
+     "modality": "GRN",
+     "weight": 0.317,
+     "score": 0.798,
+     "oof_auc": 0.948
+    },
+    {
+     "modality": "Composition",
+     "weight": 0.0,
+     "score": 0.474,
+     "oof_auc": 0.605
+    },
+    {
+     "modality": "ADT",
+     "weight": 0.0,
+     "score": 0.091,
+     "oof_auc": 0.724
+    },
+    {
+     "modality": "Lipid",
+     "weight": 0.0,
+     "score": 0.114,
+     "oof_auc": 0.851
+    },
+    {
+     "modality": "LSC",
+     "weight": 0.0,
+     "score": 0.338,
+     "oof_auc": 0.769
+    },
+    {
+     "modality": "Cell-comm",
+     "weight": 0.0,
+     "score": 0.947,
+     "oof_auc": 0.835
+    }
+   ],
+   "heldout_auc": 1.0,
+   "mutation": "del7",
+   "true_label": "absent",
+   "confidence": "ok"
+  },
+  {
+   "probability": 0.54,
+   "call": "absent",
+   "threshold": 0.662,
+   "n_modalities": 8,
+   "contributions": [
+    {
+     "modality": "Metabolite",
+     "weight": 0.547,
+     "score": 0.784,
+     "oof_auc": 0.849
+    },
+    {
+     "modality": "Lipid",
+     "weight": 0.453,
+     "score": 0.247,
+     "oof_auc": 0.844
+    },
+    {
+     "modality": "RNA",
+     "weight": 0.0,
+     "score": 0.92,
+     "oof_auc": 0.711
+    },
+    {
+     "modality": "Composition",
+     "weight": 0.0,
+     "score": 0.864,
+     "oof_auc": 0.591
+    },
+    {
+     "modality": "ADT",
+     "weight": 0.0,
+     "score": 0.316,
+     "oof_auc": 0.521
+    },
+    {
+     "modality": "GRN",
+     "weight": 0.0,
+     "score": 0.892,
+     "oof_auc": 0.784
+    },
+    {
+     "modality": "LSC",
+     "weight": 0.0,
+     "score": 0.837,
+     "oof_auc": 0.588
+    },
+    {
+     "modality": "Cell-comm",
+     "weight": 0.0,
+     "score": 0.776,
+     "oof_auc": 0.66
+    }
+   ],
+   "heldout_auc": 0.92,
+   "mutation": "complex",
+   "true_label": "absent",
+   "confidence": "ok"
+  },
+  {
+   "probability": 0.518,
+   "call": "absent",
+   "threshold": 0.701,
+   "n_modalities": 8,
+   "contributions": [
+    {
+     "modality": "Cell-comm",
+     "weight": 0.379,
+     "score": 0.952,
+     "oof_auc": 0.85
+    },
+    {
+     "modality": "ADT",
+     "weight": 0.325,
+     "score": 0.119,
+     "oof_auc": 0.848
+    },
+    {
+     "modality": "RNA",
+     "weight": 0.295,
+     "score": 0.399,
+     "oof_auc": 0.837
+    },
+    {
+     "modality": "Composition",
+     "weight": 0.0,
+     "score": 0.507,
+     "oof_auc": 0.733
+    },
+    {
+     "modality": "Lipid",
+     "weight": 0.0,
+     "score": 0.961,
+     "oof_auc": 0.794
+    },
+    {
+     "modality": "Metabolite",
+     "weight": 0.0,
+     "score": 0.033,
+     "oof_auc": 0.774
+    },
+    {
+     "modality": "GRN",
+     "weight": 0.0,
+     "score": 0.418,
+     "oof_auc": 0.738
+    },
+    {
+     "modality": "LSC",
+     "weight": 0.0,
+     "score": 0.413,
+     "oof_auc": 0.628
+    }
+   ],
+   "heldout_auc": 0.604,
+   "mutation": "KIT",
+   "true_label": "absent",
+   "confidence": "ok"
+  },
+  {
+   "probability": 0.486,
+   "call": "absent",
+   "threshold": 0.708,
+   "n_modalities": 8,
+   "contributions": [
+    {
+     "modality": "Composition",
+     "weight": 0.349,
+     "score": 0.163,
+     "oof_auc": 0.788
+    },
+    {
+     "modality": "RNA",
+     "weight": 0.238,
+     "score": 0.679,
+     "oof_auc": 0.781
+    },
+    {
+     "modality": "Cell-comm",
+     "weight": 0.235,
+     "score": 0.647,
+     "oof_auc": 0.76
+    },
+    {
+     "modality": "Metabolite",
+     "weight": 0.136,
+     "score": 0.573,
+     "oof_auc": 0.77
+    },
+    {
+     "modality": "Lipid",
+     "weight": 0.042,
+     "score": 0.892,
+     "oof_auc": 0.759
+    },
+    {
+     "modality": "ADT",
+     "weight": 0.0,
+     "score": 0.003,
+     "oof_auc": 0.735
+    },
+    {
+     "modality": "GRN",
+     "weight": 0.0,
+     "score": 0.693,
+     "oof_auc": 0.706
+    },
+    {
+     "modality": "LSC",
+     "weight": 0.0,
+     "score": 0.102,
+     "oof_auc": 0.631
+    }
+   ],
+   "heldout_auc": 0.676,
+   "mutation": "NRAS",
+   "true_label": "absent",
+   "confidence": "ok"
+  },
+  {
+   "probability": 0.443,
+   "call": "absent",
+   "threshold": 0.748,
+   "n_modalities": 8,
+   "contributions": [
+    {
+     "modality": "RNA",
+     "weight": 0.479,
+     "score": 0.529,
+     "oof_auc": 0.952
+    },
+    {
+     "modality": "GRN",
+     "weight": 0.273,
+     "score": 0.044,
+     "oof_auc": 0.906
+    },
+    {
+     "modality": "Metabolite",
+     "weight": 0.204,
+     "score": 0.867,
+     "oof_auc": 0.91
+    },
+    {
+     "modality": "ADT",
+     "weight": 0.044,
+     "score": 0.003,
+     "oof_auc": 0.861
+    },
+    {
+     "modality": "Composition",
+     "weight": 0.0,
+     "score": 0.072,
+     "oof_auc": 0.728
+    },
+    {
+     "modality": "Lipid",
+     "weight": 0.0,
+     "score": 0.942,
+     "oof_auc": 0.844
+    },
+    {
+     "modality": "LSC",
+     "weight": 0.0,
+     "score": 0.629,
+     "oof_auc": 0.766
+    },
+    {
+     "modality": "Cell-comm",
+     "weight": 0.0,
+     "score": 0.294,
+     "oof_auc": 0.812
+    }
+   ],
+   "heldout_auc": null,
+   "mutation": "kmt2a",
+   "true_label": "absent",
+   "confidence": "ok"
+  },
+  {
+   "probability": 0.443,
+   "call": "absent",
+   "threshold": 0.667,
+   "n_modalities": 8,
+   "contributions": [
+    {
+     "modality": "GRN",
+     "weight": 0.461,
+     "score": 0.028,
+     "oof_auc": 0.837
+    },
+    {
+     "modality": "Cell-comm",
+     "weight": 0.417,
+     "score": 0.857,
+     "oof_auc": 0.8
+    },
+    {
+     "modality": "ADT",
+     "weight": 0.122,
+     "score": 0.596,
+     "oof_auc": 0.768
+    },
+    {
+     "modality": "RNA",
+     "weight": 0.0,
+     "score": 0.03,
+     "oof_auc": 0.652
+    },
+    {
+     "modality": "Composition",
+     "weight": 0.0,
+     "score": 0.607,
+     "oof_auc": 0.661
+    },
+    {
+     "modality": "Lipid",
+     "weight": 0.0,
+     "score": 0.055,
+     "oof_auc": 0.713
+    },
+    {
+     "modality": "Metabolite",
+     "weight": 0.0,
+     "score": 0.712,
+     "oof_auc": 0.669
+    },
+    {
+     "modality": "LSC",
+     "weight": 0.0,
+     "score": 0.144,
+     "oof_auc": 0.54
+    }
+   ],
+   "heldout_auc": 0.705,
+   "mutation": "FLT3-TKD",
+   "true_label": "absent",
+   "confidence": "ok"
+  },
+  {
+   "probability": 0.443,
+   "call": "absent",
+   "threshold": 0.748,
+   "n_modalities": 8,
+   "contributions": [
+    {
+     "modality": "RNA",
+     "weight": 0.479,
+     "score": 0.529,
+     "oof_auc": 0.952
+    },
+    {
+     "modality": "GRN",
+     "weight": 0.273,
+     "score": 0.044,
+     "oof_auc": 0.906
+    },
+    {
+     "modality": "Metabolite",
+     "weight": 0.204,
+     "score": 0.867,
+     "oof_auc": 0.91
+    },
+    {
+     "modality": "ADT",
+     "weight": 0.044,
+     "score": 0.003,
+     "oof_auc": 0.861
+    },
+    {
+     "modality": "Composition",
+     "weight": 0.0,
+     "score": 0.072,
+     "oof_auc": 0.728
+    },
+    {
+     "modality": "Lipid",
+     "weight": 0.0,
+     "score": 0.942,
+     "oof_auc": 0.844
+    },
+    {
+     "modality": "LSC",
+     "weight": 0.0,
+     "score": 0.629,
+     "oof_auc": 0.766
+    },
+    {
+     "modality": "Cell-comm",
+     "weight": 0.0,
+     "score": 0.294,
+     "oof_auc": 0.812
+    }
+   ],
+   "heldout_auc": null,
+   "mutation": "KMT2A-rearrangement",
+   "true_label": "absent",
+   "confidence": "ok"
+  },
+  {
+   "probability": 0.442,
+   "call": "absent",
+   "threshold": 0.727,
+   "n_modalities": 8,
+   "contributions": [
+    {
+     "modality": "ADT",
+     "weight": 0.737,
+     "score": 0.446,
+     "oof_auc": 0.776
+    },
+    {
+     "modality": "LSC",
+     "weight": 0.246,
+     "score": 0.413,
+     "oof_auc": 0.686
+    },
+    {
+     "modality": "Cell-comm",
+     "weight": 0.017,
+     "score": 0.709,
+     "oof_auc": 0.594
+    },
+    {
+     "modality": "RNA",
+     "weight": 0.0,
+     "score": 0.166,
+     "oof_auc": 0.63
+    },
+    {
+     "modality": "Composition",
+     "weight": 0.0,
+     "score": 0.091,
+     "oof_auc": 0.592
+    },
+    {
+     "modality": "Lipid",
+     "weight": 0.0,
+     "score": 0.1,
+     "oof_auc": 0.67
+    },
+    {
+     "modality": "Metabolite",
+     "weight": 0.0,
+     "score": 0.864,
+     "oof_auc": 0.646
+    },
+    {
+     "modality": "GRN",
+     "weight": 0.0,
+     "score": 0.825,
+     "oof_auc": 0.588
+    }
+   ],
+   "heldout_auc": 0.44,
+   "mutation": "WT1",
+   "true_label": "absent",
+   "confidence": "ok"
+  },
+  {
+   "probability": 0.438,
+   "call": "absent",
+   "threshold": 0.709,
+   "n_modalities": 8,
+   "contributions": [
+    {
+     "modality": "Lipid",
+     "weight": 0.533,
+     "score": 0.612,
+     "oof_auc": 0.808
+    },
+    {
+     "modality": "Cell-comm",
+     "weight": 0.238,
+     "score": 0.423,
+     "oof_auc": 0.738
+    },
+    {
+     "modality": "RNA",
+     "weight": 0.229,
+     "score": 0.047,
+     "oof_auc": 0.771
+    },
+    {
+     "modality": "Composition",
+     "weight": 0.0,
+     "score": 0.155,
+     "oof_auc": 0.654
+    },
+    {
+     "modality": "ADT",
+     "weight": 0.0,
+     "score": 0.194,
+     "oof_auc": 0.7
+    },
+    {
+     "modality": "Metabolite",
+     "weight": 0.0,
+     "score": 0.801,
+     "oof_auc": 0.713
+    },
+    {
+     "modality": "GRN",
+     "weight": 0.0,
+     "score": 0.008,
+     "oof_auc": 0.72
+    },
+    {
+     "modality": "LSC",
+     "weight": 0.0,
+     "score": 0.23,
+     "oof_auc": 0.576
+    }
+   ],
+   "heldout_auc": 0.783,
+   "mutation": "IDH1",
+   "true_label": "absent",
+   "confidence": "ok"
+  },
+  {
+   "probability": 0.398,
+   "call": "absent",
+   "threshold": 0.659,
+   "n_modalities": 8,
+   "contributions": [
+    {
+     "modality": "GRN",
+     "weight": 0.431,
+     "score": 0.197,
+     "oof_auc": 0.788
+    },
+    {
+     "modality": "Lipid",
+     "weight": 0.363,
+     "score": 0.488,
+     "oof_auc": 0.782
+    },
+    {
+     "modality": "Cell-comm",
+     "weight": 0.206,
+     "score": 0.664,
+     "oof_auc": 0.72
+    },
+    {
+     "modality": "RNA",
+     "weight": 0.0,
+     "score": 0.08,
+     "oof_auc": 0.705
+    },
+    {
+     "modality": "Composition",
+     "weight": 0.0,
+     "score": 0.144,
+     "oof_auc": 0.697
+    },
+    {
+     "modality": "ADT",
+     "weight": 0.0,
+     "score": 0.105,
+     "oof_auc": 0.536
+    },
+    {
+     "modality": "Metabolite",
+     "weight": 0.0,
+     "score": 0.947,
+     "oof_auc": 0.667
+    },
+    {
+     "modality": "LSC",
+     "weight": 0.0,
+     "score": 0.186,
+     "oof_auc": 0.621
+    }
+   ],
+   "heldout_auc": 0.72,
+   "mutation": "ASXL1",
+   "true_label": "absent",
+   "confidence": "ok"
+  },
+  {
+   "probability": 0.356,
+   "call": "absent",
+   "threshold": 0.955,
+   "n_modalities": 8,
+   "contributions": [
+    {
+     "modality": "Cell-comm",
+     "weight": 0.202,
+     "score": 0.381,
+     "oof_auc": 0.983
+    },
+    {
+     "modality": "ADT",
+     "weight": 0.188,
+     "score": 0.006,
+     "oof_auc": 0.986
+    },
+    {
+     "modality": "Lipid",
+     "weight": 0.173,
+     "score": 0.573,
+     "oof_auc": 0.995
+    },
+    {
+     "modality": "RNA",
+     "weight": 0.132,
+     "score": 0.562,
+     "oof_auc": 0.996
+    },
+    {
+     "modality": "GRN",
+     "weight": 0.116,
+     "score": 0.102,
+     "oof_auc": 0.995
+    },
+    {
+     "modality": "Metabolite",
+     "weight": 0.106,
+     "score": 0.814,
+     "oof_auc": 0.996
+    },
+    {
+     "modality": "Composition",
+     "weight": 0.083,
+     "score": 0.072,
+     "oof_auc": 0.957
+    },
+    {
+     "modality": "LSC",
+     "weight": 0.0,
+     "score": 0.848,
+     "oof_auc": 0.523
+    }
+   ],
+   "heldout_auc": 0.966,
+   "mutation": "inv16",
+   "true_label": "absent",
+   "confidence": "ok"
+  },
+  {
+   "probability": 0.356,
+   "call": "absent",
+   "threshold": 0.955,
+   "n_modalities": 8,
+   "contributions": [
+    {
+     "modality": "Cell-comm",
+     "weight": 0.202,
+     "score": 0.381,
+     "oof_auc": 0.983
+    },
+    {
+     "modality": "ADT",
+     "weight": 0.188,
+     "score": 0.006,
+     "oof_auc": 0.986
+    },
+    {
+     "modality": "Lipid",
+     "weight": 0.173,
+     "score": 0.573,
+     "oof_auc": 0.995
+    },
+    {
+     "modality": "RNA",
+     "weight": 0.132,
+     "score": 0.562,
+     "oof_auc": 0.996
+    },
+    {
+     "modality": "GRN",
+     "weight": 0.116,
+     "score": 0.102,
+     "oof_auc": 0.995
+    },
+    {
+     "modality": "Metabolite",
+     "weight": 0.106,
+     "score": 0.814,
+     "oof_auc": 0.996
+    },
+    {
+     "modality": "Composition",
+     "weight": 0.083,
+     "score": 0.072,
+     "oof_auc": 0.957
+    },
+    {
+     "modality": "LSC",
+     "weight": 0.0,
+     "score": 0.848,
+     "oof_auc": 0.523
+    }
+   ],
+   "heldout_auc": 0.966,
+   "mutation": "inv(16)_CBFB-MYH11",
+   "true_label": "absent",
+   "confidence": "ok"
+  },
+  {
+   "probability": 0.337,
+   "call": "absent",
+   "threshold": 0.689,
+   "n_modalities": 8,
+   "contributions": [
+    {
+     "modality": "Metabolite",
+     "weight": 0.973,
+     "score": 0.343,
+     "oof_auc": 0.83
+    },
+    {
+     "modality": "ADT",
+     "weight": 0.027,
+     "score": 0.094,
+     "oof_auc": 0.686
+    },
+    {
+     "modality": "RNA",
+     "weight": 0.0,
+     "score": 0.028,
+     "oof_auc": 0.669
+    },
+    {
+     "modality": "Composition",
+     "weight": 0.0,
+     "score": 0.759,
+     "oof_auc": 0.583
+    },
+    {
+     "modality": "Lipid",
+     "weight": 0.0,
+     "score": 0.881,
+     "oof_auc": 0.68
+    },
+    {
+     "modality": "GRN",
+     "weight": 0.0,
+     "score": 0.169,
+     "oof_auc": 0.728
+    },
+    {
+     "modality": "LSC",
+     "weight": 0.0,
+     "score": 0.324,
+     "oof_auc": 0.53
+    },
+    {
+     "modality": "Cell-comm",
+     "weight": 0.0,
+     "score": 0.524,
+     "oof_auc": 0.578
+    }
+   ],
+   "heldout_auc": 0.971,
+   "mutation": "RUNX1",
+   "true_label": "absent",
+   "confidence": "ok"
+  },
+  {
+   "probability": 0.2,
+   "call": "absent",
+   "threshold": 0.734,
+   "n_modalities": 8,
+   "contributions": [
+    {
+     "modality": "GRN",
+     "weight": 0.441,
+     "score": 0.039,
+     "oof_auc": 0.918
+    },
+    {
+     "modality": "RNA",
+     "weight": 0.33,
+     "score": 0.08,
+     "oof_auc": 0.906
+    },
+    {
+     "modality": "ADT",
+     "weight": 0.137,
+     "score": 0.521,
+     "oof_auc": 0.869
+    },
+    {
+     "modality": "Metabolite",
+     "weight": 0.093,
+     "score": 0.911,
+     "oof_auc": 0.886
+    },
+    {
+     "modality": "Composition",
+     "weight": 0.0,
+     "score": 0.335,
+     "oof_auc": 0.757
+    },
+    {
+     "modality": "Lipid",
+     "weight": 0.0,
+     "score": 0.92,
+     "oof_auc": 0.852
+    },
+    {
+     "modality": "LSC",
+     "weight": 0.0,
+     "score": 0.111,
+     "oof_auc": 0.556
+    },
+    {
+     "modality": "Cell-comm",
+     "weight": 0.0,
+     "score": 0.448,
+     "oof_auc": 0.702
+    }
+   ],
+   "heldout_auc": 0.797,
+   "mutation": "TET2",
+   "true_label": "absent",
+   "confidence": "ok"
+  },
+  {
+   "probability": 0.146,
+   "call": "absent",
+   "threshold": 0.633,
+   "n_modalities": 8,
+   "contributions": [
+    {
+     "modality": "ADT",
+     "weight": 0.309,
+     "score": 0.066,
+     "oof_auc": 0.704
+    },
+    {
+     "modality": "GRN",
+     "weight": 0.306,
+     "score": 0.008,
+     "oof_auc": 0.704
+    },
+    {
+     "modality": "Cell-comm",
+     "weight": 0.232,
+     "score": 0.443,
+     "oof_auc": 0.676
+    },
+    {
+     "modality": "RNA",
+     "weight": 0.121,
+     "score": 0.039,
+     "oof_auc": 0.687
+    },
+    {
+     "modality": "Composition",
+     "weight": 0.032,
+     "score": 0.476,
+     "oof_auc": 0.545
+    },
+    {
+     "modality": "Lipid",
+     "weight": 0.0,
+     "score": 0.961,
+     "oof_auc": 0.672
+    },
+    {
+     "modality": "Metabolite",
+     "weight": 0.0,
+     "score": 0.95,
+     "oof_auc": 0.582
+    },
+    {
+     "modality": "LSC",
+     "weight": 0.0,
+     "score": 0.612,
+     "oof_auc": 0.516
+    }
+   ],
+   "heldout_auc": 0.84,
+   "mutation": "KRAS",
+   "true_label": "absent",
+   "confidence": "ok"
+  },
+  {
+   "probability": 0.11,
+   "call": "absent",
+   "threshold": 0.516,
+   "n_modalities": 8,
+   "contributions": [
+    {
+     "modality": "ADT",
+     "weight": 0.477,
+     "score": 0.003,
+     "oof_auc": 0.784
+    },
+    {
+     "modality": "Lipid",
+     "weight": 0.386,
+     "score": 0.078,
+     "oof_auc": 0.768
+    },
+    {
+     "modality": "LSC",
+     "weight": 0.126,
+     "score": 0.626,
+     "oof_auc": 0.732
+    },
+    {
+     "modality": "Composition",
+     "weight": 0.012,
+     "score": 0.028,
+     "oof_auc": 0.702
+    },
+    {
+     "modality": "RNA",
+     "weight": 0.0,
+     "score": 0.044,
+     "oof_auc": 0.708
+    },
+    {
+     "modality": "Metabolite",
+     "weight": 0.0,
+     "score": 0.537,
+     "oof_auc": 0.724
+    },
+    {
+     "modality": "GRN",
+     "weight": 0.0,
+     "score": 0.044,
+     "oof_auc": 0.701
+    },
+    {
+     "modality": "Cell-comm",
+     "weight": 0.0,
+     "score": 0.501,
+     "oof_auc": 0.61
+    }
+   ],
+   "heldout_auc": 0.6,
+   "mutation": "PTPN11",
+   "true_label": "absent",
+   "confidence": "ok"
+  }
+ ],
+ "predictor": {
+  "version": "1.0",
+  "n_mutations": 26,
+  "modalities": [
+   "RNA",
+   "Composition",
+   "ADT",
+   "Lipid",
+   "Metabolite",
+   "GRN",
+   "LSC",
+   "Cell-comm"
+  ],
+  "mean_heldout_auc": 0.795,
+  "rna": "raw+prog (UDON markers + program fractions)",
+  "base_model": "linSVM",
+  "n_train_samples": 361,
+  "trained": "2026-07-01 00:29"
+ },
+ "validation": true,
+ "modalities_available": [
+  "ADT",
+  "Cell-comm",
+  "Composition",
+  "GRN",
+  "LSC",
+  "Lipid",
+  "Metabolite",
+  "RNA"
+ ],
+ "note": "sealed held-out sample \u2014 predicted vs known labels (OOF-calibrated thresholds)"
+}

@@ -1,0 +1,19 @@
+# Canonical run environment = cluster base anaconda3-2020 python
+#   /usr/local/anaconda3-2020/bin/python   (Python 3.x)
+# The reported metric depends on the scikit-learn build (StratifiedGroupKFold's
+# internal balancing is not stable across releases), so results are only comparable
+# within a fixed stack. run_report.json["provenance"] records the actual versions
+# each run used; treat the cluster stack below as canonical.
+#
+# Cluster (canonical):
+scikit-learn==1.5.2
+numpy==1.26.4
+scipy==1.15.3
+pandas==2.3.2
+anndata==0.10.8
+joblib==1.4.2
+#
+# Local dev copy used a newer stack (scikit-learn 1.9.0 / numpy 2.4); expect the
+# subtype balanced-accuracy point estimate to differ by ~0.06 at n~97 purely from
+# the splitter version. The permutation p-value (not the raw number) is the signal
+# to compare across environments.

@@ -1,0 +1,15 @@
+biomarker	subtype	drug	evidence_level	source
+NPM1	NPM1	menin inhibitor (revumenib)	guideline	NCCN-2024
+FLT3	FLT3	FLT3 inhibitor (gilteritinib or midostaurin)	guideline	NCCN
+IDH1	IDH1	IDH1 inhibitor (ivosidenib)	guideline	NCCN
+IDH2	IDH2	IDH2 inhibitor (enasidenib)	guideline	NCCN
+KIT	CKIT	KIT inhibitor (avapritinib; CBF-AML context)	trial	lit
+TP53	TP53	HMA + venetoclax; consider trial (eprenetapopt) and early allogeneic transplant	heuristic	lit
+inv16	Inv16	intensive chemotherapy (favorable CBF-AML); add KIT inhibitor if KIT-mutant	guideline	ELN
+del7		HMA + venetoclax; consider allogeneic transplant / trial	heuristic	lit
+complex		HMA + venetoclax; consider allogeneic transplant / trial	heuristic	lit
+t15_17	APL	ATRA + arsenic trioxide (APL — treat urgently; do not delay for confirmation)	guideline	NCCN/ELN
+t8_21	t(8;21)	intensive chemotherapy (favorable CBF-AML); add KIT inhibitor if KIT-mutant	guideline	ELN
+kmt2a	KMT2Ar	menin inhibitor (revumenib)	guideline	NCCN-2024
+CD33	surface	gemtuzumab ozogamicin (anti-CD33 ADC; CD33+ AML) — confirm by flow before use	guideline	NCCN/FDA-label
+CD123	surface	tagraxofusp or pivekimab sunirine (anti-CD123; CD123-high AML/BPDCN context) — confirm by flow	trial	FDA-label/lit

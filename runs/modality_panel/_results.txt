@@ -1,0 +1,11 @@
+loading modality blocks ...
+  RNA: UDON markers absent -> top-2000 HVG on the 361-sample non-holdout pool
+  composition     90 feat   387 samples
+  ADT            129 feat   387 samples
+  Lipid          625 feat   387 samples
+  Metabolite    1084 feat   387 samples
+  GRN           7486 feat   387 samples
+  RNA           2000 feat   387 samples
+
+testable mutations: 2 | held-out with data: 26 | models: 11 | sets: 3
+

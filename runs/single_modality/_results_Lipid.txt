@@ -1,0 +1,28 @@
+modality: Lipid | loading its block only ...
+  Lipid: 625 features | 387 samples | 26/29 held-out covered
+  testable mutations: 17 | models: 11
+
+  cyto_complex  pos= 4 done
+  cyto_inv16    pos= 4 done
+  cyto_trisomy8 pos= 5 done
+  mut_DNMT3A    pos= 8 done
+  mut_FLT3      pos=10 done
+  mut_FLT3-ITD  pos= 7 done
+  mut_FLT3-TKD  pos= 4 done
+  mut_IDH1      pos= 3 done
+  mut_IDH2      pos= 6 done
+  mut_NPM1      pos=12 done
+  mut_NRAS      pos= 5 done
+  mut_PHIP      pos= 3 done
+  mut_RUNX1     pos= 5 done
+  mut_SRSF2     pos= 5 done
+  mut_TET2      pos= 9 done
+  mut_TP53      pos= 4 done
+  mut_inv(16)_C pos= 4 done
+
+wrote 187 rows -> C:\Users\krog5w\.gemini\antigravity\scratch\AML-multimodal\runs\single_modality\auc_Lipid.tsv
+
+[Lipid] model logL2   logL1   elastic  linSVM  shrLDA  PLS     RF      HistGB  NaiveB  kNN     MLP   
+mean AUC       0.802   0.771   0.788   0.819   0.815   0.804   0.758   0.733   0.686   0.737   0.663
+
+SINGLE MODALITY [Lipid] OK
