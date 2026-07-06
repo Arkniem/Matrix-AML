@@ -1,0 +1,108 @@
+{
+  "mode": "retrospective_validation",
+  "caveat": "Retrospective ASSOCIATIONS on sparse, partially-overlapping clinical labels \u2014 NOT trained predictors. n and an underpowered flag (<20) accompany every test; a null is a legitimate finding. ELN-expected is a single-driver proxy for a multi-factor clinical schema. CIRCULARITY: ELN risk is itself defined from driver genetics, so the anchored-driver ELN concordance + the adverse-driver->ELN test SHARE logic with the label \u2014 they validate the engine's driver EXTRACTION + anchor selection (a correctness/data-integrity check), NOT a novel prediction. The p-LSC->ELN test is the more INDEPENDENT signal (an RNA-derived stemness phenotype tracking genetics-defined risk), as is the driver->clinical-response test.",
+  "test_independence": {
+    "anchored_eln_concordance": "shares-logic (extraction/anchor correctness check)",
+    "adverse_driver_vs_eln_adverse": "shares-logic (extraction/anchor correctness check)",
+    "favorable_driver_vs_responder": "independent (genetics vs treatment response)",
+    "pLSC_vs_eln_adverse": "independent (RNA-derived stemness vs genetic risk)",
+    "survival_by_expected_risk": "independent but tiny-n (descriptive only)"
+  },
+  "coverage": {
+    "n_samples": 387,
+    "n_anchored_driver": 153,
+    "n_eln": 70,
+    "n_responder": 52,
+    "n_survival": 19,
+    "n_lsc_confident": 247
+  },
+  "anchored_driver_distribution": {
+    "NPM1": 43,
+    "Inv16": 19,
+    "FLT3": 14,
+    "TET2": 12,
+    "TP53": 10,
+    "Complex": 8,
+    "KMT2Ar": 7,
+    "DEL(7)": 7,
+    "Trisomy8": 6,
+    "SF3B1": 6,
+    "t(8;21)": 4,
+    "SRSF2": 3,
+    "DNMT3A": 2,
+    "CEBPA": 2,
+    "IDH2": 2,
+    "WT1": 2,
+    "ASXL1": 2,
+    "IDH1": 1,
+    "NRAS": 1,
+    "CSF3R": 1,
+    "DEL(5)": 1
+  },
+  "tests": {
+    "anchored_eln_concordance": {
+      "n": 39,
+      "agreement": 0.744,
+      "p_perm": 5e-05,
+      "underpowered": false
+    },
+    "adverse_driver_vs_eln_adverse": {
+      "n": 39,
+      "table": [
+        [
+          12,
+          1
+        ],
+        [
+          2,
+          24
+        ]
+      ],
+      "odds_ratio": 144.0,
+      "p": 0.0,
+      "underpowered": false
+    },
+    "favorable_driver_vs_responder": {
+      "n": 48,
+      "table": [
+        [
+          2,
+          17
+        ],
+        [
+          22,
+          7
+        ]
+      ],
+      "odds_ratio": 0.037,
+      "p": 2e-05,
+      "underpowered": false
+    },
+    "pLSC_vs_eln_adverse": {
+      "n": 44,
+      "table": [
+        [
+          15,
+          20
+        ],
+        [
+          2,
+          7
+        ]
+      ],
+      "odds_ratio": 2.625,
+      "p": 0.44505,
+      "underpowered": false
+    },
+    "survival_by_expected_risk": {
+      "Intermediate": {
+        "n": 2,
+        "median_months": 773.0
+      },
+      "Adverse": {
+        "n": 6,
+        "median_months": 92.0
+      }
+    }
+  }
+}

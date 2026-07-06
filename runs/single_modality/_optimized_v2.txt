@@ -1,0 +1,27 @@
+modalities: ADT, Cell-comm, Composition, GRN, LSC, Lipid, Metabolite, RNA
+STRONG pool: logL2, elastic, linSVM, shrLDA, PLS | gate 0.08
+
+mutation         n best_cell all_blend  OPTIMIZED  oracle*
+complex         26      0.89      0.97       0.94     1.00
+inv16           26      0.93      0.97       0.98     1.00
+trisomy8        26      0.91      0.92       1.00     1.00
+DNMT3A          26      0.76      0.78       0.82     0.88
+FLT3            26      0.70      0.74       0.74     0.92
+FLT3-ITD        26      0.77      0.82       0.89     0.99
+FLT3-TKD        26      0.86      0.93       0.89     0.97
+IDH1            26      0.86      0.81       0.88     1.00
+IDH2            26      0.39      0.65       0.68     0.80
+NPM1            26      0.92      0.96       0.95     0.99
+NRAS            26      0.64      0.64       0.67     0.83
+PHIP            26      0.60      0.93       0.93     0.99
+RUNX1           26      0.94      0.98       0.97     1.00
+SRSF2           26      0.78      0.78       0.76     0.87
+TET2            26      0.82      0.75       0.76     0.91
+TP53            26      0.90      0.78       0.77     0.92
+inv(16)_CBFB-M  26      0.93      0.97       0.98     1.00
+MEAN                   0.800     0.845      0.859    0.945
+
+v2 optimized 0.859 | v1 best-single-model 0.844 | best_cell 0.800 | oracle 0.945
+optimized beats best_cell by +0.059 ; headroom to oracle +0.085
+
+OPTIMIZE v2 OK

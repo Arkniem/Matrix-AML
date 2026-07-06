@@ -1,0 +1,31 @@
+GRN  differential-FS (top-500 up + top-500 down) vs NO-FS (full 7486 features)
+
+  cyto_complex done
+  cyto_inv16 done
+  cyto_trisomy8 done
+  mut_DNMT3A done
+  mut_FLT3 done
+  mut_FLT3-ITD done
+  mut_FLT3-TKD done
+  mut_IDH1 done
+  mut_IDH2 done
+  mut_NPM1 done
+  mut_NRAS done
+  mut_PHIP done
+  mut_RUNX1 done
+  mut_SRSF2 done
+  mut_TET2 done
+  mut_TP53 done
+  mut_inv(16)_CB done
+
+model     no-FS(full) differential  diff-full
+logL2          0.806      0.796     -0.010
+linSVM         0.829      0.810     -0.018
+PLS            0.842      0.806     -0.036
+RF             0.745      0.750     +0.005
+NaiveB         0.652      0.625     -0.027
+kNN            0.663      0.693     +0.030
+
+mean over models: no-FS 0.756  differential 0.747
+
+COMPARE FS OK

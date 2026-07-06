@@ -1,0 +1,180 @@
+{
+  "schema_version": 1,
+  "scope_id": "CCHMC::0018_Af_N1c",
+  "target": "subtype",
+  "provenance": {
+    "layout": "local"
+  },
+  "entries": [
+    {
+      "entry_id": "composition#r0",
+      "witness": "composition",
+      "domain": "predictive",
+      "grounding": "honest_cv",
+      "independence": "independent",
+      "round": 0,
+      "status": "ok",
+      "error": null,
+      "evidence": {
+        "witness": "composition",
+        "kind": "measured",
+        "status": "ok",
+        "held_out": true,
+        "patient_prediction": "NPM1",
+        "patient_probability": 0.9161,
+        "true_label": "NPM1",
+        "cohort_balanced_accuracy": 0.6312,
+        "cohort_permutation_p": 0.047619047619047616,
+        "patient_top_cellstates": {
+          "MultiLin-GMP-1": 0.516,
+          "B Memory-1": 0.086,
+          "CD4 TCM": 0.059,
+          "Intermediate Mono-3": 0.041,
+          "MEP-2": 0.035,
+          "MPP-MEP": 0.034
+        }
+      },
+      "opinion": {
+        "confidence": 0.5,
+        "reliability_weight": 0.85,
+        "summary": "predicts NPM1 (prob 0.9161)",
+        "caveats": "LLM fallback"
+      },
+      "read_entry_ids": []
+    },
+    {
+      "entry_id": "genetic#r0",
+      "witness": "genetic",
+      "domain": "genetic",
+      "grounding": "deterministic_fact",
+      "independence": "independent",
+      "round": 0,
+      "status": "ok",
+      "error": null,
+      "evidence": {
+        "witness": "genetic",
+        "kind": "independent",
+        "status": "ok",
+        "present": [
+          "complex",
+          "NPM1"
+        ],
+        "targetable": {
+          "NPM1": "menin inhibitor (NPM1/KMT2A-rearranged context)"
+        },
+        "eln": null
+      },
+      "opinion": {
+        "confidence": 0.6,
+        "reliability_weight": 0.85,
+        "summary": "present: ['complex', 'NPM1']; targetable: ['NPM1']",
+        "caveats": "LLM fallback"
+      },
+      "read_entry_ids": []
+    },
+    {
+      "entry_id": "cell-state/UDON#r0",
+      "witness": "cell-state/UDON",
+      "domain": "cell_state",
+      "grounding": "discovery",
+      "independence": "rna_derived",
+      "round": 0,
+      "status": "ok",
+      "error": null,
+      "evidence": {
+        "witness": "cell-state/UDON",
+        "kind": "discovery",
+        "status": "ok",
+        "n_pseudobulks": 23,
+        "active_programs": [
+          {
+            "program": "P3",
+            "n_pseudobulks": 10,
+            "marks": "Inv16"
+          },
+          {
+            "program": "P14",
+            "n_pseudobulks": 8,
+            "marks": "NPM1"
+          },
+          {
+            "program": "P7",
+            "n_pseudobulks": 2,
+            "marks": "PHIP"
+          },
+          {
+            "program": "P6",
+            "n_pseudobulks": 2,
+            "marks": "NPM1"
+          },
+          {
+            "program": "P2",
+            "n_pseudobulks": 1,
+            "marks": "NPM1"
+          }
+        ]
+      },
+      "opinion": {
+        "confidence": 0.6,
+        "reliability_weight": 0.7,
+        "summary": "programs: ['P3', 'P14', 'P7', 'P6', 'P2']",
+        "caveats": "LLM fallback"
+      },
+      "read_entry_ids": []
+    }
+  ],
+  "arbiter_rounds": [
+    {
+      "round": 0,
+      "consensus": {
+        "subtype_call": "NPM1 (genetic-anchored: direct mutation observation)",
+        "leading_hypothesis": "NPM1",
+        "leading_confirmed_by_genetics": true,
+        "concordance": 0.885,
+        "per_witness_consistency": {
+          "composition": "agree",
+          "genetic": "agree",
+          "cell-state/UDON": "conflict"
+        },
+        "conflicts": "cell-state/UDON\u2192Inv16",
+        "ranked_therapy_hypotheses": [
+          {
+            "biomarker": "NPM1",
+            "drug": "menin inhibitor (revumenib)",
+            "evidence_level": "guideline",
+            "source": "NCCN-2024"
+          },
+          {
+            "biomarker": "complex",
+            "drug": "HMA + venetoclax; consider allogeneic transplant / trial",
+            "evidence_level": "heuristic",
+            "source": "lit"
+          }
+        ],
+        "recommended_validations": [
+          {
+            "claim": "mutation",
+            "validation": "targeted DNA/RNA sequencing (NGS panel)",
+            "source": "standard"
+          },
+          {
+            "claim": "subtype",
+            "validation": "flow cytometry immunophenotyping",
+            "source": "standard"
+          },
+          {
+            "claim": "complex",
+            "validation": "conventional karyotype / SNP-array cytogenetics",
+            "source": "standard"
+          }
+        ],
+        "overall_confidence": "high",
+        "rationale": "Leading hypothesis: NPM1 (genetic-anchored: direct mutation observation). Concordance 0.89. Conflicts: cell-state/UDON\u2192Inv16. ",
+        "knowledge_version": "kb-2026.06"
+      }
+    }
+  ],
+  "rounds_run": 1,
+  "stop_reason": "single_pass",
+  "deterministic_evidence_hash": "58fdd5d414303c5a"
+}

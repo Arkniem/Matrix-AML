@@ -1,0 +1,2511 @@
+	cluster
+Non-Classical Mono-2__Pt-69_Rl	U1
+Intermediate Mono-2__562_AfInv16_25F	U11
+cDC2-1__301_AfInv16_29M	U11
+cDC1__301_AfInv16_29M	U11
+Non-Classical Mono-2__301_AfInv16_29M	U11
+Myeloid intermediate 1__301_AfInv16_29M	U11
+Mono-2__301_AfInv16_29M	U11
+Mono-1__301_AfInv16_29M	U11
+MDP-3__301_AfInv16_29M	U11
+MDP-2__301_AfInv16_29M	U11
+Intermediate Mono-3__301_AfInv16_29M	U11
+Intermediate Mono-2__301_AfInv16_29M	U11
+Intermediate Mono-1__301_AfInv16_29M	U11
+cDC2-2__301_AfInv16_29M	U11
+pre-DC-3__2698_EInv16_P47M	U11
+Classical-Mono__AML012	U11
+Non-Classical Mono-2__2698_EInv16_P47M	U11
+Intermediate Mono-1__AML012	U11
+Intermediate Mono-2__AML012	U11
+Non-Classical Mono-2__AML012	U11
+cDC2-1__AML012	U11
+Intermediate Mono-2__2698_EInv16_P47M	U11
+Intermediate Mono-1__2698_EInv16_P47M	U11
+Non-Classical Mono-2__PAWWEE	U11
+Intermediate Mono-1__2660_Ast82_38M	U11
+cDC2-2__2270_Aft36_P71F	U11
+Intermediate Mono-1__AML033	U11
+cDC2-1__2698_EInv16_P47M	U11
+cMOP__301_AfInv16_29M	U11
+pre-DC-1__301_AfInv16_29M	U11
+pre-DC-2__301_AfInv16_29M	U11
+cDC1__4440_AfInv16_P24M	U11
+Non-Classical Mono-2__4440_AfInv16_P24M	U11
+Myeloid intermediate 2__4440_AfInv16_P24M	U11
+Multilin-2__4440_AfInv16_P24M	U11
+MDP-3__4440_AfInv16_P24M	U11
+MDP-2__4440_AfInv16_P24M	U11
+MDP-1__4440_AfInv16_P24M	U11
+LMPP-2__4440_AfInv16_P24M	U11
+Intermediate Mono-3__4440_AfInv16_P24M	U11
+Intermediate Mono-2__4440_AfInv16_P24M	U11
+Intermediate Mono-1__4440_AfInv16_P24M	U11
+Classical-Mono__4440_AfInv16_P24M	U11
+pre-DC-2__AML-11	U11
+Non-Classical Mono-2__hashtag2-SRR16208967	U11
+Intermediate Mono-1__hashtag2-SRR16208966	U11
+Non-Classical Mono-2__hashtag2-SRR16208965	U11
+Non-Classical Mono-2__3410_AfST8_P64M	U11
+cDC2-2__3114_EInv_45F	U11
+cDC2-1__3114_EInv_45F	U11
+Non-Classical Mono-2__3114_EInv_45F	U11
+Mono-2__3114_EInv_45F	U11
+Non-Classical Mono-2__TALL3862	U11
+Intermediate Mono-3__3114_EInv_45F	U11
+Intermediate Mono-2__3114_EInv_45F	U11
+Intermediate Mono-1__3114_EInv_45F	U11
+pre-DC-3__301_AfInv16_29M	U11
+Non-Classical Mono-2__hashtag2-SRR16208966	U11
+cDC2-1__4440_AfInv16_P24M	U11
+cDC1__PAUMTZ	U11
+Mono-2__PAUMTZ	U11
+pre-DC-2__98-31_AfInv16_34F	U11
+MDP-2__1147_EInv16_44M	U11
+MDP-3__1147_EInv16_44M	U11
+cDC2-2__98-31_AfInv16_34F	U11
+cDC2-1__98-31_AfInv16_34F	U11
+Mono-1__1147_EInv16_44M	U11
+Mono-2__1147_EInv16_44M	U11
+cDC1__98-31_AfInv16_34F	U11
+Myeloid intermediate 1__1147_EInv16_44M	U11
+Myeloid intermediate 2__1147_EInv16_44M	U11
+Myeloid intermediate 3__1147_EInv16_44M	U11
+Non-Classical Mono-2__1147_EInv16_44M	U11
+LMPP-2__1147_EInv16_44M	U11
+Non-Classical Mono-2__98-31_AfInv16_34F	U11
+cDC1__1147_EInv16_44M	U11
+cDC2-1__1147_EInv16_44M	U11
+cDC2-2__1147_EInv16_44M	U11
+cMOP__1147_EInv16_44M	U11
+Mono-1__98-31_AfInv16_34F	U11
+pre-DC-2__1147_EInv16_44M	U11
+Intermediate Mono-2__98-31_AfInv16_34F	U11
+Intermediate Mono-1__1239_EST8_44M_N1c	U11
+Intermediate Mono-2__1239_EST8_44M_N1c	U11
+Non-Classical Mono-2__AML1	U11
+Intermediate Mono-1__98-31_AfInv16_34F	U11
+Classical-Mono__98-31_AfInv16_34F	U11
+Mono-2__98-31_AfInv16_34F	U11
+Non-Classical Mono-2__PAUMTZ	U11
+Intermediate Mono-3__1147_EInv16_44M	U11
+Intermediate Mono-1__1147_EInv16_44M	U11
+Intermediate Mono-1__AML048	U11
+Mono-1__PAUMTZ	U11
+Intermediate Mono-1__PAUMTZ	U11
+Intermediate Mono-1__AML055	U11
+cDC2-1__2140_E_N1c	U11
+Non-Classical Mono-2__2140_E_N1c	U11
+Non-Classical Mono-2__PAUMTZ-EoT	U11
+Intermediate Mono-2__2140_E_N1c	U11
+Intermediate Mono-1__2140_E_N1c	U11
+Intermediate Mono-3__AML055	U11
+Non-Classical Mono-2__562_AfInv16_25F	U11
+Non-Classical Mono-2__1782_Aft36_P71F	U11
+Intermediate Mono-2__1147_EInv16_44M	U11
+Non-Classical Mono-2__1702-Et922-66F	U11
+Intermediate Mono-1__1702-Et922-66F	U11
+Classical-Mono__1702-Et922-66F	U11
+Intermediate Mono-2__AML3133	U11
+Classical-Mono__AML3133	U11
+Non-Classical Mono-2__AML3050	U11
+Intermediate Mono-1__143_AfST8_P64M	U11
+Non-Classical Mono-2__1239_EST8_44M_N1c	U11
+Intermediate Mono-1__1102_E_N1c	U11
+Intermediate Mono-2__1102_E_N1c	U11
+preNeu__98-31_AfInv16_34F	U11
+pre-DC-3__98-31_AfInv16_34F	U11
+Classical-Mono__1147_EInv16_44M	U11
+Mono-2__1702-Et922-66F	U11
+cDC2-2__4440_AfInv16_P24M	U11
+Myeloid intermediate 2__301_AfInv16_29M	U11
+cDC2-2__5381v2_AfInv16_P49M	U11
+Intermediate Mono-2__1076_AfInv16_51M	U11
+cDC2-1__5381v2_AfInv16_P49M	U11
+Non-Classical Mono-2__5381v2_AfInv16_P49M	U11
+Intermediate Mono-3__5381v2_AfInv16_P49M	U11
+Intermediate Mono-2__5381v2_AfInv16_P49M	U11
+Intermediate Mono-1__5381v2_AfInv16_P49M	U11
+Classical-Mono__5381v2_AfInv16_P49M	U11
+Intermediate Mono-1__754_EInv16_47M	U11
+Intermediate Mono-1__4924_AfInv16_P49M	U11
+Classical-Mono__1060_EInv16_19M	U11
+Intermediate Mono-1__1060_EInv16_19M	U11
+Intermediate Mono-2__1060_EInv16_19M	U11
+Intermediate Mono-3__1060_EInv16_19M	U11
+Non-Classical Mono-2__4924_AfInv16_P49M	U11
+cDC2-2__4924_AfInv16_P49M	U11
+Intermediate Mono-3__4924_AfInv16_P49M	U11
+Intermediate Mono-2__4924_AfInv16_P49M	U11
+cDC2-1__1060_EInv16_19M	U11
+Mono-1__1060_EInv16_19M	U11
+Non-Classical Mono-2__1076_AfInv16_51M	U11
+Mono-2__1060_EInv16_19M	U11
+cDC2-2__1060_EInv16_19M	U11
+Non-Classical Mono-2__1060_EInv16_19M	U11
+Intermediate Mono-1__hashtag4-SRR16208967	U11
+Classical-Mono__1076_AfInv16_51M	U11
+Non-Classical Mono-2__727_EInv16_35M	U11
+Intermediate Mono-2__727_EInv16_35M	U11
+Intermediate Mono-1__1076_AfInv16_51M	U11
+Non-Classical Mono-2__754_EInv16_47M	U11
+Intermediate Mono-3__0817_E_N1c	U11
+Mono-1__0817_E_N1c	U11
+Mono-2__0817_E_N1c	U11
+Non-Classical Mono-2__0817_E_N1c	U11
+cDC2-1__0817_E_N1c	U11
+Classical-Mono__1009_AfInv16_29M	U11
+Intermediate Mono-1__1009_AfInv16_29M	U11
+Intermediate Mono-2__1009_AfInv16_29M	U11
+Intermediate Mono-3__1009_AfInv16_29M	U11
+Intermediate Mono-1__727_EInv16_35M	U11
+MDP-2__1009_AfInv16_29M	U11
+cDC2-2__754_EInv16_47M	U11
+Mono-1__1009_AfInv16_29M	U11
+Mono-2__1009_AfInv16_29M	U11
+cDC2-1__562_AfInv16_25F	U11
+Non-Classical Mono-2__1009_AfInv16_29M	U11
+cDC2-1__1009_AfInv16_29M	U11
+Non-Classical Mono-2__0018_Af_N1c	U11
+cDC2-2__1009_AfInv16_29M	U11
+Classical-Mono__568_AfInv16_P24M	U11
+Intermediate Mono-1__568_AfInv16_P24M	U11
+Intermediate Mono-2__568_AfInv16_P24M	U11
+Non-Classical Mono-2__568_AfInv16_P24M	U11
+Non-Classical Mono-2__596_E_N1c	U11
+Intermediate Mono-2__0817_E_N1c	U11
+Intermediate Mono-1__0817_E_N1c	U11
+Classical-Mono__220882__Treatment	U12
+Non-Classical Mono-2__10DD-1070__Diagnosis	U12
+Intermediate Mono-2__220882__Treatment	U12
+Intermediate Mono-3__220882__Treatment	U12
+Intermediate Mono-1__220882__Treatment	U12
+Classical-Mono__10DD-1065__Diagnosis	U12
+Intermediate Mono-2__220882__Relapse	U12
+cDC2-2__10DD-1070__Diagnosis	U12
+pre-DC-3__10DD-1070__Diagnosis	U12
+cDC2-2__220882__Relapse	U12
+cDC2-1__220882__Relapse	U12
+Intermediate Mono-2__10DD-1070__Treatment	U12
+Non-Classical Mono-2__220882__Relapse	U12
+Intermediate Mono-3__220882__Relapse	U12
+Non-Classical Mono-2__220882__Treatment	U12
+cDC2-1__10DD-1070__Diagnosis	U12
+cDC2-1__220882__Treatment	U12
+Classical-Mono__10DD-1062__Diagnosis	U12
+cDC1__869586__Diagnosis	U12
+Intermediate Mono-2__10DD-1061__Relapse	U12
+Intermediate Mono-3__10DD-1061__Relapse	U12
+Non-Classical Mono-2__10DD-1061__Relapse	U12
+cDC2-1__10DD-1061__Relapse	U12
+cDC2-2__10DD-1061__Relapse	U12
+Intermediate Mono-1__220882__Relapse	U12
+Intermediate Mono-1__10DD-1062__Diagnosis	U12
+Intermediate Mono-3__10DD-1062__Diagnosis	U12
+Mono-2__10DD-1062__Diagnosis	U12
+Classical-Mono__10DD-1062__Treatment	U12
+cDC2-2__220882__Treatment	U12
+Intermediate Mono-1__10DD-1062__Treatment	U12
+Non-Classical Mono-2__AML-19-R1	U12
+Intermediate Mono-2__10DD-1065__Diagnosis	U12
+Non-Classical Mono-2__10DD-1065__Diagnosis	U12
+Non-Classical Mono-2__AML-19-Dx1	U12
+Intermediate Mono-1__10DD-1070__Diagnosis	U12
+Intermediate Mono-2__10DD-1070__Diagnosis	U12
+Classical-Mono__869586__Diagnosis	U12
+Intermediate Mono-3__869586__Diagnosis	U12
+Mono-2__869586__Diagnosis	U12
+Non-Classical Mono-2__869586__Diagnosis	U12
+Intermediate Mono-2__AML-19-Dx2	U12
+Classical-Mono__220882__Relapse	U12
+cDC2-1__184874__Diagnosis	U12
+Intermediate Mono-3__220882__Diagnosis	U12
+Classical-Mono__184874__Diagnosis	U12
+Non-Classical Mono-2__10DD-1085__Diagnosis	U12
+cDC1__10DD-1085__Diagnosis	U12
+Non-Classical Mono-2__508084__Relapse	U12
+Intermediate Mono-1__10DD-1085__Relapse	U12
+Intermediate Mono-2__10DD-1085__Relapse	U12
+Non-Classical Mono-2__10DD-1085__Relapse	U12
+Non-Classical Mono-2__869922__Diagnosis	U12
+Non-Classical Mono-2__875663__Diagnosis	U12
+Intermediate Mono-1__184874__Diagnosis	U12
+Classical-Mono__922185__Diagnosis	U12
+Intermediate Mono-1__922185__Diagnosis	U12
+Non-Classical Mono-2__10DD-1086__Diagnosis	U12
+Intermediate Mono-2__922185__Diagnosis	U12
+Intermediate Mono-3__922185__Diagnosis	U12
+Mono-2__922185__Diagnosis	U12
+cDC2-2__508084__Relapse	U12
+Non-Classical Mono-2__10DD-1086__Treatment	U12
+Non-Classical Mono-2__922185__Diagnosis	U12
+Non-Classical Mono-2__AML22-Decitabine	U12
+cDC2-1__508084__Relapse	U12
+Intermediate Mono-3__10DD-1085__Diagnosis	U12
+Intermediate Mono-2__10DD-1085__Diagnosis	U12
+Mono-2__508084__Relapse	U12
+Classical-Mono__508084__Relapse	U12
+Intermediate Mono-2__220882__Diagnosis	U12
+Intermediate Mono-1__220882__Diagnosis	U12
+Classical-Mono__220882__Diagnosis	U12
+Non-Classical Mono-2__10DD-1070__Treatment	U12
+cDC2-1__10DD-1070__Treatment	U12
+cDC2-2__10DD-1070__Treatment	U12
+Intermediate Mono-1__508084__Relapse	U12
+Non-Classical Mono-2__869586__Relapse	U12
+Intermediate Mono-2__508084__Relapse	U12
+Intermediate Mono-3__508084__Relapse	U12
+Intermediate Mono-1__10DD-1079__Relapse	U12
+Intermediate Mono-2__10DD-1079__Relapse	U12
+Intermediate Mono-3__10DD-1079__Relapse	U12
+Non-Classical Mono-2__10DD-1079__Relapse	U12
+cDC2-2__184874__Diagnosis	U12
+Intermediate Mono-1__10DD-1061__Relapse	U12
+Non-Classical Mono-2__184874__Diagnosis	U12
+Mono-2__184874__Diagnosis	U12
+Intermediate Mono-3__184874__Diagnosis	U12
+Intermediate Mono-2__184874__Diagnosis	U12
+cDC2-2__220882__Diagnosis	U12
+pre-DC-1__10DD-1061__Diagnosis	U12
+cDC2-1__922185__Diagnosis	U12
+Intermediate Mono-2__10DD-1002__Treatment	U12
+cDC2-2__10DD-1061__Diagnosis	U12
+Intermediate Mono-3__10DD-1002__Treatment	U12
+Mono-2__10DD-1014__Diagnosis	U12
+Intermediate Mono-3__10DD-1014__Diagnosis	U12
+Intermediate Mono-2__10DD-1014__Diagnosis	U12
+Intermediate Mono-1__10DD-1014__Diagnosis	U12
+Classical-Mono__10DD-1014__Treatment	U12
+Classical-Mono__10DD-1014__Diagnosis	U12
+Intermediate Mono-3__10DD-1009__Diagnosis	U12
+Classical-Mono__827494__Diagnosis	U12
+cDC2-2__10DD-1010__Relapse	U12
+Non-Classical Mono-2__10DD-1010__Relapse	U12
+cDC2-2__827494__Diagnosis	U12
+Myeloid intermediate 2__10DD-1002__Treatment	U12
+Mono-2__10DD-1002__Treatment	U12
+Intermediate Mono-1__10DD-1014__Treatment	U12
+Intermediate Mono-2__10DD-1014__Treatment	U12
+Intermediate Mono-3__10DD-1014__Treatment	U12
+Classical-Mono__10DD-1009__Diagnosis	U12
+cDC2-1__10DD-1051__Diagnosis	U12
+cDC1__10DD-1051__Diagnosis	U12
+Intermediate Mono-2__10DD-1009__Diagnosis	U12
+Non-Classical Mono-2__10DD-1051__Diagnosis	U12
+cDC2-1__10DD-1002__Diagnosis	U12
+cDC2-1__10DD-1009__Diagnosis	U12
+cDC2-2__10DD-1002__Diagnosis	U12
+pre-DC-2__10DD-1002__Diagnosis	U12
+Intermediate Mono-3__10DD-1051__Diagnosis	U12
+Intermediate Mono-2__10DD-1051__Diagnosis	U12
+Intermediate Mono-1__10DD-1051__Diagnosis	U12
+Classical-Mono__10DD-1002__Treatment	U12
+cDC2-1__10DD-1014__Treatment	U12
+Intermediate Mono-1__10DD-1002__Treatment	U12
+Mono-2__10DD-1010__Relapse	U12
+cDC1__10DD-1002__Diagnosis	U12
+Mac__10DD-1010__Relapse	U12
+Non-Classical Mono-2__827494__Diagnosis	U12
+Non-Classical Mono-2__AML-19-R2	U12
+cDC2-1__10DD-1002__Treatment	U12
+Mono-2__10DD-1009__Diagnosis	U12
+Intermediate Mono-2__10DD-1003__Diagnosis	U12
+Non-Classical Mono-2__10DD-1009__Diagnosis	U12
+Mono-2__430998__Diagnosis	U12
+Intermediate Mono-2__827494__Diagnosis	U12
+Non-Classical Mono-2__430998__Diagnosis	U12
+cDC2-2__430998__Diagnosis	U12
+Intermediate Mono-1__827494__Diagnosis	U12
+cDC2-2__10DD-1002__Treatment	U12
+pre-DC-2__10DD-1002__Treatment	U12
+cDC2-2__AML-14	U12
+Classical-Mono__10DD-1003__Diagnosis	U12
+cDC2-1__430998__Diagnosis	U12
+Intermediate Mono-3__430998__Diagnosis	U12
+Intermediate Mono-2__430998__Diagnosis	U12
+Intermediate Mono-2__10DD-1010__Diagnosis	U12
+Intermediate Mono-2__10DD-1010__Relapse	U12
+Intermediate Mono-1__10DD-1010__Relapse	U12
+Intermediate Mono-3__827494__Diagnosis	U12
+Classical-Mono__430998__Diagnosis	U12
+Myeloid intermediate 3__10DD-1002__Treatment	U12
+pre-DC-2__10DD-1010__Diagnosis	U12
+cDC2-1__10DD-1010__Diagnosis	U12
+cDC1__10DD-1010__Diagnosis	U12
+Intermediate Mono-1__430998__Diagnosis	U12
+Non-Classical Mono-2__10DD-1002__Treatment	U12
+Mono-2__10DD-1010__Diagnosis	U12
+Mono-1__10DD-1010__Diagnosis	U12
+cDC1__10DD-1002__Treatment	U12
+Intermediate Mono-3__10DD-1010__Diagnosis	U12
+Intermediate Mono-3__10DD-1003__Diagnosis	U12
+cDC2-1__827494__Diagnosis	U12
+Non-Classical Mono-2__10DD-1002__Diagnosis	U12
+Mono-1__10DD-1051__Diagnosis	U12
+Classical-Mono__10DD-1051__Treatment	U12
+Classical-Mono__10DD-1058__Diagnosis	U12
+Intermediate Mono-1__10DD-1058__Diagnosis	U12
+Intermediate Mono-2__10DD-1061__Diagnosis	U12
+Intermediate Mono-2__10DD-1058__Treatment	U12
+pre-DC-3__10DD-1003__Relapse	U12
+cDC2-1__10DD-1003__Diagnosis	U12
+cDC1__10DD-1003__Relapse	U12
+Intermediate Mono-2__10DD-1058__Diagnosis	U12
+Intermediate Mono-2__10DD-1002__Diagnosis	U12
+Mono-2__10DD-1003__Relapse	U12
+Non-Classical Mono-2__10DD-1003__Relapse	U12
+Intermediate Mono-1__10DD-1061__Diagnosis	U12
+Intermediate Mono-1__10DD-1002__Diagnosis	U12
+Mono-2__10DD-1058__Diagnosis	U12
+Non-Classical Mono-2__10DD-1058__Diagnosis	U12
+cDC2-1__10DD-1003__Relapse	U12
+Classical-Mono__10DD-1061__Diagnosis	U12
+Myeloid intermediate 3__10DD-1002__Diagnosis	U12
+cDC2-2__10DD-1003__Diagnosis	U12
+Mono-1__10DD-1003__Relapse	U12
+cDC2-2__10DD-1003__Relapse	U12
+Non-Classical Mono-2__AML-19-Dx2	U12
+Intermediate Mono-3__10DD-1002__Diagnosis	U12
+Non-Classical Mono-2__10DD-1051__Treatment	U12
+Classical-Mono__10DD-1058__Treatment	U12
+Classical-Mono__10DD-1003__Relapse	U12
+cDC2-2__452198__Diagnosis	U12
+cDC2-1__10DD-1061__Diagnosis	U12
+Intermediate Mono-2__AML-19-R2	U12
+Intermediate Mono-2__10DD-1003__Relapse	U12
+Non-Classical Mono-2__10DD-1061__Diagnosis	U12
+cDC2-2__922185__Diagnosis	U12
+Intermediate Mono-3__10DD-1003__Relapse	U12
+Intermediate Mono-1__10DD-1051__Treatment	U12
+Intermediate Mono-1__10DD-1058__Treatment	U12
+Classical-Mono__10DD-1002__Diagnosis	U12
+Intermediate Mono-2__10DD-1051__Treatment	U12
+Intermediate Mono-3__10DD-1051__Treatment	U12
+Myeloid intermediate 2__10DD-1002__Diagnosis	U12
+Mono-2__10DD-1002__Diagnosis	U12
+Intermediate Mono-3__10DD-1061__Diagnosis	U12
+Mono-2__10DD-1051__Treatment	U12
+Mono-1__10DD-1002__Diagnosis	U12
+Mono-2__10DD-1058__Treatment	U12
+Non-Classical Mono-2__AML0160	U14
+Non-Classical Mono-1__PT11__D30	U14
+cMOP__AML-16	U14
+MDP-1__AML-12	U14
+Non-Classical Mono-2__AML2451	U14
+Mono-1__AML-16	U14
+Intermediate Mono-1__PT09__Diagnosis	U14
+Non-Classical Mono-1__hashtag3-SRR16208949	U14
+cDC1__AML2451	U14
+Myeloid intermediate 3__AML2451	U14
+Myeloid intermediate 2__AML2451	U14
+Mono-1__AML2451	U14
+MDP-1__AML2451	U14
+CD8 TEM__AML1552	U14
+MDP-1__hashtag3-SRR16208959	U14
+cMOP__PT09__Diagnosis	U14
+Non-Classical Mono-2__AML008	U14
+Mono-2__AML008	U14
+Non-Classical Mono-2__AML0656	U14
+MDP-1__AML026	U14
+Classical-Mono__AML056	U14
+Non-Classical Mono-2__10DD-1014__Diagnosis	U14
+MDP-1__AML033	U14
+MultiLin-GMP-1__10DD-1079__Diagnosis	U14
+LMPP-2__AML051	U14
+Intermediate Mono-3__AML038	U14
+Mono-1__AML038	U14
+MultiLin-GMP-1__AML048	U14
+MDP-1__AML048	U14
+Mono-2__AML038	U14
+Non-Classical Mono-2__Pt-69_Dx	U14
+Myeloid intermediate 2__AML038	U14
+Non-Classical Mono-2__Pt-16_Dx	U14
+Non-Classical Mono-1__hashtag4-SRR16208949	U14
+Non-Classical Mono-1__AML043	U14
+cMOP__PT17__D14	U14
+Mono-2__AML056	U14
+MultiLin-GMP-1__AML056	U14
+Non-Classical Mono-2__AML056	U14
+Non-Classical Mono-1__AML0693	U14
+MultiLin-GMP-1__AML0693	U14
+Pro-B-1__AML026	U14
+MSC Fibroblast-1__AML0693	U14
+cDC1__PAXMIJ-Relapse	U14
+MDP-1__AML0693	U14
+Myeloid intermediate 3__PAXMIJ-Relapse	U14
+LMPP-2__AML026	U14
+Osteoblast__827494__Diagnosis	U14
+Myeloid intermediate 2__PAXMIJ-Relapse	U14
+Mono-2__PAXMIJ-Relapse	U14
+Mono-1__PAXMIJ-Relapse	U14
+Mono-1__AML028	U14
+MDP-1__PAXMIJ-Relapse	U14
+MultiLin-GMP-1__AML028	U14
+Myeloid intermediate 2__AML028	U14
+MDP-1__376_Af_N1c	U14
+Non-Classical Mono-1__AML2123	U14
+cDC1__AML009	U15
+Non-Classical Mono-2__AML-24	U15
+Non-Classical Mono-2__AML-22	U15
+Non-Classical Mono-2__AML009	U15
+Intermediate Mono-3__AML-22	U15
+MDP-2__AML009	U15
+Intermediate Mono-1__AML009	U15
+Intermediate Mono-2__AML-23	U15
+Intermediate Mono-2__AML-22	U15
+Intermediate Mono-1__AML-22	U15
+cDC2-1__AML-23	U15
+Classical-Mono__AML-22	U15
+cDC2-2__AML-21	U15
+cDC2-1__AML-21	U15
+cDC1__AML-21	U15
+Non-Classical Mono-2__AML-21	U15
+Myeloid intermediate 2__AML-21	U15
+Intermediate Mono-3__AML-21	U15
+Intermediate Mono-1__AML-21	U15
+cDC2-1__AML005	U15
+Intermediate Mono-2__AML005	U15
+Intermediate Mono-2__AML13	U15
+B Memory-1__AML1540	U15
+Intermediate Mono-1__AML1540	U15
+LMPP-2__AML1540	U15
+Non-Classical Mono-2__AML1540	U15
+Intermediate Mono-2__AML-24	U15
+cDC2-1__AML003	U15
+MDP-1__452198__Diagnosis	U15
+Intermediate Mono-2__AML-21	U15
+Intermediate Mono-2__AML-01	U15
+Intermediate Mono-1__AML-14	U15
+Intermediate Mono-2__AML-14	U15
+Intermediate Mono-3__AML-14	U15
+Classical-Mono__hashtag2-SRR16208964	U15
+Intermediate Mono-2__AML-19	U15
+MDP-2__AML-14	U15
+Mono-1__AML-14	U15
+Classical-Mono__AML-14	U15
+Mono-2__AML-14	U15
+Classical-Mono__AML-19	U15
+Myeloid intermediate 2__AML-14	U15
+Non-Classical Mono-2__AML-14	U15
+cDC1__AML-14	U15
+cDC2-1__AML-14	U15
+pre-DC-2__AML-14	U15
+Non-Classical Mono-2__10DD-1003__Diagnosis	U15
+Intermediate Mono-1__AML-19	U15
+Intermediate Mono-1__10DD-1003__Diagnosis	U15
+Intermediate Mono-3__AML-19	U15
+Non-Classical Mono-2__AML-19	U15
+Intermediate Mono-2__AML-12	U15
+Intermediate Mono-3__AML-12	U15
+Intermediate Mono-1__PT08__Relapse	U15
+Intermediate Mono-1__PT10__Diagnosis	U15
+Intermediate Mono-3__PT10__Diagnosis	U15
+Mono-2__PT10__Diagnosis	U15
+Non-Classical Mono-2__PT10__Diagnosis	U15
+Mono-2__AML-19	U15
+Intermediate Mono-1__AML-01	U15
+cDC1__AML-19	U15
+Non-Classical Mono-2__AML-12	U15
+cDC1__AML-12	U15
+Intermediate Mono-2__AML-13	U15
+Myeloid intermediate 2__AML-13	U15
+Non-Classical Mono-2__AML-13	U15
+cDC1__AML-13	U15
+MDP-2__AML-12	U15
+Intermediate Mono-1__hashtag4-SRR16208958	U15
+Non-Classical Mono-2__hashtag4-SRR16208958	U15
+cDC1__hashtag4-SRR16208958	U15
+Intermediate Mono-2__NA-SRR16208929	U15
+Intermediate Mono-3__NA-SRR16208929	U15
+Mono-2__NA-SRR16208929	U15
+cDC2-1__1036_EInv16_22M	U15
+Non-Classical Mono-2__NA-SRR16208929	U15
+Non-Classical Mono-2__1036_EInv16_22M	U15
+cDC2-1__NA-SRR16208929	U15
+Intermediate Mono-1__NA-SRR16208929	U15
+Mono-2__AML-18	U15
+Non-Classical Mono-2__AML-17	U15
+Mono-2__AML-17	U15
+Intermediate Mono-3__AML-17	U15
+Intermediate Mono-2__AML-17	U15
+Intermediate Mono-1__AML-17	U15
+Classical-Mono__AML-17	U15
+Intermediate Mono-2__1036_EInv16_22M	U15
+Intermediate Mono-1__AML-18	U15
+Classical-Mono__NA-SRR16208929	U15
+cDC2-1__NA-SRR16208928	U15
+Non-Classical Mono-2__NA-SRR16208928	U15
+Intermediate Mono-3__hashtag4-SRR16208964	U15
+Non-Classical Mono-2__hashtag4-SRR16208964	U15
+Classical-Mono__AML-16	U15
+Intermediate Mono-1__AML-16	U15
+Intermediate Mono-2__AML-16	U15
+Intermediate Mono-3__AML-16	U15
+Mono-2__AML-16	U15
+Non-Classical Mono-2__AML-16	U15
+cDC1__AML-16	U15
+pre-DC-2__AML-18	U15
+cDC2-1__AML-18	U15
+cDC1__AML-18	U15
+Non-Classical Mono-2__AML-18	U15
+MultiLin-GMP-1__AML-18	U15
+Classical-Mono__NA-SRR16208928	U15
+Intermediate Mono-1__NA-SRR16208928	U15
+Intermediate Mono-2__NA-SRR16208928	U15
+Intermediate Mono-1__AML-12	U15
+cDC1__AML-12_CCHMC	U15
+Intermediate Mono-2__AML-08	U15
+Classical-Mono__AML-10	U15
+Intermediate Mono-2__AML-10	U15
+cDC1__AML-04	U15
+Mono-1__AML-07	U15
+Mono-2__AML-07	U15
+cDC1__AML-07	U15
+cMOP__AML-07	U15
+Non-Classical Mono-2__AML-04	U15
+Intermediate Mono-3__AML-04	U15
+Intermediate Mono-1__AML-07	U15
+Non-Classical Mono-2__AML-10	U15
+Intermediate Mono-1__AML-10	U15
+Mono-2__AML-08	U15
+Intermediate Mono-1__AML-08	U15
+Intermediate Mono-2__AML-04	U15
+Non-Classical Mono-2__AML-02	U15
+Classical-Mono__AML-02	U15
+Intermediate Mono-1__P04__Diagnosis	U15
+cDC2-1__AML-19	U15
+MDP-3__10DD-1070__Treatment	U17
+HSC-2__430998__Diagnosis	U17
+MPP-1__10DD-1010__Relapse	U17
+MPP-MEP__10DD-1010__Relapse	U17
+MultiLin-GMP-1__10DD-1010__Relapse	U17
+LMPP-1-cycling__430998__Diagnosis	U17
+MDP-2__10DD-1085__Diagnosis	U17
+MDP-2__10DD-1070__Treatment	U17
+cDC2-2__332131__Diagnosis	U17
+Myeloid intermediate 3__10DD-1009__Relapse	U17
+cDC1__332131__Diagnosis	U17
+MultiLin-GMP-2__332131__Diagnosis	U17
+MPP-MEP__332131__Diagnosis	U17
+MEP-1__332131__Diagnosis	U17
+MDP-2__332131__Diagnosis	U17
+LMPP-1__332131__Diagnosis	U17
+MultiLin-GMP-1__P20__Diagnosis	U17
+MPP-MEP__10DD-1051__Diagnosis	U17
+Myeloid intermediate 3__10DD-1051__Diagnosis	U17
+pre-DC-3__10DD-1070__Treatment	U17
+MPP-MEP__10DD-1051__Treatment	U17
+Multilin-1__10DD-1051__Treatment	U17
+pre-DC-3__332131__Diagnosis	U17
+MultiLin-GMP-1__10DD-1009__Relapse	U17
+MultiLin-GMP-2__869922__Diagnosis	U17
+MEP-2__10DD-1009__Relapse	U17
+pre-DC-3__508084__Relapse	U17
+Multilin-2__508084__Relapse	U17
+MultiLin-GMP-1__508084__Relapse	U17
+MultiLin-GMP-3__10DD-1086__Diagnosis	U17
+MPP-MEP__508084__Relapse	U17
+MEP-2__508084__Relapse	U17
+MDP-6__508084__Relapse	U17
+MDP-1__508084__Relapse	U17
+LMPP-2__508084__Relapse	U17
+LMPP-1-cycling__508084__Relapse	U17
+LMPP-1__508084__Relapse	U17
+MEP-Eryth-2__10DD-1086__Diagnosis	U17
+LMPP-1-cycling__10DD-1086__Diagnosis	U17
+B Memory-1__916462__Diagnosis	U17
+LMPP-1__10DD-1086__Diagnosis	U17
+cDC1__869922__Diagnosis	U17
+immNeu-2__P13__Diagnosis	U17
+Myeloid intermediate 2__869922__Diagnosis	U17
+MPP-MEP__10DD-1085__Diagnosis	U17
+Multilin-2__10DD-1003__Diagnosis	U17
+Multilin-1__869922__Diagnosis	U17
+Intermediate Mono-1__AML-19-R2	U17
+LMPP-1-cycling__10DD-1009__Diagnosis	U17
+MultiLin-GMP-1__10DD-1009__Diagnosis	U17
+pre-DC-2__10DD-1070__Treatment	U17
+Mono-1__869922__Diagnosis	U17
+MPP-MEP__869922__Diagnosis	U17
+MDP-2__869922__Diagnosis	U17
+LMPP-1-cycling__10DD-1009__Relapse	U17
+MPP-MEP__10DD-1009__Relapse	U17
+pre-DC-1__10DD-1070__Treatment	U17
+LMPP-1__10DD-1058__Treatment	U17
+MultiLin-GMP-1__869586__Relapse	U17
+MEP-1__10DD-1070__Treatment	U17
+MEP-Eryth-2__10DD-1065__Diagnosis	U17
+MEP-Eryth-2__869586__Relapse	U17
+MEP-2__10DD-1065__Treatment	U17
+MPP-MEP__220882__Relapse	U17
+ASDC__10DD-1070__Diagnosis	U17
+MPP-MEP__10DD-1070__Treatment	U17
+ASDC__P15__Diagnosis	U17
+Classical-Mono__10DD-1070__Diagnosis	U17
+Intermediate Mono-3__10DD-1070__Diagnosis	U17
+Mono-2__10DD-1070__Diagnosis	U17
+LMPP-1__10DD-1070__Treatment	U17
+pre-DC-3__220882__Treatment	U17
+Myeloid intermediate 2__10DD-1070__Diagnosis	U17
+Intermediate Mono-3__10DD-1070__Treatment	U17
+Intermediate Mono-1__10DD-1070__Treatment	U17
+Classical-Mono__10DD-1070__Treatment	U17
+Myeloid intermediate 3__10DD-1070__Diagnosis	U17
+Mono-1__10DD-1070__Diagnosis	U17
+MPP-MEP__10DD-1070__Diagnosis	U17
+MPP-2__10DD-1070__Diagnosis	U17
+MDP-2__10DD-1070__Diagnosis	U17
+cDC1__10DD-1070__Diagnosis	U17
+MEP-2__10DD-1065__Diagnosis	U17
+MPP-2__10DD-1070__Treatment	U17
+pre-DC-2__10DD-1070__Diagnosis	U17
+ASDC__10DD-1070__Treatment	U17
+pre-DC-3__827494__Diagnosis	U17
+LMPP-1-cycling__10DD-1070__Diagnosis	U17
+LMPP-1__10DD-1070__Diagnosis	U17
+BMCP-1__10DD-1070__Treatment	U17
+pre-DC-1__10DD-1070__Diagnosis	U17
+MEP-Eryth-1__869586__Relapse	U17
+MultiLin-GMP-2__10DD-1070__Diagnosis	U17
+MEP-2__869586__Relapse	U17
+MultiLin-GMP-1__868442__Diagnosis	U17
+Myeloid intermediate 2__10DD-1070__Treatment	U17
+Multilin-2__10DD-1070__Diagnosis	U17
+Myeloid intermediate 3__10DD-1070__Treatment	U17
+LMPP-1-cycling__10DD-1070__Treatment	U17
+Myeloid intermediate 2__220882__Treatment	U17
+MPP-MEP__10DD-1058__Treatment	U17
+Multilin-2__10DD-1070__Treatment	U17
+cDC1__10DD-1070__Treatment	U17
+Mono-2__10DD-1070__Treatment	U17
+Mono-1__10DD-1070__Treatment	U17
+MPP-MEP__10DD-1058__Diagnosis	U17
+Intermediate Mono-3__10DD-1058__Diagnosis	U17
+ASDC__AML-08	U18
+cDC2-2__AML5292	U18
+pre-DC-3__AML5292	U18
+cDC2-2__AML-12	U18
+cDC2-1__MDS585	U18
+cDC2-1__AML5292	U18
+cDC2-1__AML-12	U18
+cDC2-1__PT15__Diagnosis	U18
+cDC2-2__PT15__Diagnosis	U18
+cDC1__PT15__Diagnosis	U18
+cDC1__AML1371	U18
+cDC2-2__AML-08	U18
+pre-DC-1__AML-08	U18
+pre-DC-3__PT01__Diagnosis	U18
+cDC1__AML-08	U18
+cDC2-2__PT01__Diagnosis	U18
+cDC2-2__PT02__Diagnosis	U18
+cDC1__PT01__Diagnosis	U18
+pre-DC-3__AML-08	U18
+cDC1__AML2	U18
+cDC2-2__PT07__Diagnosis	U18
+cDC2-1__PT08__Diagnosis	U18
+cDC2-2__PT08__Diagnosis	U18
+cDC1__PT09__Diagnosis	U18
+pre-DC-3__AML-19-Dx1	U18
+cDC2-1__PT09__Diagnosis	U18
+pre-DC-3__AML-17	U18
+cDC2-2__PT09__Diagnosis	U18
+pre-DC-3__AML13	U18
+cDC2-2__AML13	U18
+pre-DC-3__PT09__Diagnosis	U18
+cDC2-1__AML13	U18
+cDC2-1__AML1371	U18
+pre-DC-3__AML1371	U18
+Multilin-1__P07__Relapse	U2
+Myeloid intermediate 2__P08__Diagnosis	U2
+Mono-2__P07__Relapse	U2
+cDC1__P08__Diagnosis	U2
+Myeloid intermediate 3__P08__Diagnosis	U2
+T CD8 Naive__P08__Diagnosis	U2
+Multilin-2__P07__Relapse	U2
+T CD4 Naive-2__P08__Diagnosis	U2
+T CD4 Naive-1__P08__Diagnosis	U2
+MPP-MEP__P07__Relapse	U2
+NK-Mature__P08__Diagnosis	U2
+LMPP-1-cycling__P08__Relapse	U2
+MPP-2__P07__Relapse	U2
+MPP-2__P08__Relapse	U2
+MultiLin-GMP-3__P07__Relapse	U2
+NK-Mature__P07__Relapse	U2
+cDC2-2__P07__Relapse	U2
+T CD4 Naive-1__P07__Relapse	U2
+preNeu__P08__Diagnosis	U2
+pre-DC-3__P08__Diagnosis	U2
+ERP-6__P08__Diagnosis	U2
+pre-DC-2__P08__Diagnosis	U2
+MAIT__P08__Diagnosis	U2
+LMPP-2__P08__Diagnosis	U2
+Mono-2__P08__Diagnosis	U2
+Mono-1__P08__Diagnosis	U2
+CD4 TCM__P08__Relapse	U2
+LMPP-1-cycling__P08__Diagnosis	U2
+MPP-MEP__P08__Diagnosis	U2
+Intermediate Mono-3__P08__Diagnosis	U2
+HSC-2__P08__Diagnosis	U2
+Erythroblast-2__P08__Diagnosis	U2
+cDC2-1__P08__Diagnosis	U2
+cDC2-2__P08__Diagnosis	U2
+immNeu-1__P08__Diagnosis	U2
+pre-DC-1__P08__Diagnosis	U2
+LMPP-1__P08__Diagnosis	U2
+CD8 TEM__P08__Diagnosis	U2
+MDP-2__P08__Diagnosis	U2
+CD8 TEM__P08__Relapse	U2
+Myeloid intermediate 1__P08__Diagnosis	U2
+T CD4 Naive-2__P07__Relapse	U2
+Multilin-2__P08__Diagnosis	U2
+Multilin-1__P08__Diagnosis	U2
+MultiLin-GMP-3__P08__Diagnosis	U2
+MultiLin-GMP-2__P08__Diagnosis	U2
+MultiLin-GMP-1__P08__Diagnosis	U2
+Erythroblast-2__P08__Relapse	U2
+MPP-2__P08__Diagnosis	U2
+MEP-Eryth-2__P08__Diagnosis	U2
+MEP-2__P08__Diagnosis	U2
+T CD8 Naive__P07__Relapse	U2
+cDC2-1__P07__Relapse	U2
+MEP-1__P08__Diagnosis	U2
+Erythroblast-1__P08__Relapse	U2
+immNeu-2__P07__Relapse	U2
+BMCP-1__P08__Diagnosis	U2
+CD4 TCM__P08__Diagnosis	U2
+ERP-5__P08__Relapse	U2
+Non-Classical Mono-1__P07__Relapse	U2
+Erythroblast-1__P08__Diagnosis	U2
+MDP-2__P05__Diagnosis	U2
+MEP-Eryth-1__P07__Relapse	U2
+MPP-MEP__P03__Diagnosis	U2
+MPP-2__P03__Diagnosis	U2
+MKP-early__P03__Diagnosis	U2
+MEP-2__P03__Diagnosis	U2
+MDP-3__P03__Diagnosis	U2
+MDP-2__P03__Diagnosis	U2
+MDP-1__P03__Diagnosis	U2
+LMPP-2__P03__Diagnosis	U2
+LMPP-1-cycling__P03__Diagnosis	U2
+LMPP-1__P03__Diagnosis	U2
+ERP-2__P03__Diagnosis	U2
+ERP-1__P03__Diagnosis	U2
+CLP__P03__Diagnosis	U2
+CD4 TCM__P03__Diagnosis	U2
+ASDC__P03__Diagnosis	U2
+pre-B__P02__Relapse	U2
+pDC__P02__Relapse	U2
+T CD8 Naive__P02__Relapse	U2
+T CD4 Naive-2__P02__Relapse	U2
+T CD4 Naive-1__P02__Relapse	U2
+NK-Mature__P02__Relapse	U2
+MAIT__P02__Relapse	U2
+LMPP-1__P02__Relapse	U2
+Multilin-1__P03__Diagnosis	U2
+CD4 TCM__P02__Relapse	U2
+Multilin-2__P03__Diagnosis	U2
+Pro-B-Early__P03__Diagnosis	U2
+NK-Mature__P03__Relapse	U2
+Multilin-2__P03__Relapse	U2
+MultiLin-GMP-3__P03__Relapse	U2
+MultiLin-GMP-2__P03__Relapse	U2
+MultiLin-GMP-1__P03__Relapse	U2
+MPP-MEP__P03__Relapse	U2
+MPP-2__P03__Relapse	U2
+MEP-2__P03__Relapse	U2
+MDP-6__P03__Relapse	U2
+MDP-4__P03__Relapse	U2
+MDP-3__P03__Relapse	U2
+MDP-2__P03__Relapse	U2
+MDP-1__P03__Relapse	U2
+LMPP-2__P03__Relapse	U2
+LMPP-1-cycling__P03__Relapse	U2
+LMPP-1__P03__Relapse	U2
+pre-DC-3__P03__Diagnosis	U2
+pDC__P03__Diagnosis	U2
+T CD8 Naive__P03__Diagnosis	U2
+T CD4 Naive-2__P03__Diagnosis	U2
+T CD4 Naive-1__P03__Diagnosis	U2
+Pro-B-cycling-1__P03__Diagnosis	U2
+Pro-B-Early-cycling__P03__Diagnosis	U2
+NK-Mature__P03__Diagnosis	U2
+preNeu__P02__Diagnosis	U2
+cDC1__P02__Diagnosis	U2
+T CD4 Naive-2__P02__Diagnosis	U2
+MultiLin-GMP-1__P01__Relapse	U2
+MPP-MEP__P01__Relapse	U2
+MEP-Eryth-2__P01__Relapse	U2
+MEP-2__P01__Relapse	U2
+MEP-1__P01__Relapse	U2
+LMPP-1-cycling__P01__Relapse	U2
+LMPP-1__P01__Relapse	U2
+Intermediate Mono-1__P01__Relapse	U2
+Erythroblast-2__P01__Relapse	U2
+Erythroblast-1__P01__Relapse	U2
+ERP-6__P01__Relapse	U2
+CD8 TEM__P01__Relapse	U2
+CD4 TCM__P01__Relapse	U2
+BMCP-1__P01__Relapse	U2
+T CD8 Naive__P01__Diagnosis	U2
+T CD4 Naive-2__P01__Diagnosis	U2
+T CD4 Naive-1__P01__Diagnosis	U2
+NK-Mature__P01__Diagnosis	U2
+Myeloid intermediate 3__P01__Diagnosis	U2
+Myeloid intermediate 2__P01__Diagnosis	U2
+Myeloid intermediate 1__P01__Diagnosis	U2
+Multilin-2__P01__Diagnosis	U2
+MultiLin-GMP-3__P01__Diagnosis	U2
+MultiLin-GMP-2__P01__Relapse	U2
+MultiLin-GMP-3__P01__Relapse	U2
+Multilin-1__P01__Relapse	U2
+Myeloid intermediate 3__P01__Relapse	U2
+NK-Mature__P02__Diagnosis	U2
+Myeloid intermediate 3__P02__Diagnosis	U2
+Myeloid intermediate 2__P02__Diagnosis	U2
+Myeloid intermediate 1__P02__Diagnosis	U2
+Multilin-2__P02__Diagnosis	U2
+Multilin-1__P02__Diagnosis	U2
+MultiLin-GMP-3__P02__Diagnosis	U2
+MultiLin-GMP-2__P02__Diagnosis	U2
+MultiLin-GMP-1__P02__Diagnosis	U2
+Mono-1__P02__Diagnosis	U2
+MPP-MEP__P02__Diagnosis	U2
+T CD4 Naive-2__P03__Relapse	U2
+MEP-Eryth-2__P02__Diagnosis	U2
+MEP-1__P02__Diagnosis	U2
+MDP-2__P02__Diagnosis	U2
+MDP-1__P02__Diagnosis	U2
+LMPP-2__P02__Diagnosis	U2
+LMPP-1-cycling__P02__Diagnosis	U2
+LMPP-1__P02__Diagnosis	U2
+CD4 TCM__P02__Diagnosis	U2
+BMCP-1__P02__Diagnosis	U2
+B Memory-2__P02__Diagnosis	U2
+preNeu__P01__Relapse	U2
+NK-Mature__P01__Relapse	U2
+MEP-2__P02__Diagnosis	U2
+MEP-Eryth-2__P07__Relapse	U2
+pDC__P03__Relapse	U2
+CD8 TEM__P04__Diagnosis	U2
+MultiLin-GMP-1__P06__Relapse	U2
+MPP-MEP__P06__Relapse	U2
+MEP-2__P06__Relapse	U2
+MDP-2__P06__Relapse	U2
+MDP-1__P06__Relapse	U2
+MAIT__P06__Relapse	U2
+LMPP-2__P06__Relapse	U2
+CD8 TEM__P06__Relapse	U2
+CD4 TCM__P06__Relapse	U2
+pre-DC-3__P06__Diagnosis	U2
+pre-DC-2__P06__Diagnosis	U2
+cDC2-1__P06__Diagnosis	U2
+cDC1__P06__Diagnosis	U2
+Non-Classical Mono-2__P06__Diagnosis	U2
+NK-Mature__P06__Diagnosis	U2
+Mono-2__P06__Diagnosis	U2
+Mono-1__P06__Diagnosis	U2
+MAIT__P06__Diagnosis	U2
+Intermediate Mono-3__P06__Diagnosis	U2
+CD4 TCM__P06__Diagnosis	U2
+B Memory-2__P06__Diagnosis	U2
+T CD4 Naive-2__P05__Relapse	U2
+NK-Mature__P05__Relapse	U2
+NK-Mature__P06__Relapse	U2
+Multilin-2__P05__Relapse	U2
+Non-Classical Mono-1__P06__Relapse	U2
+T CD4 Naive-2__P06__Relapse	U2
+MEP-2__P07__Relapse	U2
+MEP-1__P07__Relapse	U2
+MDP-2__P07__Relapse	U2
+MAIT__P07__Relapse	U2
+LMPP-1-cycling__P07__Relapse	U2
+LMPP-1__P07__Relapse	U2
+Intermediate Mono-3__P07__Relapse	U2
+Intermediate Mono-2__P07__Relapse	U2
+Intermediate Mono-1__P07__Relapse	U2
+CD8 TEM__P07__Relapse	U2
+CD4 TCM__P07__Relapse	U2
+BMCP-1__P07__Relapse	U2
+T CD8 Naive__P07__Diagnosis	U2
+T CD4 Naive-2__P07__Diagnosis	U2
+T CD4 Naive-1__P07__Diagnosis	U2
+NK-Mature__P07__Diagnosis	U2
+MPP-MEP__P07__Diagnosis	U2
+MPP-2__P07__Diagnosis	U2
+MAIT__P07__Diagnosis	U2
+LMPP-1__P07__Diagnosis	U2
+ERP-2__P07__Diagnosis	U2
+CD4 TCM__P07__Diagnosis	U2
+T CD8 Naive__P06__Relapse	U2
+T CD4 Naive-1__P06__Relapse	U2
+Multilin-1__P05__Relapse	U2
+MultiLin-GMP-3__P05__Relapse	U2
+MultiLin-GMP-2__P05__Relapse	U2
+LMPP-1-cycling__P05__Diagnosis	U2
+ERP-3__P05__Diagnosis	U2
+cDC1__P04__Relapse	U2
+NK-Mature__P04__Relapse	U2
+Myeloid intermediate 3__P04__Relapse	U2
+Myeloid intermediate 2__P04__Relapse	U2
+Multilin-2__P04__Relapse	U2
+MultiLin-GMP-2__P04__Relapse	U2
+MultiLin-GMP-1__P04__Relapse	U2
+MEP-Eryth-2__P04__Relapse	U2
+MEP-2__P04__Relapse	U2
+MDP-2__P04__Relapse	U2
+LMPP-1-cycling__P04__Relapse	U2
+LMPP-1__P04__Relapse	U2
+CD4 TCM__P04__Relapse	U2
+preNeu__P04__Diagnosis	U2
+pre-DC-2__P04__Diagnosis	U2
+T CD8 Naive__P04__Diagnosis	U2
+T CD4 Naive-2__P04__Diagnosis	U2
+NK-Mature__P04__Diagnosis	U2
+Myeloid intermediate 1__P04__Diagnosis	U2
+MultiLin-GMP-2__P04__Diagnosis	U2
+MAIT__P04__Diagnosis	U2
+MultiLin-GMP-1__P08__Relapse	U2
+MEP-2__P05__Diagnosis	U2
+MEP-Eryth-2__P05__Diagnosis	U2
+MKP-early__P05__Diagnosis	U2
+MultiLin-GMP-1__P05__Relapse	U2
+MPP-MEP__P05__Relapse	U2
+MPP-2__P05__Relapse	U2
+MPP-1__P05__Relapse	U2
+MKP-late__P05__Relapse	U2
+MKP-early__P05__Relapse	U2
+MEP-Eryth-2__P05__Relapse	U2
+MEP-Eryth-1__P05__Relapse	U2
+MEP-2__P05__Relapse	U2
+MEP-1__P05__Relapse	U2
+MDP-2__P05__Relapse	U2
+CD4 TCM__P04__Diagnosis	U2
+MDP-1__P05__Relapse	U2
+LMPP-1-cycling__P05__Relapse	U2
+LMPP-1__P05__Relapse	U2
+HSC-2__P05__Relapse	U2
+Erythroblast-3__P05__Relapse	U2
+ERP-3__P05__Relapse	U2
+ERP-1__P05__Relapse	U2
+CLP__P05__Relapse	U2
+CD4 TCM__P05__Relapse	U2
+Multilin-2__P05__Diagnosis	U2
+MultiLin-GMP-1__P05__Diagnosis	U2
+MPP-MEP__P05__Diagnosis	U2
+LMPP-2__P05__Relapse	U2
+NK-Mature__P08__Relapse	U2
+NK-Mature__P13__Relapse	U2
+CD8 TEM__P09__Diagnosis	U2
+T CD4 Naive-1__P18__Relapse	U2
+NK-Mature__P18__Relapse	U2
+MultiLin-GMP-1__P18__Relapse	U2
+MPP-MEP__P18__Relapse	U2
+MPP-2__P18__Relapse	U2
+MPP-1__P18__Relapse	U2
+MEP-2__P18__Relapse	U2
+MAIT__P18__Relapse	U2
+LMPP-2__P18__Relapse	U2
+LMPP-1-cycling__P18__Relapse	U2
+CD8 TEM__P18__Relapse	U2
+CD4 TCM__P18__Relapse	U2
+B Memory-2__P18__Relapse	U2
+B Memory-1__P18__Relapse	U2
+T CD8 Naive__P18__Diagnosis	U2
+T CD4 Naive-2__P18__Diagnosis	U2
+T CD4 Naive-1__P18__Diagnosis	U2
+Pro-B-2__P18__Diagnosis	U2
+NK-Mature__P18__Diagnosis	U2
+Multilin-2__P18__Diagnosis	U2
+MultiLin-GMP-1__P18__Diagnosis	U2
+T CD4 Naive-2__P18__Relapse	U2
+T CD8 Naive__P18__Relapse	U2
+pre-B__P18__Relapse	U2
+B Memory-1__P19__Diagnosis	U2
+Multilin-2__P19__Relapse	U2
+MultiLin-GMP-2__P19__Relapse	U2
+MultiLin-GMP-1__P19__Relapse	U2
+MPP-MEP__P19__Relapse	U2
+MEP-2__P19__Relapse	U2
+MDP-2__P19__Relapse	U2
+MDP-1__P19__Relapse	U2
+MAIT__P19__Relapse	U2
+LMPP-2__P19__Relapse	U2
+LMPP-1-cycling__P19__Relapse	U2
+MPP-MEP__P18__Diagnosis	U2
+LMPP-1__P19__Relapse	U2
+B Memory-1__P19__Relapse	U2
+T CD8 Naive__P19__Diagnosis	U2
+T CD4 Naive-1__P19__Diagnosis	U2
+NK-Mature__P19__Diagnosis	U2
+Multilin-2__P19__Diagnosis	U2
+MPP-MEP__P19__Diagnosis	U2
+MEP-2__P19__Diagnosis	U2
+LMPP-1-cycling__P19__Diagnosis	U2
+CD4 TCM__P19__Diagnosis	U2
+B Memory-2__P19__Diagnosis	U2
+CD4 TCM__P19__Relapse	U2
+MPP-2__P18__Diagnosis	U2
+MEP-2__P18__Diagnosis	U2
+MEP-1__P18__Diagnosis	U2
+MEP-2__P17__Diagnosis	U2
+MAIT__P17__Diagnosis	U2
+LMPP-1__P17__Diagnosis	U2
+CD8 TEM__P17__Diagnosis	U2
+CD4 TCM__P17__Diagnosis	U2
+T CD8 Naive__P16__Relapse	U2
+T CD4 Naive-1__P16__Relapse	U2
+Multilin-2__P16__Relapse	U2
+MultiLin-GMP-1__P16__Relapse	U2
+MPP-2__P16__Relapse	U2
+MPP-2__P17__Diagnosis	U2
+LMPP-2__P16__Relapse	U2
+ERP-6__P16__Relapse	U2
+B Memory-2__P16__Relapse	U2
+pre-DC-2__P16__Diagnosis	U2
+cDC1__P16__Diagnosis	U2
+T CD8 Naive__P16__Diagnosis	U2
+T CD4 Naive-1__P16__Diagnosis	U2
+NK-Mature__P16__Diagnosis	U2
+Myeloid intermediate 2__P16__Diagnosis	U2
+Multilin-2__P16__Diagnosis	U2
+Multilin-1__P16__Diagnosis	U2
+LMPP-1-cycling__P16__Relapse	U2
+NK-Mature__P19__Relapse	U2
+MPP-MEP__P17__Diagnosis	U2
+NK-Mature__P17__Diagnosis	U2
+MDP-2__P18__Diagnosis	U2
+MDP-1__P18__Diagnosis	U2
+MAIT__P18__Diagnosis	U2
+LMPP-2__P18__Diagnosis	U2
+LMPP-1-cycling__P18__Diagnosis	U2
+LMPP-1__P18__Diagnosis	U2
+CLP__P18__Diagnosis	U2
+CD8 TEM__P18__Diagnosis	U2
+CD4 TCM__P18__Diagnosis	U2
+BMCP-1__P18__Diagnosis	U2
+MultiLin-GMP-2__P17__Diagnosis	U2
+B Memory-2__P18__Diagnosis	U2
+T CD4 Naive-2__P17__Relapse	U2
+NK-Mature__P17__Relapse	U2
+MAIT__P17__Relapse	U2
+ERP-7__P17__Relapse	U2
+CD8 TEM__P17__Relapse	U2
+CD4 TCM__P17__Relapse	U2
+pre-DC-2__P17__Diagnosis	U2
+T CD8 Naive__P17__Diagnosis	U2
+T CD4 Naive-2__P17__Diagnosis	U2
+T CD4 Naive-1__P17__Diagnosis	U2
+B Memory-1__P18__Diagnosis	U2
+MultiLin-GMP-3__P16__Diagnosis	U2
+T CD4 Naive-1__P19__Relapse	U2
+T CD8 Naive__P19__Relapse	U2
+CD8 TEM__P22__Diagnosis	U2
+CD4 TCM__P22__Diagnosis	U2
+BMCP-1__P22__Diagnosis	U2
+B Memory-2__P22__Diagnosis	U2
+B Memory-1__P22__Diagnosis	U2
+preNeu__P21__Relapse	U2
+pre-DC-2__P21__Relapse	U2
+immNeu-1__P21__Relapse	U2
+cDC1__P21__Relapse	U2
+NK-Mature__P21__Relapse	U2
+Myeloid intermediate 3__P21__Relapse	U2
+Myeloid intermediate 2__P21__Relapse	U2
+Myeloid intermediate 1__P21__Relapse	U2
+Multilin-2__P21__Relapse	U2
+Multilin-1__P21__Relapse	U2
+MultiLin-GMP-3__P21__Relapse	U2
+MultiLin-GMP-2__P21__Relapse	U2
+MultiLin-GMP-1__P21__Relapse	U2
+Mono-1__P21__Relapse	U2
+MPP-MEP__P21__Relapse	U2
+MDP-2__P21__Relapse	U2
+CLP__P22__Diagnosis	U2
+Erythroblast-1__P22__Diagnosis	U2
+Erythroblast-2__P22__Diagnosis	U2
+Intermediate Mono-2__P22__Diagnosis	U2
+CLP__P22__Relapse	U2
+CD8 TEM__P22__Relapse	U2
+CD4 TCM__P22__Relapse	U2
+BMCP-1__P22__Relapse	U2
+B Memory-2__P22__Relapse	U2
+B Memory-1__P22__Relapse	U2
+preNeu__P22__Diagnosis	U2
+immNeu-1__P22__Diagnosis	U2
+T CD8 Naive__P22__Diagnosis	U2
+T CD4 Naive-2__P22__Diagnosis	U2
+MDP-1__P21__Relapse	U2
+T CD4 Naive-1__P22__Diagnosis	U2
+NK-Mature__P22__Diagnosis	U2
+Myeloid intermediate 2__P22__Diagnosis	U2
+Myeloid intermediate 1__P22__Diagnosis	U2
+Multilin-2__P22__Diagnosis	U2
+Multilin-1__P22__Diagnosis	U2
+MultiLin-GMP-3__P22__Diagnosis	U2
+MultiLin-GMP-2__P22__Diagnosis	U2
+MultiLin-GMP-1__P22__Diagnosis	U2
+MPP-MEP__P22__Diagnosis	U2
+MAIT__P22__Diagnosis	U2
+T CD4 Activated__P22__Diagnosis	U2
+LMPP-1-cycling__P21__Relapse	U2
+LMPP-1__P21__Relapse	U2
+Intermediate Mono-3__P21__Relapse	U2
+Multilin-1__P20__Relapse	U2
+MultiLin-GMP-2__P20__Relapse	U2
+MultiLin-GMP-1__P20__Relapse	U2
+MPP-MEP__P20__Relapse	U2
+MEP-Eryth-2__P20__Relapse	U2
+MEP-2__P20__Relapse	U2
+MDP-2__P20__Relapse	U2
+LMPP-1-cycling__P20__Relapse	U2
+LMPP-1__P20__Relapse	U2
+ERP-3__P20__Relapse	U2
+Myeloid intermediate 2__P20__Relapse	U2
+ERP-2__P20__Relapse	U2
+CD8 TEM__P20__Relapse	U2
+CD4 TCM__P20__Relapse	U2
+BMCP-1__P20__Relapse	U2
+pre-DC-3__P20__Diagnosis	U2
+Non-Classical Mono-2__P20__Diagnosis	U2
+MKP-late__P20__Diagnosis	U2
+MKP-early__P20__Diagnosis	U2
+MEP-2__P20__Diagnosis	U2
+LMPP-1-cycling__P20__Diagnosis	U2
+LMPP-1__P20__Diagnosis	U2
+ERP-1__P20__Relapse	U2
+T CD4 Naive-2__P19__Relapse	U2
+NK-Mature__P20__Relapse	U2
+cDC1__P20__Relapse	U2
+Erythroblast-3__P21__Relapse	U2
+CD8 TEM__P21__Relapse	U2
+preNeu__P21__Diagnosis	U2
+pre-DC-2__P21__Diagnosis	U2
+cDC1__P21__Diagnosis	U2
+T CD4 Naive-2__P21__Diagnosis	U2
+NK-Mature__P21__Diagnosis	U2
+Myeloid intermediate 3__P21__Diagnosis	U2
+Myeloid intermediate 2__P21__Diagnosis	U2
+Myeloid intermediate 1__P21__Diagnosis	U2
+T CD4 Naive-2__P20__Relapse	U2
+Multilin-1__P21__Diagnosis	U2
+MultiLin-GMP-1__P21__Diagnosis	U2
+Mono-1__P21__Diagnosis	U2
+MPP-MEP__P21__Diagnosis	U2
+MEP-Eryth-2__P21__Diagnosis	U2
+MEP-2__P21__Diagnosis	U2
+MEP-1__P21__Diagnosis	U2
+MDP-2__P21__Diagnosis	U2
+MDP-1__P21__Diagnosis	U2
+CD4 TCM__P21__Diagnosis	U2
+BMCP-1__P21__Diagnosis	U2
+MultiLin-GMP-2__P21__Diagnosis	U2
+MultiLin-GMP-2__P16__Diagnosis	U2
+MultiLin-GMP-1__P16__Diagnosis	U2
+MPP-MEP__P16__Diagnosis	U2
+Multilin-1__P11__Diagnosis	U2
+MultiLin-GMP-3__P11__Diagnosis	U2
+MultiLin-GMP-2__P11__Diagnosis	U2
+MPP-MEP__P11__Diagnosis	U2
+MPP-2__P11__Diagnosis	U2
+MEP-Eryth-2__P11__Diagnosis	U2
+MEP-Eryth-1__P11__Diagnosis	U2
+MEP-2__P11__Diagnosis	U2
+MEP-1__P11__Diagnosis	U2
+MAIT__P11__Diagnosis	U2
+LMPP-1-cycling__P11__Diagnosis	U2
+LMPP-1__P11__Diagnosis	U2
+Erythroblast-1__P11__Diagnosis	U2
+ERP-8__P11__Diagnosis	U2
+ERP-4__P11__Diagnosis	U2
+ERP-2__P11__Diagnosis	U2
+ERP-1__P11__Diagnosis	U2
+CD8 TEM__P11__Diagnosis	U2
+CD4 TCM__P11__Diagnosis	U2
+BMCP-1__P11__Diagnosis	U2
+pDC__P10__Diagnosis	U2
+NK-Mature__P11__Diagnosis	U2
+T CD4 Naive-1__P11__Diagnosis	U2
+T CD4 Naive-2__P11__Diagnosis	U2
+CD4 TCM__P11__Relapse	U2
+LMPP-1__P12__Relapse	U2
+CD8 TEM__P12__Relapse	U2
+CD4 TCM__P12__Relapse	U2
+T CD8 Naive__P12__Diagnosis	U2
+T CD4 Naive-2__P12__Diagnosis	U2
+T CD4 Naive-1__P12__Diagnosis	U2
+T CD4 Activated__P12__Diagnosis	U2
+NK-Mature__P12__Diagnosis	U2
+Multilin-1__P12__Diagnosis	U2
+MultiLin-GMP-1__P12__Diagnosis	U2
+cDC2-1__P10__Diagnosis	U2
+MPP-MEP__P12__Diagnosis	U2
+MEP-1__P12__Diagnosis	U2
+MAIT__P12__Diagnosis	U2
+LMPP-1-cycling__P12__Diagnosis	U2
+LMPP-1__P12__Diagnosis	U2
+CD8 TEM__P12__Diagnosis	U2
+CD4 TCM__P12__Diagnosis	U2
+T CD4 Naive-2__P11__Relapse	U2
+NK-Mature__P11__Relapse	U2
+MAIT__P11__Relapse	U2
+CD8 TEM__P11__Relapse	U2
+MPP-2__P12__Diagnosis	U2
+cDC1__P10__Diagnosis	U2
+Myeloid intermediate 2__P10__Diagnosis	U2
+Multilin-2__P10__Diagnosis	U2
+Erythroblast-2__P09__Relapse	U2
+CD8 TEM__P09__Relapse	U2
+CD4 TCM__P09__Relapse	U2
+preNeu__P09__Diagnosis	U2
+pre-DC-2__P09__Diagnosis	U2
+immNeu-1__P09__Diagnosis	U2
+cDC1__P09__Diagnosis	U2
+T CD4 Naive-2__P09__Diagnosis	U2
+T CD4 Naive-1__P09__Diagnosis	U2
+NK-Mature__P09__Diagnosis	U2
+MEP-1__P09__Relapse	U2
+Myeloid intermediate 3__P09__Diagnosis	U2
+Myeloid intermediate 1__P09__Diagnosis	U2
+Multilin-1__P09__Diagnosis	U2
+MultiLin-GMP-1__P09__Diagnosis	U2
+MPP-MEP__P09__Diagnosis	U2
+MEP-Eryth-2__P09__Diagnosis	U2
+MEP-2__P09__Diagnosis	U2
+MDP-2__P09__Diagnosis	U2
+MDP-1__P09__Diagnosis	U2
+LMPP-2__P09__Diagnosis	U2
+ERP-4__P09__Diagnosis	U2
+Myeloid intermediate 2__P09__Diagnosis	U2
+LMPP-1-cycling__P12__Relapse	U2
+MultiLin-GMP-1__P09__Relapse	U2
+Myeloid intermediate 1__P09__Relapse	U2
+MultiLin-GMP-3__P10__Diagnosis	U2
+MultiLin-GMP-2__P10__Diagnosis	U2
+MultiLin-GMP-1__P10__Diagnosis	U2
+MPP-MEP__P10__Diagnosis	U2
+MPP-2__P10__Diagnosis	U2
+MKP-late__P10__Diagnosis	U2
+MKP-early__P10__Diagnosis	U2
+MEP-Eryth-2__P10__Diagnosis	U2
+MEP-2__P10__Diagnosis	U2
+MEP-1__P10__Diagnosis	U2
+Multilin-1__P09__Relapse	U2
+MDP-3__P10__Diagnosis	U2
+LMPP-2__P10__Diagnosis	U2
+LMPP-1-cycling__P10__Diagnosis	U2
+LMPP-1__P10__Diagnosis	U2
+BMCP-1__P10__Diagnosis	U2
+preNeu__P09__Relapse	U2
+pDC__P09__Relapse	U2
+immNeu-1__P09__Relapse	U2
+T CD4 Naive-2__P09__Relapse	U2
+NK-Mature__P09__Relapse	U2
+Myeloid intermediate 3__P09__Relapse	U2
+MDP-2__P10__Diagnosis	U2
+MEP-2__P12__Relapse	U2
+MPP-2__P12__Relapse	U2
+MPP-MEP__P12__Relapse	U2
+pDC__P14__Relapse	U2
+T CD8 Naive__P14__Relapse	U2
+T CD4 Naive-1__P14__Relapse	U2
+Multilin-2__P14__Relapse	U2
+MultiLin-GMP-1__P14__Relapse	U2
+MPP-MEP__P14__Relapse	U2
+MPP-2__P14__Relapse	U2
+MPP-1__P14__Relapse	U2
+MEP-2__P14__Relapse	U2
+MDP-3__P14__Relapse	U2
+B Memory-2__P15__Diagnosis	U2
+MDP-2__P14__Relapse	U2
+LMPP-2__P14__Relapse	U2
+LMPP-1-cycling__P14__Relapse	U2
+LMPP-1__P14__Relapse	U2
+Erythroblast-2__P14__Relapse	U2
+Erythroblast-1__P14__Relapse	U2
+CD4 TCM__P14__Relapse	U2
+pre-DC-2__P14__Diagnosis	U2
+pDC__P14__Diagnosis	U2
+cDC2-1__P14__Diagnosis	U2
+cDC1__P14__Diagnosis	U2
+MDP-1__P14__Relapse	U2
+T CD4 Naive-2__P14__Diagnosis	U2
+CD4 TCM__P15__Diagnosis	U2
+MEP-2__P15__Diagnosis	U2
+MPP-2__P16__Diagnosis	U2
+MDP-2__P16__Diagnosis	U2
+MAIT__P16__Diagnosis	U2
+LMPP-2__P16__Diagnosis	U2
+LMPP-1-cycling__P16__Diagnosis	U2
+LMPP-1__P16__Diagnosis	U2
+Erythroblast-2__P16__Diagnosis	U2
+CD8 TEM__P16__Diagnosis	U2
+CD4 TCM__P16__Diagnosis	U2
+pDC__P15__Relapse	U2
+LMPP-1-cycling__P15__Diagnosis	U2
+T CD4 Naive-2__P15__Relapse	U2
+MAIT__P15__Relapse	U2
+CD8 TEM__P15__Relapse	U2
+CD4 TCM__P15__Relapse	U2
+T CD4 Naive-2__P15__Diagnosis	U2
+T CD4 Naive-1__P15__Diagnosis	U2
+NK-Mature__P15__Diagnosis	U2
+Multilin-2__P15__Diagnosis	U2
+MPP-MEP__P15__Diagnosis	U2
+MPP-2__P15__Diagnosis	U2
+MPP-1__P15__Diagnosis	U2
+NK-Mature__P15__Relapse	U2
+CD4 TCM__P09__Diagnosis	U2
+T CD4 Naive-1__P14__Diagnosis	U2
+NK-Mature__P14__Diagnosis	U2
+T CD8 Naive__P13__Diagnosis	U2
+T CD4 Naive-2__P13__Diagnosis	U2
+T CD4 Naive-1__P13__Diagnosis	U2
+T CD4 Activated__P13__Diagnosis	U2
+NK-Mature__P13__Diagnosis	U2
+Multilin-2__P13__Diagnosis	U2
+MPP-1__P13__Diagnosis	U2
+MEP-2__P13__Diagnosis	U2
+MDP-1__P13__Diagnosis	U2
+MAIT__P13__Diagnosis	U2
+CD4 TCM__P13__Relapse	U2
+LMPP-2__P13__Diagnosis	U2
+ERP-1__P13__Diagnosis	U2
+CD4 TCM__P13__Diagnosis	U2
+B Memory-2__P13__Diagnosis	U2
+preNeu__P12__Relapse	U2
+Non-Classical Mono-1__P12__Relapse	U2
+NK-Mature__P12__Relapse	U2
+Multilin-1__P12__Relapse	U2
+MultiLin-GMP-3__P12__Relapse	U2
+MultiLin-GMP-2__P12__Relapse	U2
+MultiLin-GMP-1__P12__Relapse	U2
+LMPP-1-cycling__P13__Diagnosis	U2
+Pro-B-cycling-1__P14__Diagnosis	U2
+CD8 TEM__P13__Relapse	U2
+LMPP-1-cycling__P13__Relapse	U2
+Myeloid intermediate 2__P14__Diagnosis	U2
+Multilin-2__P14__Diagnosis	U2
+Multilin-1__P14__Diagnosis	U2
+MultiLin-GMP-2__P14__Diagnosis	U2
+MultiLin-GMP-1__P14__Diagnosis	U2
+MPP-MEP__P14__Diagnosis	U2
+MPP-2__P14__Diagnosis	U2
+MDP-3__P14__Diagnosis	U2
+MDP-2__P14__Diagnosis	U2
+MDP-1__P14__Diagnosis	U2
+LMPP-1__P13__Relapse	U2
+LMPP-2__P14__Diagnosis	U2
+LMPP-1__P14__Diagnosis	U2
+CD8 TEM__P14__Diagnosis	U2
+CD4 TCM__P14__Diagnosis	U2
+pDC__P13__Relapse	U2
+T CD4 Naive-2__P13__Relapse	U2
+MultiLin-GMP-2__P01__Diagnosis	U2
+Multilin-2__P13__Relapse	U2
+MPP-2__P13__Relapse	U2
+MDP-1__P13__Relapse	U2
+MAIT__P13__Relapse	U2
+LMPP-1-cycling__P14__Diagnosis	U2
+MultiLin-GMP-1__P01__Diagnosis	U2
+Erythroblast-2__P22__Relapse	U2
+MEP-2__P01__Diagnosis	U2
+MAIT__AML-17-CR1	U2
+NK-Mature__AML-17-CR1	U2
+LMPP-1__1702-Et922-66F	U2
+T CD4 Activated__AML-17-CR1	U2
+B Memory-1__AML-17-CR2	U2
+BMCP-1__1702-Et922-66F	U2
+preNeu__143_AfST8_P64M	U2
+immNeu-2__143_AfST8_P64M	U2
+NK-Mature__AML-17-CR2	U2
+immNeu-1__143_AfST8_P64M	U2
+cMOP__143_AfST8_P64M	U2
+LMPP-1__AML-17-CR1	U2
+Myeloid intermediate 2__P24__Diagnosis	U2
+Myeloid intermediate 1__P24__Diagnosis	U2
+Myeloid intermediate 1__143_AfST8_P64M	U2
+MultiLin-GMP-1__143_AfST8_P64M	U2
+MEP-Eryth-2__143_AfST8_P64M	U2
+MEP-2__143_AfST8_P64M	U2
+MEP-1__143_AfST8_P64M	U2
+LMPP-2__143_AfST8_P64M	U2
+LMPP-1-cycling__143_AfST8_P64M	U2
+Classical-Mono__143_AfST8_P64M	U2
+BMCP-1__143_AfST8_P64M	U2
+immNeu-2__1239_EST8_44M_N1c	U2
+Myeloid intermediate 3__143_AfST8_P64M	U2
+Myeloid intermediate 1__1239_EST8_44M_N1c	U2
+LMPP-1-cycling__1702-Et922-66F	U2
+CD4 TCM__AML-17-CR1	U2
+Myeloid intermediate 1__1782_Aft36_P71F	U2
+MAIT__P26__Diagnosis	U2
+cMOP__P24__Diagnosis	U2
+Mono-1__171_Af_N1c	U2
+T CD8 Naive__P24__Diagnosis	U2
+immNeu-1__1702-Et922-66F	U2
+Myeloid intermediate 1__1702-Et922-66F	U2
+Multilin-1__1702-Et922-66F	U2
+MultiLin-GMP-3__1702-Et922-66F	U2
+MultiLin-GMP-2__1702-Et922-66F	U2
+B Memory-1__AML-16-Dx	U2
+MEP-1__1702-Et922-66F	U2
+BMCP-1__AML-16-Dx	U2
+MKP-early__1702-Et922-66F	U2
+MAIT__AML-16-Dx	U2
+MEP-1__AML-16-Dx	U2
+MEP-2__AML-16-Dx	U2
+MEP-Eryth-2__1702-Et922-66F	U2
+MEP-2__1702-Et922-66F	U2
+T CD4 Naive-2__P24__Diagnosis	U2
+NK-Mature__P24__Diagnosis	U2
+Myeloid intermediate 3__P24__Diagnosis	U2
+B Memory-1__AML-17-CR1	U2
+B Memory-2__AML-17-CR1	U2
+MPP-2__1702-Et922-66F	U2
+ERP-2__1827_Af_N1c	U2
+Multilin-2__1239_EST8_44M_N1c	U2
+MultiLin-GMP-2__1239_EST8_44M_N1c	U2
+MultiLin-GMP-2__AML-20-Dx	U2
+MultiLin-GMP-3__AML-20-Dx	U2
+Multilin-1__AML-20-Dx	U2
+Multilin-2__AML-20-Dx	U2
+NK-Mature__AML-20-Dx	U2
+Plasma Cell__AML-20-Dx	U2
+Pro-B-Early__AML-20-Dx	U2
+Pro-B-Early-cycling__AML-20-Dx	U2
+cDC2-2__AML-20-Dx	U2
+pDC__AML-20-Dx	U2
+B Memory-1__AML-20-R1	U2
+MultiLin-GMP-1__AML-20-Dx	U2
+B Memory-2__AML-20-R1	U2
+CLP__AML-20-R1	U2
+Erythroblast-3__AML-20-R1	U2
+LMPP-1__AML-20-R1	U2
+LMPP-2__AML-20-R1	U2
+MDP-1__AML-20-R1	U2
+MDP-2__AML-20-R1	U2
+MultiLin-GMP-1__AML-20-R1	U2
+Multilin-2__AML-20-R1	U2
+NK-Mature__AML-20-R1	U2
+pDC__AML-20-R1	U2
+Multilin-1__P24__Diagnosis	U2
+CD4 TCM__AML-20-R1	U2
+MultiLin-GMP-3__1239_EST8_44M_N1c	U2
+MPP-MEP__AML-20-Dx	U2
+MEP-2__AML-20-Dx	U2
+MKP-early__1239_EST8_44M_N1c	U2
+ASDC__AML-20-CR	U2
+CD8 TEM__AML-20-CR	U2
+ERP-2__AML-20-CR	U2
+HSC-2__AML-20-CR	U2
+MEP-2__AML-20-CR	U2
+MPP-1__AML-20-CR	U2
+MPP-2__AML-20-CR	U2
+MultiLin-GMP-1__AML-20-CR	U2
+NK-Mature__AML-20-CR	U2
+pDC__AML-20-CR	U2
+MEP-Eryth-2__AML-20-Dx	U2
+CD4 TCM__AML-20-Dx	U2
+ERP-2__AML-20-Dx	U2
+Erythroblast-2__AML-20-Dx	U2
+HSC-1__AML-20-Dx	U2
+HSC-2__AML-20-Dx	U2
+LMPP-1__AML-20-Dx	U2
+LMPP-2__AML-20-Dx	U2
+MDP-1__AML-20-Dx	U2
+MDP-2__AML-20-Dx	U2
+MDP-3__AML-20-Dx	U2
+MDP-5__AML-20-Dx	U2
+MDP-6__AML-20-Dx	U2
+CLP__AML-20-Dx	U2
+Multilin-1__AML-11	U2
+MultiLin-GMP-1__AML-11	U2
+MEP-1__AML-11	U2
+Plasma Cell__4440_AfInv16_P24M	U2
+MultiLin-GMP-3__4440_AfInv16_P24M	U2
+MEP-2__4440_AfInv16_P24M	U2
+LMPP-1__4440_AfInv16_P24M	U2
+BMCP-1__4440_AfInv16_P24M	U2
+T CD4 Naive-2__P25__Diagnosis	U2
+B Memory-2__P25__Relapse	U2
+BMCP-1__P25__Relapse	U2
+CD4 TCM__P25__Relapse	U2
+MultiLin-GMP-2__376_Af_N1c	U2
+pDC__3410_AfST8_P64M	U2
+pDC__4440_AfInv16_P24M	U2
+preNeu__P24__Relapse	U2
+CD8 TEM__P25__Relapse	U2
+Erythroblast-1__P25__Relapse	U2
+MultiLin-GMP-2__301_AfInv16_29M	U2
+immNeu-1__P24__Relapse	U2
+cMOP__P24__Relapse	U2
+LMPP-1__301_AfInv16_29M	U2
+NK-Mature__P24__Relapse	U2
+Erythroblast-2__P25__Relapse	U2
+MK-Platelet__2853_Aft36_P71F	U2
+MEP-Eryth-2__2853_Aft36_P71F	U2
+MEP-Eryth-1__2853_Aft36_P71F	U2
+Intermediate Mono-3__3410_AfST8_P64M	U2
+LMPP-1__P25__Relapse	U2
+T CD4 Naive-1__P25__Diagnosis	U2
+Multilin-2__P25__Diagnosis	U2
+LMPP-1__P25__Diagnosis	U2
+LMPP-1-cycling__P25__Diagnosis	U2
+MDP-1__P25__Diagnosis	U2
+pre-DC-2__508084__Diagnosis	U2
+cMOP__508084__Diagnosis	U2
+Myeloid intermediate 3__508084__Diagnosis	U2
+T CD4 Naive-1__550_EInv16_38M	U2
+T CD8 Naive__550_EInv16_38M	U2
+Myeloid intermediate 1__508084__Diagnosis	U2
+Mono-2__508084__Diagnosis	U2
+Mono-1__508084__Diagnosis	U2
+NK-Mature__P25__Diagnosis	U2
+Intermediate Mono-3__508084__Diagnosis	U2
+Intermediate Mono-2__508084__Diagnosis	U2
+Intermediate Mono-1__508084__Diagnosis	U2
+Classical-Mono__508084__Diagnosis	U2
+BMCP-1__508084__Diagnosis	U2
+MPP-2__4924_AfInv16_P49M	U2
+MEP-Eryth-2__4924_AfInv16_P49M	U2
+LMPP-1__4924_AfInv16_P49M	U2
+BMCP-1__4924_AfInv16_P49M	U2
+MDP-2__P25__Diagnosis	U2
+MEP-2__P25__Diagnosis	U2
+MEP-Eryth-2__P25__Diagnosis	U2
+B Memory-2__P25__Diagnosis	U2
+LMPP-1-cycling__P25__Relapse	U2
+MultiLin-GMP-3__2270_Aft36_P71F	U2
+MPP-2__2270_Aft36_P71F	U2
+Multilin-1__P25__Relapse	U2
+Myeloid intermediate 2__P25__Relapse	U2
+Myeloid intermediate 3__P25__Relapse	U2
+NK-Mature__P25__Relapse	U2
+T CD4 Naive-1__P25__Relapse	U2
+preNeu__1893_Af_N1c	U2
+MEP-Eryth-2__1893_Af_N1c	U2
+T CD4 Naive-2__P25__Relapse	U2
+LMPP-1-cycling__P24__Relapse	U2
+CD4 TCM__P26__Diagnosis	U2
+CD8 TEM__P26__Diagnosis	U2
+MultiLin-GMP-2__P25__Relapse	U2
+CD8 TEM__P24__Relapse	U2
+LMPP-1__P26__Diagnosis	U2
+LMPP-1-cycling__P26__Diagnosis	U2
+MEP-Eryth-1__1827_Af_N1c	U2
+Erythroblast-1__1827_Af_N1c	U2
+preNeu__P24__Diagnosis	U2
+pre-DC-2__P24__Diagnosis	U2
+ERP-8__1827_Af_N1c	U2
+ERP-6__1827_Af_N1c	U2
+ERP-4__1827_Af_N1c	U2
+LMPP-1__AML-11	U2
+LMPP-1-cycling__AML-11	U2
+CD4 TCM__P24__Relapse	U2
+MultiLin-GMP-1__P25__Relapse	U2
+MPP-MEP__P25__Relapse	U2
+MPP-2__P25__Relapse	U2
+MKP-late__2270_Aft36_P71F	U2
+Myeloid intermediate 3__P24__Relapse	U2
+Myeloid intermediate 2__P24__Relapse	U2
+Myeloid intermediate 1__P24__Relapse	U2
+Multilin-1__P24__Relapse	U2
+MultiLin-GMP-3__P24__Relapse	U2
+MKP-early__2270_Aft36_P71F	U2
+MultiLin-GMP-2__P24__Relapse	U2
+MultiLin-GMP-1__P24__Relapse	U2
+MK-Platelet__2270_Aft36_P71F	U2
+MEP-Eryth-2__2270_Aft36_P71F	U2
+Mono-1__P24__Relapse	U2
+MPP-MEP__P24__Relapse	U2
+MEP-2__2270_Aft36_P71F	U2
+MEP-Eryth-2__P24__Relapse	U2
+MEP-1__P24__Relapse	U2
+MEP-1__2270_Aft36_P71F	U2
+MDP-2__P24__Relapse	U2
+LMPP-1__2270_Aft36_P71F	U2
+HSC-2__2270_Aft36_P71F	U2
+ERP-4__2270_Aft36_P71F	U2
+ERP-2__2270_Aft36_P71F	U2
+ERP-1__2270_Aft36_P71F	U2
+MEP-2__P25__Relapse	U2
+MPP-1__P25__Relapse	U2
+MultiLin-GMP-3__P24__Diagnosis	U2
+CD4 TCM__P25__Diagnosis	U2
+MEP-2__1239_EST8_44M_N1c	U2
+BMCP-1__1239_EST8_44M_N1c	U2
+LMPP-1-cycling__P23__Diagnosis	U2
+LMPP-1__P23__Diagnosis	U2
+Intermediate Mono-3__P23__Diagnosis	U2
+CD8 TEM__P23__Diagnosis	U2
+CD4 TCM__P23__Diagnosis	U2
+BMCP-1__PT06__Diagnosis	U2
+Myeloid intermediate 1__PT06__Diagnosis	U2
+BMCP-1__PT18__D14	U2
+CD4 TCM__Pt-12_Rl	U2
+MAIT__Pt-12_Rl	U2
+BMCP-1__AML5	U2
+NK-Mature__Pt-12_Rl	U2
+T CD4 Naive-1__Pt-12_Rl	U2
+B Memory-2__P23__Diagnosis	U2
+MDP-1__AML5	U2
+MDP-2__AML5	U2
+Mono-1__AML5	U2
+MultiLin-GMP-1__AML5	U2
+Myeloid intermediate 1__AML5	U2
+MEP-Eryth-2__hashtag3-SRR16208959	U2
+ERP-1__hashtag3-SRR16208965	U2
+Myeloid intermediate 3__AML5	U2
+cMOP__AML5	U2
+LMPP-2__P23__Diagnosis	U2
+MDP-1__P23__Diagnosis	U2
+MDP-2__P23__Diagnosis	U2
+MEP-1__P23__Diagnosis	U2
+MultiLin-GMP-3__AML3133	U2
+MultiLin-GMP-2__P23__Diagnosis	U2
+MAIT__P26__Relapse	U2
+MDP-2__P26__Relapse	U2
+MEP-2__P26__Relapse	U2
+MPP-1__P26__Relapse	U2
+MPP-2__P26__Relapse	U2
+MPP-MEP__P26__Relapse	U2
+Multilin-2__P26__Relapse	U2
+MultiLin-GMP-1__P23__Diagnosis	U2
+MPP-MEP__P23__Diagnosis	U2
+BMCP-1__AML6	U2
+MEP-2__AML3762	U2
+MPP-2__P23__Diagnosis	U2
+B Memory-2__AML3948	U2
+HSC-2__AML3948	U2
+MPP-1__AML3948	U2
+NK-Mature__P26__Relapse	U2
+cDC2-2__P26__Relapse	U2
+BMCP-1__PAWWEE	U2
+MPP-1__P23__Diagnosis	U2
+MEP-Eryth-2__P23__Diagnosis	U2
+LMPP-1__AML4340	U2
+MEP-2__P23__Diagnosis	U2
+MEP-Eryth-1__AML3762	U2
+B Memory-1__P23__Diagnosis	U2
+preNeu__P22__Relapse	U2
+MultiLin-GMP-1__hashtag3-SRR16208965	U2
+MPP-MEP__P22__Relapse	U2
+MEP-Eryth-2__P22__Relapse	U2
+MEP-2__P22__Relapse	U2
+MEP-1__P22__Relapse	U2
+MDP-2__P22__Relapse	U2
+MAIT__P22__Relapse	U2
+LMPP-1-cycling__P22__Relapse	U2
+B Memory-2__HTO6-SRR16208954	U2
+T CD4 Naive-1__HTO6-SRR16208954	U2
+Non-Classical Mono-1__1036_EInv16_22M	U2
+LMPP-1__hashtag5-SRR16208965	U2
+MultiLin-GMP-1__P22__Relapse	U2
+HSC-2__0316_E_N1c	U2
+BMCP-1__P01__Diagnosis	U2
+CD4 TCM__P01__Diagnosis	U2
+CD8 TEM__P01__Diagnosis	U2
+CLP__P01__Diagnosis	U2
+ERP-6__P01__Diagnosis	U2
+Erythroblast-1__P01__Diagnosis	U2
+Erythroblast-2__P01__Diagnosis	U2
+LMPP-1__P01__Diagnosis	U2
+LMPP-1-cycling__P01__Diagnosis	U2
+MAIT__P01__Diagnosis	U2
+MDP-2__P01__Diagnosis	U2
+pre-DC-3__NA-SRR16208932	U2
+LMPP-1__AML3133	U2
+MultiLin-GMP-2__P22__Relapse	U2
+Multilin-1__P22__Relapse	U2
+cMOP__AML6	U2
+pre-DC-2__AML6	U2
+preNeu__hashtag3-SRR16208965	U2
+cDC1__P22__Relapse	U2
+T CD8 Naive__P22__Relapse	U2
+T CD4 Naive-2__P22__Relapse	U2
+MultiLin-GMP-1__hashtag3-SRR16208966	U2
+T CD4 Naive-1__P22__Relapse	U2
+preNeu__hashtag3-SRR16208966	U2
+MPP-MEP__hashtag3-SRR16208967	U2
+MultiLin-GMP-1__hashtag3-SRR16208967	U2
+MultiLin-GMP-3__P22__Relapse	U2
+Myeloid intermediate 1__hashtag3-SRR16208967	U2
+preNeu__hashtag3-SRR16208967	U2
+Plasma Cell__1076_AfInv16_51M	U2
+NK-Mature__P22__Relapse	U2
+Myeloid intermediate 3__P22__Relapse	U2
+MEP-Eryth-2__1076_AfInv16_51M	U2
+LMPP-2__ETP9153	U2
+MultiLin-GMP-1__ETP9153	U2
+T CD8 Naive__1060_EInv16_19M	U2
+ERP-6__HTO2-SRR16208956	U2
+ERP-7__HTO2-SRR16208956	U2
+Myeloid intermediate 2__P22__Relapse	U2
+T CD4 Activated__P22__Relapse	U2
+LMPP-1__1239_EST8_44M_N1c	U2
+MultiLin-GMP-3__P23__Diagnosis	U2
+Multilin-1__P23__Diagnosis	U2
+MultiLin-GMP-1__P24__Diagnosis	U2
+MDP-2__AML0048	U2
+MKP-early__AML0048	U2
+MultiLin-GMP-2__AML0048	U2
+MultiLin-GMP-3__AML0048	U2
+Multilin-2__AML0048	U2
+NK-Mature__P26__Diagnosis	U2
+T CD4 Naive-1__P26__Diagnosis	U2
+Mono-1__P24__Diagnosis	U2
+T CD4 Naive-2__P26__Diagnosis	U2
+T CD8 Naive__P26__Diagnosis	U2
+B Memory-1__P26__Relapse	U2
+B Memory-2__P26__Relapse	U2
+MPP-MEP__P24__Diagnosis	U2
+MEP-Eryth-2__P24__Diagnosis	U2
+MEP-2__P24__Diagnosis	U2
+MEP-1__P24__Diagnosis	U2
+MDP-2__P24__Diagnosis	U2
+CD4 TCM__P26__Relapse	U2
+LMPP-1-cycling__P24__Diagnosis	U2
+CD4 TCM__P24__Diagnosis	U2
+CD8 TEM__P26__Relapse	U2
+MPP-1__AML3050	U2
+ERP-3__AML0048	U2
+ASDC__AML0048	U2
+MultiLin-GMP-1__P26__Diagnosis	U2
+MPP-MEP__P26__Diagnosis	U2
+MultiLin-GMP-2__P24__Diagnosis	U2
+immNeu-2__1147_EInv16_44M	U2
+T CD4 Naive-1__1147_EInv16_44M	U2
+T CD4 Activated__1147_EInv16_44M	U2
+B Memory-1__AML-21-Dx	U2
+B Memory-2__AML-21-Dx	U2
+CD4 TCM__AML-21-Dx	U2
+MultiLin-GMP-3__1147_EInv16_44M	U2
+MEP-2__1147_EInv16_44M	U2
+MEP-1__1147_EInv16_44M	U2
+LMPP-1__1147_EInv16_44M	U2
+pDC__P23__Relapse	U2
+CD8 TEM__1147_EInv16_44M	U2
+NK-Mature__AML-21-Dx	U2
+BMCP-1__1147_EInv16_44M	U2
+B Memory-1__1147_EInv16_44M	U2
+Erythroblast-1__P22__Relapse	U2
+B Memory-1__AML0024	U2
+B Memory-2__AML0024	U2
+ERP-6__AML0024	U2
+T CD4 Naive-2__1102_E_N1c	U2
+ERP-8__AML0024	U2
+MPP-2__P26__Diagnosis	U2
+LMPP-1-cycling__1102_E_N1c	U2
+CD4 TCM__1147_EInv16_44M	U2
+NK-Mature__P23__Relapse	U2
+BMCP-1__P24__Diagnosis	U2
+Multilin-1__P23__Relapse	U2
+Myeloid intermediate 1__AML12	U2
+Myeloid intermediate 2__AML12	U2
+Myeloid intermediate 3__AML12	U2
+LMPP-1-cycling__P26__Relapse	U2
+HSC-2__P23__Relapse	U2
+HSC-1__P23__Relapse	U2
+BMCP-1__P23__Relapse	U2
+pDC__P23__Diagnosis	U2
+ERP-1__AML2123	U2
+HSC-2__AML2123	U2
+MEP-1__AML2123	U2
+MEP-Eryth-1__AML2123	U2
+MPP-1__AML2123	U2
+MultiLin-GMP-1__AML2123	U2
+Myeloid intermediate 1__AML2123	U2
+Myeloid intermediate 3__AML2123	U2
+Osteoblast__AML2123	U2
+preNeu__AML2123	U2
+T CD4 Naive-2__P23__Diagnosis	U2
+T CD4 Naive-1__P23__Diagnosis	U2
+NK-Mature__P23__Diagnosis	U2
+Multilin-2__P23__Diagnosis	U2
+BMCP-1__AML2	U2
+MDP-1__AML12	U2
+Multilin-2__P23__Relapse	U2
+BMCP-1__P25__Diagnosis	U2
+Erythroblast-2__AML0612	U2
+MEP-1__AML0612	U2
+MEP-2__AML0612	U2
+MultiLin-GMP-1__AML0612	U2
+Multilin-2__AML0612	U2
+MultiLin-GMP-1__P23__Relapse	U2
+MPP-MEP__P23__Relapse	U2
+LMPP-1__P23__Relapse	U2
+MPP-2__P23__Relapse	U2
+MPP-1__P23__Relapse	U2
+MKP-early__P23__Relapse	U2
+MultiLin-GMP-2__P23__Relapse	U2
+MEP-Eryth-2__P23__Relapse	U2
+MEP-2__P23__Relapse	U2
+ERP-3__AML052	U2
+LMPP-1__P26__Relapse	U2
+MEP-1__P23__Relapse	U2
+MDP-2__P23__Relapse	U2
+MDP-1__P23__Relapse	U2
+LMPP-2__P23__Relapse	U2
+MultiLin-GMP-3__P23__Relapse	U2
+LMPP-1-cycling__P23__Relapse	U2
+LMPP-1__AML0612	U2
+cMOP__P19__Diagnosis	U21
+Myeloid intermediate 1__P19__Relapse	U21
+immNeu-1__P19__Diagnosis	U21
+immNeu-1__P20__Diagnosis	U21
+Myeloid intermediate 3__P19__Relapse	U21
+Myeloid intermediate 1__P19__Diagnosis	U21
+immNeu-1__P20__Relapse	U21
+Myeloid intermediate 3__P19__Diagnosis	U21
+preNeu__P11__Diagnosis	U21
+LMPP-1-cycling__P10__Relapse	U21
+LMPP-2__P24__Relapse	U21
+Classical-Mono__P11__Diagnosis	U21
+preNeu__P11__Relapse	U21
+Intermediate Mono-1__P11__Diagnosis	U21
+immNeu-1__P11__Relapse	U21
+cMOP__P11__Relapse	U21
+Intermediate Mono-3__P11__Diagnosis	U21
+Mono-1__P11__Diagnosis	U21
+Mono-2__P11__Diagnosis	U21
+Myeloid intermediate 3__P11__Relapse	U21
+Myeloid intermediate 2__P11__Relapse	U21
+Myeloid intermediate 1__P11__Relapse	U21
+MultiLin-GMP-3__P11__Relapse	U21
+MultiLin-GMP-1__P11__Relapse	U21
+Mono-2__P11__Relapse	U21
+Mono-1__P11__Relapse	U21
+immNeu-2__P22__Relapse	U21
+Erythroblast-2__P11__Relapse	U21
+Erythroblast-1__P11__Relapse	U21
+immNeu-2__P11__Diagnosis	U21
+immNeu-1__P11__Diagnosis	U21
+cMOP__P11__Diagnosis	U21
+Non-Classical Mono-1__P11__Diagnosis	U21
+Myeloid intermediate 3__P11__Diagnosis	U21
+Myeloid intermediate 1__P11__Diagnosis	U21
+MultiLin-GMP-1__P11__Diagnosis	U21
+MDP-2__P10__Relapse	U21
+pre-DC-2__P10__Relapse	U21
+pDC__P10__Relapse	U21
+immNeu-2__P11__Relapse	U21
+Intermediate Mono-3__P10__Diagnosis	U21
+MultiLin-GMP-1__P10__Relapse	U21
+MultiLin-GMP-2__P10__Relapse	U21
+LMPP-2__P24__Diagnosis	U21
+MPP-MEP__P10__Relapse	U21
+Multilin-1__P10__Relapse	U21
+Multilin-2__P10__Relapse	U21
+Classical-Mono__P10__Diagnosis	U21
+Myeloid intermediate 1__P10__Relapse	U21
+immNeu-1__P10__Diagnosis	U21
+cMOP__P10__Diagnosis	U21
+Myeloid intermediate 3__P10__Diagnosis	U21
+Myeloid intermediate 2__P10__Relapse	U21
+Mono-2__P10__Relapse	U21
+Myeloid intermediate 1__P10__Diagnosis	U21
+Myeloid intermediate 3__P10__Relapse	U21
+cDC1__P10__Relapse	U21
+Mono-2__P10__Diagnosis	U21
+Mono-1__P10__Diagnosis	U21
+Mono-2__P12__Relapse	U21
+MDP-1__P10__Diagnosis	U21
+preNeu__P10__Diagnosis	U21
+cMOP__P10__Relapse	U21
+immNeu-1__P24__Diagnosis	U21
+Mono-1__P10__Relapse	U21
+Mono-2__AML-16-Dx	U23
+Intermediate Mono-1__AML-17-CR1	U23
+Mono-1__AML-16-Dx	U23
+Intermediate Mono-2__AML-17-CR1	U23
+Non-Classical Mono-2__AML-17-CR1	U23
+Intermediate Mono-1__AML-17-CR2	U23
+pre-DC-3__220882__Relapse	U23
+Intermediate Mono-3__Pt-12_Rl	U23
+Classical-Mono__AML-16-Dx	U23
+cDC1__220882__Relapse	U23
+Myeloid intermediate 3__869586__Diagnosis	U23
+MultiLin-GMP-1__P06__Diagnosis	U23
+MDP-1__869922__Diagnosis	U23
+Intermediate Mono-3__10DD-1010__Relapse	U23
+immNeu-2__171_Af_N1c	U23
+Non-Classical Mono-2__916462__Diagnosis	U23
+Classical-Mono__PAXMIJ-EoT	U23
+Intermediate Mono-3__AML-16-Dx	U23
+Non-Classical Mono-1__10DD-1010__Diagnosis	U23
+Myeloid intermediate 3__hashtag6-SRR16208965	U23
+Classical-Mono__10DD-1010__Diagnosis	U23
+pre-DC-3__AML-19-Dx2	U23
+cDC1__AML-19-R1	U23
+Intermediate Mono-1__10DD-1010__Diagnosis	U23
+HSC-2__AML-19-R2	U23
+Intermediate Mono-3__AML-19-R2	U23
+MEP-Eryth-2__AML-19-R2	U23
+Myeloid intermediate 1__AML-19-R2	U23
+Myeloid intermediate 3__AML-19-R2	U23
+Mono-1__AML-21-CR	U23
+Mono-2__AML-21-CR	U23
+MultiLin-GMP-1__AML-21-CR	U23
+preNeu__AML-21-CR	U23
+Classical-Mono__AML-21-Dx	U23
+Intermediate Mono-1__AML-21-Dx	U23
+Intermediate Mono-2__AML-21-Dx	U23
+MEP-2__10DD-1086__Treatment	U23
+Intermediate Mono-3__AML-21-Dx	U23
+Mono-1__AML-21-Dx	U23
+Mono-2__AML-21-Dx	U23
+cDC2-1__AML-21-Dx	U23
+cDC2-2__AML-21-Dx	U23
+MEP-Eryth-1__10DD-1086__Treatment	U23
+MEP-Eryth-2__10DD-1086__Treatment	U23
+MEP-2__AML-19-Dx2	U23
+Non-Classical Mono-2__AML-17-R2	U23
+Pro-B-Early__10DD-1009__Diagnosis	U23
+BMCP-1__10DD-1086__Treatment	U23
+immNeu-2__2853_Aft36_P71F	U23
+Pro-B-Early-cycling__10DD-1009__Diagnosis	U23
+Intermediate Mono-3__AML-17-CR2	U23
+MDP-1__AML-17-R2	U23
+cDC2-2__P21__Diagnosis	U23
+cDC2-2__868442__Diagnosis	U23
+Intermediate Mono-2__AML-17-CR2	U23
+Intermediate Mono-2__AML-17-R1	U23
+Non-Classical Mono-2__AML-17-CR2	U23
+Intermediate Mono-3__AML-17-R1	U23
+MKP-late__AML-17-R1	U23
+Non-Classical Mono-2__AML-17-R1	U23
+MultiLin-GMP-1__452198__Relapse	U23
+MEP-1__868442__Diagnosis	U23
+LMPP-2__10DD-1009__Diagnosis	U23
+Mono-1__Pt-69_Rl	U27
+cDC2-1__Pt-69_Rl	U27
+Mono-2__Pt-69_Rl	U27
+Mono-2__AML-12	U27
+pre-DC-3__AML033	U27
+Mono-2__AML009	U27
+Intermediate Mono-3__AML009	U27
+Intermediate Mono-3__hashtag2-SRR16208958	U27
+Mono-1__10DD-1086__Treatment	U4
+Mono-2__10DD-1086__Treatment	U4
+MultiLin-GMP-1__10DD-1086__Treatment	U4
+Mono-2__AML0024	U4
+pre-DC-3__P26__Diagnosis	U4
+cMOP__AML0024	U4
+Intermediate Mono-3__10DD-1086__Treatment	U4
+Classical-Mono__10DD-1086__Treatment	U4
+ASDC__AML026	U4
+Mono-2__10DD-1086__Diagnosis	U4
+preNeu__10DD-1086__Diagnosis	U4
+pre-B__AML005	U4
+Non-Classical Mono-2__AML0024	U4
+Classical-Mono__10DD-1086__Diagnosis	U4
+MultiLin-GMP-1__AML0024	U4
+Non-Classical Mono-2__AML026	U4
+Intermediate Mono-1__10DD-1086__Diagnosis	U4
+LMPP-2__PAWWEE	U4
+Non-Classical Mono-2__AML051	U4
+LMPP-1-cycling__1076_AfInv16_51M	U4
+LMPP-2__1076_AfInv16_51M	U4
+MDP-1__1076_AfInv16_51M	U4
+MDP-2__1076_AfInv16_51M	U4
+MPP-1__1076_AfInv16_51M	U4
+MPP-MEP__1076_AfInv16_51M	U4
+Mono-1__1076_AfInv16_51M	U4
+Mono-2__1076_AfInv16_51M	U4
+MultiLin-GMP-1__1076_AfInv16_51M	U4
+MultiLin-GMP-2__1076_AfInv16_51M	U4
+Multilin-1__1076_AfInv16_51M	U4
+Myeloid intermediate 1__1076_AfInv16_51M	U4
+Myeloid intermediate 2__1076_AfInv16_51M	U4
+Myeloid intermediate 3__1076_AfInv16_51M	U4
+MultiLin-GMP-1__AML9	U4
+Intermediate Mono-3__1076_AfInv16_51M	U4
+cDC1__1076_AfInv16_51M	U4
+B Memory-1__1076_AfInv16_51M	U4
+Myeloid intermediate 3__HTO2-SRR16208954	U4
+preNeu__MDS585	U4
+preNeu__MDS1123	U4
+LMPP-2__1036_EInv16_22M	U4
+MDP-2__1036_EInv16_22M	U4
+MPP-1__1036_EInv16_22M	U4
+MultiLin-GMP-1__1036_EInv16_22M	U4
+MultiLin-GMP-2__1036_EInv16_22M	U4
+Myeloid intermediate 1__1036_EInv16_22M	U4
+Myeloid intermediate 2__1036_EInv16_22M	U4
+Myeloid intermediate 3__1036_EInv16_22M	U4
+MDP-2__MDS1123	U4
+cDC1__1036_EInv16_22M	U4
+immNeu-2__1036_EInv16_22M	U4
+preNeu__1036_EInv16_22M	U4
+MDP-2__1060_EInv16_19M	U4
+cDC1__1060_EInv16_19M	U4
+pre-DC-3__AML026	U4
+cDC2-1__1076_AfInv16_51M	U4
+pre-DC-3__1076_AfInv16_51M	U4
+preNeu__AML3948	U4
+cDC2-2__PAUMTZ	U4
+Intermediate Mono-2__PAUMTZ	U4
+cDC2-1__AML3948	U4
+cDC2-2__PAUMTZ-EoT	U4
+cDC1__AML3948	U4
+MultiLin-GMP-1__AML3948	U4
+pre-DC-1__AML3730	U4
+cDC1__AML3730	U4
+Non-Classical Mono-2__AML3730	U4
+MDP-2__AML3730	U4
+LMPP-2__AML3730	U4
+LMPP-1-cycling__AML3730	U4
+CD4 TCM__AML3730	U4
+preNeu__AML1540	U4
+Myeloid intermediate 1__10DD-1086__Treatment	U4
+cDC2-2__1076_AfInv16_51M	U4
+MDP-2__AML5292	U4
+immNeu-2__PT17__D30	U4
+preNeu__1076_AfInv16_51M	U4
+MDP-1__AML6	U4
+Myeloid intermediate 1__P02__Relapse	U4
+Myeloid intermediate 3__P02__Relapse	U4
+MDP-2__hashtag3-SRR16208959	U4
+Myeloid intermediate 2__TALL4954	U4
+Multilin-2__TALL4954	U4
+immNeu-1__P02__Relapse	U4
+MDP-2__TALL4954	U4
+B Memory-1__TALL4954	U4
+pre-DC-2__P02__Relapse	U4
+preNeu__P02__Relapse	U4
+preNeu__AML5292	U4
+Myeloid intermediate 3__AML5292	U4
+Myeloid intermediate 2__AML5292	U4
+Myeloid intermediate 1__AML5292	U4
+Myeloid intermediate 3__10DD-1086__Treatment	U4
+ASDC__5381v2_AfInv16_P49M	U4
+MultiLin-GMP-2__P18__Relapse	U4
+MDP-2__P13__Relapse	U4
+Myeloid intermediate 2__P13__Relapse	U4
+Myeloid intermediate 3__P13__Relapse	U4
+cDC1__P13__Relapse	U4
+Myeloid intermediate 3__754_EInv16_47M	U4
+pre-DC-2__P13__Relapse	U4
+cDC1__754_EInv16_47M	U4
+cMOP__754_EInv16_47M	U4
+preNeu__754_EInv16_47M	U4
+Mono-1__P01__Diagnosis	U4
+Non-Classical Mono-2__868442__Diagnosis	U4
+pre-DC-2__2698_EInv16_P47M	U4
+Myeloid intermediate 2__754_EInv16_47M	U4
+cDC1__2698_EInv16_P47M	U4
+MultiLin-GMP-1__2698_EInv16_P47M	U4
+MDP-2__2698_EInv16_P47M	U4
+MDP-1__2698_EInv16_P47M	U4
+LMPP-2__2698_EInv16_P47M	U4
+pre-DC-2__2660_Ast82_38M	U4
+cDC2-2__2660_Ast82_38M	U4
+cDC2-1__2660_Ast82_38M	U4
+Mono-1__AML0024	U4
+cDC1__2660_Ast82_38M	U4
+Myeloid intermediate 2__2660_Ast82_38M	U4
+Mono-1__P14__Relapse	U4
+Multilin-1__2660_Ast82_38M	U4
+Myeloid intermediate 2__2698_EInv16_P47M	U4
+ASDC__4924_AfInv16_P49M	U4
+MultiLin-GMP-2__754_EInv16_47M	U4
+Intermediate Mono-3__P13__Relapse	U4
+LMPP-2__550_EInv16_38M	U4
+MDP-2__550_EInv16_38M	U4
+immNeu-1__P12__Relapse	U4
+MPP-MEP__550_EInv16_38M	U4
+MultiLin-GMP-1__550_EInv16_38M	U4
+MultiLin-GMP-2__550_EInv16_38M	U4
+Multilin-2__550_EInv16_38M	U4
+Myeloid intermediate 2__550_EInv16_38M	U4
+cDC1__550_EInv16_38M	U4
+preNeu__550_EInv16_38M	U4
+ASDC__562_AfInv16_25F	U4
+pre-DC-3__562_AfInv16_25F	U4
+Mono-1__P13__Diagnosis	U4
+MultiLin-GMP-2__P13__Diagnosis	U4
+pre-DC-3__727_EInv16_35M	U4
+Myeloid intermediate 1__P13__Diagnosis	U4
+Myeloid intermediate 2__P13__Diagnosis	U4
+Myeloid intermediate 3__P13__Diagnosis	U4
+LMPP-1-cycling__754_EInv16_47M	U4
+Osteoblast__P13__Diagnosis	U4
+MDP-2__754_EInv16_47M	U4
+MPP-MEP__754_EInv16_47M	U4
+MultiLin-GMP-2__4924_AfInv16_P49M	U4
+Mono-1__754_EInv16_47M	U4
+Mono-2__754_EInv16_47M	U4
+LMPP-2__4924_AfInv16_P49M	U4
+MultiLin-GMP-1__754_EInv16_47M	U4
+MultiLin-GMP-1__2660_Ast82_38M	U4
+Myeloid intermediate 2__P14__Relapse	U4
+preNeu__AML-17-D1	U4
+MDP-2__2660_Ast82_38M	U4
+MultiLin-GMP-2__AML-14	U4
+MDP-2__P26__Diagnosis	U4
+preNeu__AML-14_CCHMC	U4
+Myeloid intermediate 2__AML-14_CCHMC	U4
+MultiLin-GMP-1__AML-01	U4
+MDP-2__AML-01	U4
+MultiLin-GMP-3__AML-14	U4
+Myeloid intermediate 3__P16__Diagnosis	U4
+Mono-1__P16__Diagnosis	U4
+preNeu__P15__Relapse	U4
+pre-DC-3__P15__Relapse	U4
+pre-DC-2__P15__Relapse	U4
+pre-DC-1__P15__Relapse	U4
+Myeloid intermediate 3__P14__Relapse	U4
+B Memory-1__1906_Aft82_P36M	U4
+cDC2-2__P15__Relapse	U4
+preNeu__AML-14	U4
+Erythroblast-2__P17__Relapse	U4
+cMOP__10DD-1086__Treatment	U4
+immNeu-1__10DD-1086__Treatment	U4
+preNeu__10DD-1086__Treatment	U4
+Intermediate Mono-3__AML0024	U4
+Intermediate Mono-2__AML0024	U4
+immNeu-2__P06__Relapse	U4
+MultiLin-GMP-1__P17__Diagnosis	U4
+MDP-1__1147_EInv16_44M	U4
+cDC2-2__AML-21-CR	U4
+MAIT__P08__Relapse	U4
+cDC1__P17__Relapse	U4
+LMPP-1-cycling__550_EInv16_38M	U4
+MultiLin-GMP-1__P17__Relapse	U4
+MultiLin-GMP-2__AML-17-D1	U4
+pre-DC-3__AML-21-CR	U4
+cDC2-1__P15__Relapse	U4
+cMOP__P15__Relapse	U4
+MEP-1__P15__Relapse	U4
+Classical-Mono__P15__Relapse	U4
+Intermediate Mono-1__P15__Relapse	U4
+Intermediate Mono-2__P15__Relapse	U4
+Intermediate Mono-3__P15__Relapse	U4
+MDP-2__P15__Relapse	U4
+CLP__2660_Ast82_38M	U4
+LMPP-1-cycling__2660_Ast82_38M	U4
+pre-DC-2__P14__Relapse	U4
+Mono-1__P15__Relapse	U4
+Mono-2__P15__Relapse	U4
+MultiLin-GMP-1__P15__Relapse	U4
+pre-DC-2__868442__Diagnosis	U4
+Myeloid intermediate 1__P15__Relapse	U4
+MultiLin-GMP-2__P15__Relapse	U4
+Myeloid intermediate 2__P15__Relapse	U4
+Myeloid intermediate 3__P15__Relapse	U4
+MDP-1__2660_Ast82_38M	U4
+cDC1__P15__Relapse	U4
+LMPP-2__2660_Ast82_38M	U4
+LMPP-2__AML9	U5
+Intermediate Mono-3__AML9	U5
+Intermediate Mono-2__AML9	U5
+Intermediate Mono-1__AML9	U5
+Classical-Mono__AML9	U5
+MDP-1__AML9	U5
+BMCP-1__AML10	U5
+Non-Classical Mono-2__P26__Diagnosis	U5
+cDC2-1__AML9	U5
+BMCP-1__220882__Diagnosis	U5
+Intermediate Mono-1__AML14	U5
+pDC__508084__Diagnosis	U5
+Intermediate Mono-1__hashtag5-SRR16208965	U7
+Intermediate Mono-2__TALL4954	U7
+Intermediate Mono-1__hashtag4-SRR16208965	U7
+Intermediate Mono-2__hashtag2-SRR16208957	U7
+Intermediate Mono-1__hashtag2-SRR16208967	U7
+Intermediate Mono-1__hashtag3-SRR16208949	U7
+Intermediate Mono-1__hashtag3-SRR16208950	U7
+Intermediate Mono-1__hashtag3-SRR16208957	U7
+Intermediate Mono-1__hashtag3-SRR16208965	U7
+Intermediate Mono-1__hashtag3-SRR16208967	U7
+Intermediate Mono-1__hashtag4-SRR16208966	U7
+Intermediate Mono-1__hashtag2-SRR16208957	U7
+Non-Classical Mono-2__hashtag2-SRR16208957	U7
+Intermediate Mono-1__0018_Af_N1c	U7
+Intermediate Mono-3__HTO3-SRR16208955	U7
+Intermediate Mono-1__AML-21-CR	U7
+Intermediate Mono-1__2853_Aft36_P71F	U7
+Non-Classical Mono-2__HTO3-SRR16208955	U7
+Intermediate Mono-2__2853_Aft36_P71F	U7
+Non-Classical Mono-2__2853_Aft36_P71F	U7
+Non-Classical Mono-2__AML1552	U7
+Intermediate Mono-2__AML-21-CR	U7
+Intermediate Mono-1__AML1896	U7
+Intermediate Mono-1__hashtag5-SRR16208967	U7
+Intermediate Mono-1__AML2451	U7
+Intermediate Mono-2__AML2451	U7
+Intermediate Mono-1__3410_AfST8_P64M	U7
+Non-Classical Mono-2__171_Af_N1c	U7
+Classical-Mono__AML0310	U7
+Intermediate Mono-2__AML1896	U7
+Non-Classical Mono-2__AML-21-CR	U7
+Intermediate Mono-3__AML0048	U7
+Non-Classical Mono-2__AML0693	U7
+Intermediate Mono-1__AML0310	U7
+Intermediate Mono-2__AML0310	U7
+Intermediate Mono-3__AML0310	U7
+Mono-2__AML0310	U7
+Non-Classical Mono-2__AML0310	U7
+cDC2-1__AML0310	U7
+cDC2-2__AML0310	U7
+Classical-Mono__AML0361	U7
+Intermediate Mono-1__AML0361	U7
+Intermediate Mono-2__AML0361	U7
+Intermediate Mono-3__AML0361	U7
+Non-Classical Mono-2__AML0361	U7
+Non-Classical Mono-2__AML043	U7
+Intermediate Mono-3__AML0612	U7
+Intermediate Mono-1__AML0656	U7
+Non-Classical Mono-2__AML3133	U7
+Intermediate Mono-1__AML3762	U7
+Intermediate Mono-1__AML3133	U7
+cDC2-2__AML3762	U7
+Intermediate Mono-2__HTO3-SRR16208955	U7
+Intermediate Mono-1__HTO3-SRR16208955	U7
+Non-Classical Mono-2__HTO3-SRR16208954	U7
+Intermediate Mono-3__HTO3-SRR16208954	U7
+Intermediate Mono-2__HTO3-SRR16208954	U7
+Intermediate Mono-1__HTO3-SRR16208954	U7
+Classical-Mono__HTO3-SRR16208954	U7
+Non-Classical Mono-2__HTO2-SRR16208956	U7
+Intermediate Mono-2__HTO2-SRR16208956	U7
+Intermediate Mono-1__HTO2-SRR16208956	U7
+Intermediate Mono-3__AML3762	U7
+Non-Classical Mono-2__AML0114	U7
+Intermediate Mono-1__171_Af_N1c	U7
+Intermediate Mono-1__AML4340	U7
+Intermediate Mono-1__AML4897	U7
+Intermediate Mono-2__AML4897	U7
+Non-Classical Mono-2__AML4897	U7
+Non-Classical Mono-2__1102_E_N1c	U7
+CD8 TEM__10DD-1061__Relapse	U9
+MAIT__10DD-1062__Diagnosis	U9
+CD8 TEM__10DD-1062__Diagnosis	U9
+CD4 TCM__10DD-1062__Diagnosis	U9
+B Memory-2__10DD-1062__Diagnosis	U9
+MAIT__10DD-1058__Diagnosis	U9
+MAIT__10DD-1061__Relapse	U9
+B Memory-2__10DD-1058__Treatment	U9
+CD8 TEM__10DD-1058__Treatment	U9
+MAIT__10DD-1058__Treatment	U9
+NK-Mature__10DD-1058__Treatment	U9
+CD4 TCM__10DD-1061__Diagnosis	U9
+CD8 TEM__10DD-1061__Diagnosis	U9
+B Memory-1__10DD-1062__Diagnosis	U9
+B Memory-2__10DD-1061__Relapse	U9
+B Memory-2__PT07__D14	U9
+B Memory-1__PT07__Diagnosis	U9
+Pro-B-3__10DD-1062__Diagnosis	U9
+CD4 TCM__10DD-1061__Relapse	U9
+CD4 TCM__10DD-1058__Treatment	U9
+T CD4 Naive-2__10DD-1061__Diagnosis	U9
+CD8 TEM__10DD-1065__Diagnosis	U9
+CD4 TCM__PT06__Diagnosis	U9
+NK-Mature__10DD-1079__Diagnosis	U9
+CD8 TEM__10DD-1079__Diagnosis	U9
+preNeu__10DD-1070__Treatment	U9
+cMOP__10DD-1070__Treatment	U9
+NK-Mature__10DD-1070__Treatment	U9
+Myeloid intermediate 1__10DD-1070__Treatment	U9
+MAIT__10DD-1070__Treatment	U9
+CD8 TEM__10DD-1070__Treatment	U9
+CD4 TCM__10DD-1070__Treatment	U9
+B Memory-2__10DD-1070__Treatment	U9
+NK-Mature__10DD-1070__Diagnosis	U9
+MAIT__10DD-1070__Diagnosis	U9
+CD8 TEM__10DD-1070__Diagnosis	U9
+CD4 TCM__10DD-1070__Diagnosis	U9
+T CD4 Naive-2__10DD-1065__Treatment	U9
+MAIT__10DD-1065__Treatment	U9
+CD8 TEM__10DD-1065__Treatment	U9
+CD4 TCM__10DD-1065__Treatment	U9
+B Memory-2__10DD-1065__Treatment	U9
+T CD4 Naive-2__10DD-1065__Diagnosis	U9
+CD8 TEM__PT01__D30	U9
+MAIT__PT01__D30	U9
+MAIT__10DD-1065__Diagnosis	U9
+CD8 TEM__10DD-1058__Diagnosis	U9
+CD4 TCM__10DD-1065__Diagnosis	U9
+B Memory-2__10DD-1065__Diagnosis	U9
+CD8 TEM__10DD-1062__Treatment	U9
+B Memory-1__10DD-1062__Treatment	U9
+CD4 TCM__10DD-1058__Diagnosis	U9
+CD8 TEM__10DD-1010__Relapse	U9
+MAIT__10DD-1051__Treatment	U9
+CD8 TEM__hashtag3-SRR16208959	U9
+CD4 TCM__10DD-1009__Relapse	U9
+B Memory-2__10DD-1009__Relapse	U9
+Pro-B-3__10DD-1009__Diagnosis	U9
+Pro-B-2__10DD-1009__Diagnosis	U9
+MAIT__10DD-1009__Diagnosis	U9
+CD8 TEM__10DD-1009__Diagnosis	U9
+CD4 TCM__10DD-1009__Diagnosis	U9
+B Memory-2__10DD-1009__Diagnosis	U9
+B Memory-1__10DD-1009__Diagnosis	U9
+Osteoblast__10DD-1003__Relapse	U9
+MAIT__10DD-1003__Relapse	U9
+CD8 TEM__10DD-1003__Relapse	U9
+CD4 TCM__10DD-1003__Relapse	U9
+B Memory-2__10DD-1003__Relapse	U9
+MAIT__10DD-1003__Diagnosis	U9
+CD8 TEM__hashtag4-SRR16208958	U9
+CD8 TEM__10DD-1003__Diagnosis	U9
+CD4 TCM__10DD-1003__Diagnosis	U9
+MAIT__10DD-1002__Treatment	U9
+CD8 TEM__10DD-1002__Treatment	U9
+CD4 TCM__10DD-1002__Treatment	U9
+MAIT__10DD-1002__Diagnosis	U9
+CD8 TEM__10DD-1002__Diagnosis	U9
+CD4 TCM__10DD-1002__Diagnosis	U9
+MPP-MEP__1036_EInv16_22M	U9
+B Memory-1__1036_EInv16_22M	U9
+CD8 TEM__10DD-1009__Relapse	U9
+B Memory-2__10DD-1058__Diagnosis	U9
+MAIT__10DD-1009__Relapse	U9
+Pro-B-3__10DD-1009__Relapse	U9
+CD8 TEM__10DD-1051__Treatment	U9
+CD4 TCM__10DD-1051__Treatment	U9
+B Memory-2__10DD-1051__Treatment	U9
+B Memory-1__10DD-1051__Treatment	U9
+T CD4 Naive-2__10DD-1051__Diagnosis	U9
+MAIT__10DD-1051__Diagnosis	U9
+CD8 TEM__10DD-1051__Diagnosis	U9
+CD4 TCM__10DD-1051__Diagnosis	U9
+B Memory-2__10DD-1051__Diagnosis	U9
+Pro-B-3__TALL3783	U9
+MAIT__10DD-1014__Treatment	U9
+Pro-B-3__TALL3862	U9
+CD8 TEM__10DD-1014__Treatment	U9
+B Memory-2__10DD-1014__Treatment	U9
+MAIT__10DD-1014__Diagnosis	U9
+CD8 TEM__10DD-1014__Diagnosis	U9
+CD4 TCM__10DD-1014__Diagnosis	U9
+B Memory-2__10DD-1014__Diagnosis	U9
+NK-Mature__10DD-1010__Relapse	U9
+MAIT__10DD-1010__Relapse	U9
+HSC-2__10DD-1010__Relapse	U9
+B Memory-2__10DD-1079__Relapse	U9
+CD4 TCM__10DD-1010__Relapse	U9
+NK-Mature__10DD-1010__Diagnosis	U9
+MAIT__10DD-1010__Diagnosis	U9
+CD8 TEM__10DD-1010__Diagnosis	U9
+CD4 TCM__10DD-1010__Diagnosis	U9
+Pro-B-2__10DD-1009__Relapse	U9
+CD4 TCM__10DD-1079__Relapse	U9
+pre-B__184874__Diagnosis	U9
+MAIT__10DD-1079__Relapse	U9
+NK-Mature__AML10	U9
+MAIT__AML10	U9
+CD8 TEM__AML10	U9
+CD4 TCM__AML10	U9
+Pro-B-3__AML-17-D2	U9
+Pro-B-3__AML-17-D1	U9
+MAIT__AML-16	U9
+CD8 TEM__AML-16	U9
+B Memory-1__AML-16	U9
+MAIT__AML-14	U9
+B Memory-1__AML-14	U9
+CD8 TEM__AML-04	U9
+B Memory-1__AML-04	U9
+CD8 TEM__AML-02	U9
+MAIT__922185__Diagnosis	U9
+CD8 TEM__922185__Diagnosis	U9
+CD4 TCM__922185__Diagnosis	U9
+B Memory-1__922185__Diagnosis	U9
+MAIT__916462__Diagnosis	U9
+CD8 TEM__916462__Diagnosis	U9
+CD8 TEM__875663__Diagnosis	U9
+MAIT__869922__Diagnosis	U9
+CD8 TEM__869922__Diagnosis	U9
+CD8 TEM__869586__Relapse	U9
+CD4 TCM__869586__Relapse	U9
+T CD4 Activated__AML10	U9
+MAIT__869586__Diagnosis	U9
+T CD4 Naive-1__AML10	U9
+CD8 TEM__AML11	U9
+T CD4 Activated__AML9	U9
+NK-Mature__AML9	U9
+MAIT__AML9	U9
+HSC-2__AML9	U9
+CD8 TEM__AML9	U9
+CD4 TCM__AML9	U9
+B Memory-2__AML9	U9
+B Memory-1__AML9	U9
+MAIT__AML6	U9
+CD8 TEM__AML6	U9
+CD8 TEM__AML5	U9
+T CD4 Naive-1__AML4	U9
+NK-Mature__AML4	U9
+Multilin-1__AML4	U9
+MAIT__AML4	U9
+CD8 TEM__AML4	U9
+CD4 TCM__AML4	U9
+B Memory-1__AML4	U9
+CD8 TEM__AML3	U9
+HSC-2__AML2	U9
+B Memory-2__AML2	U9
+B Memory-1__AML2	U9
+CD8 TEM__AML12	U9
+T CD4 Activated__AML11	U9
+MAIT__AML11	U9
+CD4 TCM__AML11	U9
+CD8 TEM__869586__Diagnosis	U9
+CD4 TCM__869586__Diagnosis	U9
+B Memory-2__869586__Diagnosis	U9
+CD8 TEM__220882__Diagnosis	U9
+CD4 TCM__220882__Diagnosis	U9
+B Memory-1__220882__Diagnosis	U9
+MAIT__184874__Diagnosis	U9
+CD8 TEM__184874__Diagnosis	U9
+CD4 TCM__184874__Diagnosis	U9
+B Memory-1__184874__Diagnosis	U9
+T CD4 Activated__10DD-1086__Treatment	U9
+CD8 TEM__10DD-1086__Treatment	U9
+MAIT__10DD-1086__Diagnosis	U9
+CD8 TEM__10DD-1086__Diagnosis	U9
+CD4 TCM__10DD-1086__Diagnosis	U9
+MAIT__10DD-1085__Relapse	U9
+CD8 TEM__10DD-1085__Relapse	U9
+CD4 TCM__10DD-1085__Relapse	U9
+MAIT__10DD-1085__Diagnosis	U9
+CD8 TEM__10DD-1085__Diagnosis	U9
+CD4 TCM__10DD-1085__Diagnosis	U9
+B Memory-2__10DD-1085__Diagnosis	U9
+B Memory-1__10DD-1085__Diagnosis	U9
+CD8 TEM__10DD-1082__Treatment	U9
+CD4 TCM__10DD-1082__Treatment	U9
+B Memory-2__10DD-1082__Treatment	U9
+NK-Mature__10DD-1079__Treatment	U9
+CD8 TEM__10DD-1079__Treatment	U9
+MAIT__220882__Diagnosis	U9
+CD4 TCM__220882__Relapse	U9
+CD8 TEM__220882__Relapse	U9
+MAIT__220882__Relapse	U9
+B Memory-1__869586__Diagnosis	U9
+MAIT__827494__Diagnosis	U9
+CD8 TEM__827494__Diagnosis	U9
+CD4 TCM__827494__Diagnosis	U9
+B Memory-1__827494__Diagnosis	U9
+MAIT__568_AfInv16_P24M	U9
+MAIT__508084__Relapse	U9
+CD8 TEM__508084__Relapse	U9
+CD4 TCM__508084__Relapse	U9
+B Memory-2__508084__Relapse	U9
+B Memory-1__508084__Relapse	U9
+MAIT__452198__Relapse	U9
+CD8 TEM__10DD-1079__Relapse	U9
+CD8 TEM__452198__Relapse	U9
+B Memory-1__452198__Relapse	U9
+CD8 TEM__452198__Diagnosis	U9
+B Memory-1__452198__Diagnosis	U9
+MAIT__430998__Diagnosis	U9
+CD8 TEM__430998__Diagnosis	U9
+CD4 TCM__430998__Diagnosis	U9
+B Memory-1__430998__Diagnosis	U9
+CD8 TEM__332131__Diagnosis	U9
+MAIT__220882__Treatment	U9
+CD8 TEM__220882__Treatment	U9
+CD4 TCM__220882__Treatment	U9
+B Memory-2__220882__Treatment	U9
+CD4 TCM__452198__Relapse	U9
+CD8 TEM__AML1	U9

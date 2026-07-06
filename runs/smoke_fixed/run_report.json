@@ -1,0 +1,378 @@
+{
+  "run_id": "smoke_fixed",
+  "run_status": "completed",
+  "failing_steps": [],
+  "provenance": {
+    "python": "3.14.5",
+    "scikit-learn": "1.9.0",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "pandas": "2.3.3",
+    "anndata": "0.12.16",
+    "pythonhashseed": null,
+    "amlmm_njobs": null,
+    "layout": "local",
+    "hooks": "deterministic"
+  },
+  "coverage": {
+    "layout": "local",
+    "n_samples": 387,
+    "n_pseudobulks": 12255,
+    "n_datasets": 11,
+    "samples_with_metadata": 287,
+    "samples_with_composition": 387,
+    "samples_with_donor_id": 387,
+    "modalities": [
+      "RNA",
+      "GRN",
+      "Metabolite",
+      "Lipid",
+      "ADT",
+      "cell-communication"
+    ]
+  },
+  "target": "subtype",
+  "feature_blocks": [
+    "composition"
+  ],
+  "steps": [
+    {
+      "name": "feasibility",
+      "status": "ok",
+      "metrics": {
+        "n_targets": 9,
+        "trainable": [
+          "subtype",
+          "disease_category",
+          "ELN_risk",
+          "sex",
+          "age"
+        ],
+        "marginal": [],
+        "not_trainable": [
+          "WHO_classification",
+          "FAB",
+          "is_pediatric",
+          "overall_survival"
+        ]
+      },
+      "artifacts": {
+        "feasibility.tsv": "C:\\Users\\krog5w\\.gemini\\antigravity\\scratch\\AML-multimodal\\runs\\smoke_fixed\\feasibility.tsv"
+      },
+      "params": {
+        "min_class_n": 8
+      },
+      "seconds": 0.11,
+      "error": null,
+      "log": []
+    },
+    {
+      "name": "assemble_features",
+      "status": "ok",
+      "metrics": {
+        "target": "subtype",
+        "blocks": [
+          "composition"
+        ],
+        "n_samples": 97,
+        "n_features": 90,
+        "n_classes": 5,
+        "class_counts": {
+          "NPM1": 43,
+          "Inv16": 18,
+          "FLT3": 14,
+          "TET2": 12,
+          "TP53": 10
+        },
+        "dropped_single_group_classes": [],
+        "n_donor_groups": 76,
+        "n_cohorts": 5
+      },
+      "artifacts": {},
+      "params": {
+        "target": "subtype",
+        "blocks": null,
+        "min_class_n": 8
+      },
+      "seconds": 0.02,
+      "error": null,
+      "log": []
+    },
+    {
+      "name": "classify",
+      "status": "ok",
+      "metrics": {
+        "target": "subtype",
+        "strategy": "donor_kfold",
+        "models": [
+          "rf",
+          "logreg"
+        ],
+        "balanced_accuracy": 0.6312,
+        "macro_f1": 0.6233,
+        "n_samples": 97,
+        "n_classes": 5,
+        "permutation_p95": 0.2912,
+        "permutation_pvalue": 0.01639344262295082,
+        "cv_error": null,
+        "model_wins": {
+          "rf": 1,
+          "logreg": 4
+        },
+        "gate_accept": true,
+        "gate_reason": "balanced_acc 0.631, permutation p=0.016 (n=97)",
+        "gate_action": "pass",
+        "final_model": "C:\\Users\\krog5w\\.gemini\\antigravity\\scratch\\AML-multimodal\\runs\\smoke_fixed\\final_model.joblib"
+      },
+      "artifacts": {
+        "cv_result.json": "C:\\Users\\krog5w\\.gemini\\antigravity\\scratch\\AML-multimodal\\runs\\smoke_fixed\\cv_result.json",
+        "final_model.joblib": "C:\\Users\\krog5w\\.gemini\\antigravity\\scratch\\AML-multimodal\\runs\\smoke_fixed\\final_model.joblib"
+      },
+      "params": {
+        "strategy": "donor_kfold",
+        "outer_splits": 5,
+        "inner_splits": 3,
+        "n_permutations": 60
+      },
+      "seconds": 56.54,
+      "error": null,
+      "log": []
+    },
+    {
+      "name": "cluster_explore",
+      "status": "ok",
+      "metrics": {
+        "n_programs": 16,
+        "n_pseudobulks_assigned": 8564,
+        "programs_dataset_dominated_gt80pct": 1,
+        "example_batch_dominated": [
+          "P4"
+        ],
+        "max_dataset_fraction_median": 0.378
+      },
+      "artifacts": {
+        "program_by_subtype.tsv": "C:\\Users\\krog5w\\.gemini\\antigravity\\scratch\\AML-multimodal\\runs\\smoke_fixed\\program_by_subtype.tsv",
+        "program_by_dataset.tsv": "C:\\Users\\krog5w\\.gemini\\antigravity\\scratch\\AML-multimodal\\runs\\smoke_fixed\\program_by_dataset.tsv"
+      },
+      "params": {},
+      "seconds": 0.08,
+      "error": null,
+      "log": []
+    }
+  ],
+  "feasibility": {
+    "subtype": {
+      "kind": "multiclass",
+      "n_labeled": 142,
+      "n_classes_usable": 5.0,
+      "classes_usable": "NPM1;Inv16;FLT3;TET2;TP53",
+      "majority_frac": 0.303,
+      "cramers_v_vs_dataset": 0.822,
+      "verdict": "yes",
+      "note": "high cohort confounding (V=0.82) \u2014 use leave_one_cohort_out"
+    },
+    "disease_category": {
+      "kind": "multiclass",
+      "n_labeled": 287,
+      "n_classes_usable": 3.0,
+      "classes_usable": "AML;Control;MDS",
+      "majority_frac": 0.861,
+      "cramers_v_vs_dataset": 0.48,
+      "verdict": "yes",
+      "note": ""
+    },
+    "WHO_classification": {
+      "kind": "multiclass",
+      "n_labeled": 39,
+      "n_classes_usable": 1.0,
+      "classes_usable": "NPM1",
+      "majority_frac": 0.564,
+      "cramers_v_vs_dataset": 1.0,
+      "verdict": "no",
+      "note": "high cohort confounding (V=1.00) \u2014 use leave_one_cohort_out"
+    },
+    "FAB": {
+      "kind": "multiclass",
+      "n_labeled": 48,
+      "n_classes_usable": 1.0,
+      "classes_usable": "M4",
+      "majority_frac": 0.25,
+      "cramers_v_vs_dataset": 0.557,
+      "verdict": "no",
+      "note": ""
+    },
+    "ELN_risk": {
+      "kind": "multiclass",
+      "n_labeled": 70,
+      "n_classes_usable": 3.0,
+      "classes_usable": "Favorable;Adverse;Intermediate",
+      "majority_frac": 0.386,
+      "cramers_v_vs_dataset": 0.222,
+      "verdict": "yes",
+      "note": ""
+    },
+    "sex": {
+      "kind": "binary",
+      "n_labeled": 171,
+      "n_classes_usable": 2.0,
+      "classes_usable": "M;F",
+      "majority_frac": 0.573,
+      "cramers_v_vs_dataset": 0.191,
+      "verdict": "yes",
+      "note": ""
+    },
+    "is_pediatric": {
+      "kind": "binary",
+      "n_labeled": 334,
+      "n_classes_usable": 1.0,
+      "classes_usable": "FALSE",
+      "majority_frac": 1.0,
+      "cramers_v_vs_dataset": NaN,
+      "verdict": "no",
+      "note": ""
+    },
+    "overall_survival": {
+      "kind": "numeric",
+      "n_labeled": 19,
+      "n_classes_usable": NaN,
+      "classes_usable": "",
+      "majority_frac": NaN,
+      "cramers_v_vs_dataset": NaN,
+      "verdict": "no",
+      "note": "regression target (not classified by this pipeline)"
+    },
+    "age": {
+      "kind": "numeric",
+      "n_labeled": 96,
+      "n_classes_usable": NaN,
+      "classes_usable": "",
+      "majority_frac": NaN,
+      "cramers_v_vs_dataset": NaN,
+      "verdict": "yes",
+      "note": "regression target (not classified by this pipeline)"
+    }
+  },
+  "cv": {
+    "strategy": "donor_kfold",
+    "n_samples": 97,
+    "n_classes": 5,
+    "classes": [
+      "FLT3",
+      "Inv16",
+      "NPM1",
+      "TET2",
+      "TP53"
+    ],
+    "class_counts": {
+      "FLT3": 14,
+      "Inv16": 18,
+      "NPM1": 43,
+      "TET2": 12,
+      "TP53": 10
+    },
+    "balanced_accuracy": 0.6312,
+    "macro_f1": 0.6233,
+    "per_class_f1": {
+      "FLT3": 0.5926,
+      "Inv16": 0.8333,
+      "NPM1": 0.6747,
+      "TET2": 0.4444,
+      "TP53": 0.5714
+    },
+    "balanced_accuracy_fold_mean": 0.6222,
+    "balanced_accuracy_fold_std": 0.1407,
+    "confusion_matrix": [
+      [
+        8,
+        0,
+        3,
+        3,
+        0
+      ],
+      [
+        1,
+        15,
+        2,
+        0,
+        0
+      ],
+      [
+        2,
+        3,
+        28,
+        5,
+        5
+      ],
+      [
+        1,
+        0,
+        5,
+        6,
+        0
+      ],
+      [
+        1,
+        0,
+        2,
+        1,
+        6
+      ]
+    ],
+    "model_wins": {
+      "rf": 1,
+      "logreg": 4
+    },
+    "per_fold": [
+      {
+        "fold": 0,
+        "n_test": 20,
+        "balanced_accuracy": 0.6666666666666667,
+        "model": "logreg",
+        "inner_score": 0.5555,
+        "test_cohort": null
+      },
+      {
+        "fold": 1,
+        "n_test": 20,
+        "balanced_accuracy": 0.5722222222222222,
+        "model": "rf",
+        "inner_score": 0.6206,
+        "test_cohort": null
+      },
+      {
+        "fold": 2,
+        "n_test": 19,
+        "balanced_accuracy": 0.5055555555555555,
+        "model": "logreg",
+        "inner_score": 0.6152,
+        "test_cohort": null
+      },
+      {
+        "fold": 3,
+        "n_test": 19,
+        "balanced_accuracy": 0.875,
+        "model": "logreg",
+        "inner_score": 0.5775,
+        "test_cohort": null
+      },
+      {
+        "fold": 4,
+        "n_test": 19,
+        "balanced_accuracy": 0.4916666666666666,
+        "model": "logreg",
+        "inner_score": 0.588,
+        "test_cohort": null
+      }
+    ],
+    "permutation_balanced_accuracy_p95": 0.2912,
+    "permutation_balanced_accuracy_mean": 0.1918,
+    "permutation_observed_reference": 0.5721,
+    "permutation_pvalue": 0.01639344262295082,
+    "n_permutations": 60
+  },
+  "gate": {
+    "accept": true,
+    "reason": "balanced_acc 0.631, permutation p=0.016 (n=97)",
+    "action": "pass"
+  }
+}

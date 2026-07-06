@@ -1,0 +1,501 @@
+{
+ "mode": "mutation_panel",
+ "sample_key": "Colorado::AML-06",
+ "dataset": "Colorado",
+ "specimen_class": null,
+ "control_gate": null,
+ "mutation_predictions": [
+  {
+   "probability": 0.848,
+   "call": "absent",
+   "threshold": 0.955,
+   "n_modalities": 1,
+   "contributions": [
+    {
+     "modality": "LSC",
+     "weight": 0.0,
+     "score": 0.848,
+     "oof_auc": 0.523
+    }
+   ],
+   "heldout_auc": 0.966,
+   "mutation": "inv16",
+   "true_label": null,
+   "confidence": "ok"
+  },
+  {
+   "probability": 0.848,
+   "call": "absent",
+   "threshold": 0.955,
+   "n_modalities": 1,
+   "contributions": [
+    {
+     "modality": "LSC",
+     "weight": 0.0,
+     "score": 0.848,
+     "oof_auc": 0.523
+    }
+   ],
+   "heldout_auc": 0.966,
+   "mutation": "inv(16)_CBFB-MYH11",
+   "true_label": null,
+   "confidence": "ok"
+  },
+  {
+   "probability": 0.812,
+   "call": "present",
+   "threshold": 0.748,
+   "n_modalities": 1,
+   "contributions": [
+    {
+     "modality": "LSC",
+     "weight": 0.0,
+     "score": 0.812,
+     "oof_auc": 0.766
+    }
+   ],
+   "heldout_auc": null,
+   "mutation": "kmt2a",
+   "true_label": null,
+   "confidence": "ok"
+  },
+  {
+   "probability": 0.812,
+   "call": "present",
+   "threshold": 0.748,
+   "n_modalities": 1,
+   "contributions": [
+    {
+     "modality": "LSC",
+     "weight": 0.0,
+     "score": 0.812,
+     "oof_auc": 0.766
+    }
+   ],
+   "heldout_auc": null,
+   "mutation": "KMT2A-rearrangement",
+   "true_label": null,
+   "confidence": "ok"
+  },
+  {
+   "probability": 0.812,
+   "call": "present",
+   "threshold": 0.516,
+   "n_modalities": 1,
+   "contributions": [
+    {
+     "modality": "LSC",
+     "weight": 0.126,
+     "score": 0.812,
+     "oof_auc": 0.732
+    }
+   ],
+   "heldout_auc": 0.6,
+   "mutation": "PTPN11",
+   "true_label": null,
+   "confidence": "ok"
+  },
+  {
+   "probability": 0.803,
+   "call": "present",
+   "threshold": 0.708,
+   "n_modalities": 1,
+   "contributions": [
+    {
+     "modality": "LSC",
+     "weight": 0.0,
+     "score": 0.803,
+     "oof_auc": 0.631
+    }
+   ],
+   "heldout_auc": 0.676,
+   "mutation": "NRAS",
+   "true_label": null,
+   "confidence": "ok"
+  },
+  {
+   "probability": 0.781,
+   "call": "present",
+   "threshold": 0.629,
+   "n_modalities": 1,
+   "contributions": [
+    {
+     "modality": "LSC",
+     "weight": 0.0,
+     "score": 0.781,
+     "oof_auc": 0.51
+    }
+   ],
+   "heldout_auc": 0.65,
+   "mutation": "IDH2",
+   "true_label": null,
+   "confidence": "ok"
+  },
+  {
+   "probability": 0.767,
+   "call": "present",
+   "threshold": 0.633,
+   "n_modalities": 1,
+   "contributions": [
+    {
+     "modality": "LSC",
+     "weight": 0.0,
+     "score": 0.767,
+     "oof_auc": 0.516
+    }
+   ],
+   "heldout_auc": 0.84,
+   "mutation": "KRAS",
+   "true_label": null,
+   "confidence": "ok"
+  },
+  {
+   "probability": 0.765,
+   "call": "present",
+   "threshold": 0.751,
+   "n_modalities": 1,
+   "contributions": [
+    {
+     "modality": "LSC",
+     "weight": 0.0,
+     "score": 0.765,
+     "oof_auc": 0.54
+    }
+   ],
+   "heldout_auc": 0.924,
+   "mutation": "trisomy8",
+   "true_label": null,
+   "confidence": "ok"
+  },
+  {
+   "probability": 0.737,
+   "call": "absent",
+   "threshold": 0.795,
+   "n_modalities": 1,
+   "contributions": [
+    {
+     "modality": "LSC",
+     "weight": 0.0,
+     "score": 0.737,
+     "oof_auc": 0.551
+    }
+   ],
+   "heldout_auc": 0.952,
+   "mutation": "NPM1",
+   "true_label": null,
+   "confidence": "ok"
+  },
+  {
+   "probability": 0.668,
+   "call": "absent",
+   "threshold": 0.734,
+   "n_modalities": 1,
+   "contributions": [
+    {
+     "modality": "LSC",
+     "weight": 0.0,
+     "score": 0.668,
+     "oof_auc": 0.556
+    }
+   ],
+   "heldout_auc": 0.797,
+   "mutation": "TET2",
+   "true_label": null,
+   "confidence": "ok"
+  },
+  {
+   "probability": 0.346,
+   "call": "absent",
+   "threshold": 0.659,
+   "n_modalities": 1,
+   "contributions": [
+    {
+     "modality": "LSC",
+     "weight": 0.0,
+     "score": 0.346,
+     "oof_auc": 0.621
+    }
+   ],
+   "heldout_auc": 0.72,
+   "mutation": "ASXL1",
+   "true_label": null,
+   "confidence": "ok"
+  },
+  {
+   "probability": 0.335,
+   "call": "absent",
+   "threshold": 0.667,
+   "n_modalities": 1,
+   "contributions": [
+    {
+     "modality": "LSC",
+     "weight": 0.0,
+     "score": 0.335,
+     "oof_auc": 0.54
+    }
+   ],
+   "heldout_auc": 0.705,
+   "mutation": "FLT3-TKD",
+   "true_label": null,
+   "confidence": "ok"
+  },
+  {
+   "probability": 0.316,
+   "call": "absent",
+   "threshold": 0.899,
+   "n_modalities": 1,
+   "contributions": [
+    {
+     "modality": "LSC",
+     "weight": 0.0,
+     "score": 0.316,
+     "oof_auc": 0.544
+    }
+   ],
+   "heldout_auc": null,
+   "mutation": "GATA2",
+   "true_label": null,
+   "confidence": "ok"
+  },
+  {
+   "probability": 0.244,
+   "call": "absent",
+   "threshold": 0.701,
+   "n_modalities": 1,
+   "contributions": [
+    {
+     "modality": "LSC",
+     "weight": 0.0,
+     "score": 0.244,
+     "oof_auc": 0.628
+    }
+   ],
+   "heldout_auc": 0.604,
+   "mutation": "KIT",
+   "true_label": null,
+   "confidence": "ok"
+  },
+  {
+   "probability": 0.205,
+   "call": "absent",
+   "threshold": 0.662,
+   "n_modalities": 1,
+   "contributions": [
+    {
+     "modality": "LSC",
+     "weight": 0.0,
+     "score": 0.205,
+     "oof_auc": 0.588
+    }
+   ],
+   "heldout_auc": 0.92,
+   "mutation": "complex",
+   "true_label": null,
+   "confidence": "ok"
+  },
+  {
+   "probability": 0.202,
+   "call": "absent",
+   "threshold": 0.724,
+   "n_modalities": 1,
+   "contributions": [
+    {
+     "modality": "LSC",
+     "weight": 0.0,
+     "score": 0.202,
+     "oof_auc": 0.637
+    }
+   ],
+   "heldout_auc": 0.694,
+   "mutation": "FLT3",
+   "true_label": null,
+   "confidence": "ok"
+  },
+  {
+   "probability": 0.199,
+   "call": "absent",
+   "threshold": 0.701,
+   "n_modalities": 1,
+   "contributions": [
+    {
+     "modality": "LSC",
+     "weight": 0.0,
+     "score": 0.199,
+     "oof_auc": 0.525
+    }
+   ],
+   "heldout_auc": 0.785,
+   "mutation": "DNMT3A",
+   "true_label": null,
+   "confidence": "ok"
+  },
+  {
+   "probability": 0.188,
+   "call": "absent",
+   "threshold": 0.697,
+   "n_modalities": 1,
+   "contributions": [
+    {
+     "modality": "LSC",
+     "weight": 0.0,
+     "score": 0.188,
+     "oof_auc": 0.529
+    }
+   ],
+   "heldout_auc": null,
+   "mutation": "del5",
+   "true_label": null,
+   "confidence": "ok"
+  },
+  {
+   "probability": 0.18,
+   "call": "absent",
+   "threshold": 0.796,
+   "n_modalities": 1,
+   "contributions": [
+    {
+     "modality": "LSC",
+     "weight": 0.0,
+     "score": 0.18,
+     "oof_auc": 0.568
+    }
+   ],
+   "heldout_auc": 0.807,
+   "mutation": "TP53",
+   "true_label": null,
+   "confidence": "ok"
+  },
+  {
+   "probability": 0.172,
+   "call": "absent",
+   "threshold": 0.734,
+   "n_modalities": 1,
+   "contributions": [
+    {
+     "modality": "LSC",
+     "weight": 0.0,
+     "score": 0.172,
+     "oof_auc": 0.723
+    }
+   ],
+   "heldout_auc": 0.902,
+   "mutation": "FLT3-ITD",
+   "true_label": null,
+   "confidence": "ok"
+  },
+  {
+   "probability": 0.169,
+   "call": "absent",
+   "threshold": 0.781,
+   "n_modalities": 1,
+   "contributions": [
+    {
+     "modality": "LSC",
+     "weight": 0.0,
+     "score": 0.169,
+     "oof_auc": 0.769
+    }
+   ],
+   "heldout_auc": 1.0,
+   "mutation": "del7",
+   "true_label": null,
+   "confidence": "ok"
+  },
+  {
+   "probability": 0.169,
+   "call": "absent",
+   "threshold": 0.727,
+   "n_modalities": 1,
+   "contributions": [
+    {
+     "modality": "LSC",
+     "weight": 0.246,
+     "score": 0.169,
+     "oof_auc": 0.686
+    }
+   ],
+   "heldout_auc": 0.44,
+   "mutation": "WT1",
+   "true_label": null,
+   "confidence": "ok"
+  },
+  {
+   "probability": 0.166,
+   "call": "absent",
+   "threshold": 0.626,
+   "n_modalities": 1,
+   "contributions": [
+    {
+     "modality": "LSC",
+     "weight": 0.0,
+     "score": 0.166,
+     "oof_auc": 0.566
+    }
+   ],
+   "heldout_auc": null,
+   "mutation": "CEBPA",
+   "true_label": null,
+   "confidence": "ok"
+  },
+  {
+   "probability": 0.161,
+   "call": "absent",
+   "threshold": 0.689,
+   "n_modalities": 1,
+   "contributions": [
+    {
+     "modality": "LSC",
+     "weight": 0.0,
+     "score": 0.161,
+     "oof_auc": 0.53
+    }
+   ],
+   "heldout_auc": 0.971,
+   "mutation": "RUNX1",
+   "true_label": null,
+   "confidence": "ok"
+  },
+  {
+   "probability": 0.091,
+   "call": "absent",
+   "threshold": 0.709,
+   "n_modalities": 1,
+   "contributions": [
+    {
+     "modality": "LSC",
+     "weight": 0.0,
+     "score": 0.091,
+     "oof_auc": 0.576
+    }
+   ],
+   "heldout_auc": 0.783,
+   "mutation": "IDH1",
+   "true_label": null,
+   "confidence": "ok"
+  }
+ ],
+ "predictor": {
+  "version": "1.0",
+  "n_mutations": 26,
+  "modalities": [
+   "RNA",
+   "Composition",
+   "ADT",
+   "Lipid",
+   "Metabolite",
+   "GRN",
+   "LSC",
+   "Cell-comm"
+  ],
+  "mean_heldout_auc": 0.795,
+  "rna": "raw+prog (UDON markers + program fractions)",
+  "base_model": "linSVM",
+  "n_train_samples": 361,
+  "trained": "2026-07-01 00:29"
+ },
+ "validation": true,
+ "modalities_available": [
+  "LSC"
+ ],
+ "note": "sealed held-out sample \u2014 predicted vs known labels (OOF-calibrated thresholds)"
+}

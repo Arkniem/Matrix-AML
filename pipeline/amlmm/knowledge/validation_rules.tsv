@@ -1,0 +1,15 @@
+claim_type	validation	source
+mutation	targeted DNA/RNA sequencing (NGS panel)	standard
+subtype	flow cytometry immunophenotyping	standard
+inv16	FISH or RT-PCR for CBFB-MYH11	standard
+complex	conventional karyotype / SNP-array cytogenetics	standard
+del7	FISH for -7/del(7q) and conventional karyotype	standard
+t15_17	urgent PML-RARA FISH / RT-PCR to confirm APL (at/ before ATRA start)	standard
+t8_21	RT-PCR or FISH for RUNX1-RUNX1T1	standard
+kmt2a	FISH / fusion panel for KMT2A (11q23) rearrangement	standard
+del5	FISH for del(5q)/-5 and conventional karyotype	standard
+trisomy8	FISH for trisomy 8 and conventional karyotype	standard
+surface_marker	flow cytometry for the named surface marker	standard
+lsc	ex-vivo drug-sensitivity assay	heuristic
+metabolite	targeted metabolomics / LC-MS confirmation of the imputed metabolite shift	heuristic
+lipid_profile	untargeted lipidomics / mass-spectrometry confirmation of the imputed lipid-class shift	standard

@@ -1,0 +1,30 @@
+modalities: ADT, Cell-comm, Composition, GRN, LSC, Lipid, Metabolite, RNA
+models: logL2, logL1, elastic, linSVM, shrLDA, PLS, RF, HistGB, NaiveB, kNN, MLP
+gate margin (CV dominance -> single modality): 0.08
+
+mutation       model    strat   lead_mod      n  single   blend OPTIMIZED  oracle*
+complex        linSVM   blend   Metabolite   26    0.89    0.90      0.90     0.99
+inv16          PLS      blend   RNA          26    0.93    0.98      0.98     0.98
+trisomy8       PLS      blend   Lipid        26    0.91    1.00      1.00     1.00
+DNMT3A         shrLDA   blend   Lipid        26    0.88    0.85      0.85     0.88
+FLT3           logL2    blend   RNA          26    0.78    0.73      0.73     0.81
+FLT3-ITD       shrLDA   blend   Lipid        26    0.80    0.92      0.92     0.92
+FLT3-TKD       logL1    blend   RNA          26    0.86    0.94      0.94     0.98
+IDH1           logL1    single  RNA          26    0.86    0.72      0.86     1.00
+IDH2           RF       single  RNA          26    0.39    0.38      0.39     0.74
+NPM1           logL2    blend   RNA          26    0.95    0.96      0.96     0.98
+NRAS           RF       blend   Cell-comm    26    0.64    0.63      0.63     0.72
+PHIP           elastic  blend   GRN          26    0.83    0.84      0.84     0.97
+RUNX1          logL2    blend   Metabolite   26    0.94    0.95      0.95     1.00
+SRSF2          PLS      blend   Metabolite   26    0.78    0.80      0.80     0.80
+TET2           shrLDA   blend   Lipid        26    0.82    0.82      0.82     0.89
+TP53           PLS      blend   RNA          26    0.90    0.81      0.81     0.90
+inv(16)_CBFB-M PLS      blend   RNA          26    0.93    0.98      0.98     0.98
+MEAN                                              0.828   0.835     0.844    0.914
+
+optimized vs best-single(CV): +0.015 | vs consistency-blend: +0.008 | headroom to oracle: +0.070
+
+per-held-out-sample (rank-call vs truth across mutations):
+  26 held-out samples scored across 17 mutations (442 total sample-mutation tests)
+
+OPTIMIZE OK
