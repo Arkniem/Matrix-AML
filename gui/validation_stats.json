@@ -1,0 +1,405 @@
+{
+ "generated": "2026-07-22 06:42",
+ "n_mutations": 26,
+ "method": "donor-grouped CV-OOF on the single-cell atlas; 95% CI = donor bootstrap; perm_p = 1000-shuffle label-permutation null; nested_* = held-out-fold threshold",
+ "modality_ladder": {
+  "bulkrna": {
+   "mean_auroc": 0.724,
+   "mean_nested_f1": 0.1955,
+   "mean_nested_sensitivity": 0.3518,
+   "mean_nested_specificity": 0.8666,
+   "n_significant_perm_p<0.05": 16,
+   "n_mutations": 26
+  },
+  "rna_comp": {
+   "mean_auroc": 0.816,
+   "mean_nested_f1": 0.2643,
+   "mean_nested_sensitivity": 0.3782,
+   "mean_nested_specificity": 0.9111,
+   "n_significant_perm_p<0.05": 25,
+   "n_mutations": 26
+  },
+  "measured": {
+   "mean_auroc": 0.8344,
+   "mean_nested_f1": 0.3137,
+   "mean_nested_sensitivity": 0.4128,
+   "mean_nested_specificity": 0.9235,
+   "n_significant_perm_p<0.05": 26,
+   "n_mutations": 26
+  },
+  "multimodal": {
+   "mean_auroc": 0.8851,
+   "mean_nested_f1": 0.3563,
+   "mean_nested_sensitivity": 0.4558,
+   "mean_nested_specificity": 0.9435,
+   "n_significant_perm_p<0.05": 26,
+   "n_mutations": 26
+  }
+ },
+ "mutations": {
+  "complex": {
+   "auroc": 0.866,
+   "auroc_ci": [
+    0.7672,
+    0.9296
+   ],
+   "perm_p": 0.001,
+   "n_pos": 24,
+   "nested_f1": 0.2941,
+   "nested_sensitivity": 0.4167,
+   "nested_specificity": 0.8979,
+   "auprc": 0.3783,
+   "auprc_baseline": 0.0672
+  },
+  "del5": {
+   "auroc": 0.922,
+   "auroc_ci": [
+    0.8524,
+    0.9674
+   ],
+   "perm_p": 0.001,
+   "n_pos": 15,
+   "nested_f1": 0.4706,
+   "nested_sensitivity": 0.5333,
+   "nested_specificity": 0.9678,
+   "auprc": 0.3342,
+   "auprc_baseline": 0.042
+  },
+  "del7": {
+   "auroc": 0.9698,
+   "auroc_ci": [
+    0.9326,
+    0.9947
+   ],
+   "perm_p": 0.001,
+   "n_pos": 18,
+   "nested_f1": 0.625,
+   "nested_sensitivity": 0.5556,
+   "nested_specificity": 0.9882,
+   "auprc": 0.6917,
+   "auprc_baseline": 0.0504
+  },
+  "inv16": {
+   "auroc": 0.9971,
+   "auroc_ci": [
+    0.9914,
+    1.0
+   ],
+   "perm_p": 0.001,
+   "n_pos": 11,
+   "nested_f1": 0.6316,
+   "nested_sensitivity": 0.5455,
+   "nested_specificity": 0.9942,
+   "auprc": 0.9271,
+   "auprc_baseline": 0.0308
+  },
+  "kmt2a": {
+   "auroc": 0.9539,
+   "auroc_ci": [
+    0.9126,
+    0.9848
+   ],
+   "perm_p": 0.001,
+   "n_pos": 12,
+   "nested_f1": 0.4138,
+   "nested_sensitivity": 0.5,
+   "nested_specificity": 0.9681,
+   "auprc": 0.4806,
+   "auprc_baseline": 0.0336
+  },
+  "trisomy8": {
+   "auroc": 0.7688,
+   "auroc_ci": [
+    0.6347,
+    0.88
+   ],
+   "perm_p": 0.001,
+   "n_pos": 18,
+   "nested_f1": 0.25,
+   "nested_sensitivity": 0.3333,
+   "nested_specificity": 0.9292,
+   "auprc": 0.1774,
+   "auprc_baseline": 0.0504
+  },
+  "ASXL1": {
+   "auroc": 0.8589,
+   "auroc_ci": [
+    0.7736,
+    0.9429
+   ],
+   "perm_p": 0.001,
+   "n_pos": 12,
+   "nested_f1": 0.2222,
+   "nested_sensitivity": 0.4167,
+   "nested_specificity": 0.9188,
+   "auprc": 0.1664,
+   "auprc_baseline": 0.0336
+  },
+  "CEBPA": {
+   "auroc": 0.9017,
+   "auroc_ci": [
+    0.806,
+    0.9759
+   ],
+   "perm_p": 0.001,
+   "n_pos": 9,
+   "nested_f1": 0.1667,
+   "nested_sensitivity": 0.2222,
+   "nested_specificity": 0.9626,
+   "auprc": 0.2987,
+   "auprc_baseline": 0.0252
+  },
+  "DNMT3A": {
+   "auroc": 0.8317,
+   "auroc_ci": [
+    0.7438,
+    0.9221
+   ],
+   "perm_p": 0.001,
+   "n_pos": 23,
+   "nested_f1": 0.2963,
+   "nested_sensitivity": 0.3478,
+   "nested_specificity": 0.9311,
+   "auprc": 0.2592,
+   "auprc_baseline": 0.0644
+  },
+  "FLT3": {
+   "auroc": 0.836,
+   "auroc_ci": [
+    0.7518,
+    0.9043
+   ],
+   "perm_p": 0.001,
+   "n_pos": 32,
+   "nested_f1": 0.4222,
+   "nested_sensitivity": 0.5938,
+   "nested_specificity": 0.88,
+   "auprc": 0.3348,
+   "auprc_baseline": 0.0896
+  },
+  "FLT3-ITD": {
+   "auroc": 0.8702,
+   "auroc_ci": [
+    0.7492,
+    0.9525
+   ],
+   "perm_p": 0.001,
+   "n_pos": 21,
+   "nested_f1": 0.5,
+   "nested_sensitivity": 0.619,
+   "nested_specificity": 0.9464,
+   "auprc": 0.319,
+   "auprc_baseline": 0.0588
+  },
+  "FLT3-TKD": {
+   "auroc": 0.9139,
+   "auroc_ci": [
+    0.864,
+    0.9585
+   ],
+   "perm_p": 0.001,
+   "n_pos": 7,
+   "nested_f1": 0.2105,
+   "nested_sensitivity": 0.5714,
+   "nested_specificity": 0.9229,
+   "auprc": 0.242,
+   "auprc_baseline": 0.0196
+  },
+  "GATA2": {
+   "auroc": 0.918,
+   "auroc_ci": [
+    0.8117,
+    0.978
+   ],
+   "perm_p": 0.001,
+   "n_pos": 8,
+   "nested_f1": 0.2143,
+   "nested_sensitivity": 0.375,
+   "nested_specificity": 0.9513,
+   "auprc": 0.3074,
+   "auprc_baseline": 0.0224
+  },
+  "IDH1": {
+   "auroc": 0.8877,
+   "auroc_ci": [
+    0.8109,
+    0.9551
+   ],
+   "perm_p": 0.001,
+   "n_pos": 12,
+   "nested_f1": 0.25,
+   "nested_sensitivity": 0.4167,
+   "nested_specificity": 0.9333,
+   "auprc": 0.3056,
+   "auprc_baseline": 0.0336
+  },
+  "IDH2": {
+   "auroc": 0.7299,
+   "auroc_ci": [
+    0.5316,
+    0.8656
+   ],
+   "perm_p": 0.003,
+   "n_pos": 14,
+   "nested_f1": 0.1481,
+   "nested_sensitivity": 0.1429,
+   "nested_specificity": 0.9679,
+   "auprc": 0.2108,
+   "auprc_baseline": 0.0392
+  },
+  "KIT": {
+   "auroc": 0.9191,
+   "auroc_ci": [
+    0.849,
+    0.9755
+   ],
+   "perm_p": 0.001,
+   "n_pos": 12,
+   "nested_f1": 0.35,
+   "nested_sensitivity": 0.5833,
+   "nested_specificity": 0.9391,
+   "auprc": 0.3464,
+   "auprc_baseline": 0.0336
+  },
+  "KMT2A-rearrangement": {
+   "auroc": 0.9539,
+   "auroc_ci": [
+    0.9126,
+    0.9848
+   ],
+   "perm_p": 0.001,
+   "n_pos": 12,
+   "nested_f1": 0.4138,
+   "nested_sensitivity": 0.5,
+   "nested_specificity": 0.9681,
+   "auprc": 0.4806,
+   "auprc_baseline": 0.0336
+  },
+  "KRAS": {
+   "auroc": 0.7925,
+   "auroc_ci": [
+    0.6946,
+    0.8895
+   ],
+   "perm_p": 0.001,
+   "n_pos": 13,
+   "nested_f1": 0.1356,
+   "nested_sensitivity": 0.3077,
+   "nested_specificity": 0.8779,
+   "auprc": 0.1073,
+   "auprc_baseline": 0.0364
+  },
+  "NPM1": {
+   "auroc": 0.8941,
+   "auroc_ci": [
+    0.8209,
+    0.9524
+   ],
+   "perm_p": 0.001,
+   "n_pos": 54,
+   "nested_f1": 0.6813,
+   "nested_sensitivity": 0.5741,
+   "nested_specificity": 0.9802,
+   "auprc": 0.707,
+   "auprc_baseline": 0.1513
+  },
+  "NRAS": {
+   "auroc": 0.8478,
+   "auroc_ci": [
+    0.7288,
+    0.939
+   ],
+   "perm_p": 0.001,
+   "n_pos": 28,
+   "nested_f1": 0.4507,
+   "nested_sensitivity": 0.5714,
+   "nested_specificity": 0.9179,
+   "auprc": 0.4389,
+   "auprc_baseline": 0.0784
+  },
+  "PTPN11": {
+   "auroc": 0.8349,
+   "auroc_ci": [
+    0.7266,
+    0.9288
+   ],
+   "perm_p": 0.001,
+   "n_pos": 9,
+   "nested_f1": 0.1714,
+   "nested_sensitivity": 0.3333,
+   "nested_specificity": 0.9339,
+   "auprc": 0.1763,
+   "auprc_baseline": 0.0252
+  },
+  "RUNX1": {
+   "auroc": 0.8334,
+   "auroc_ci": [
+    0.7367,
+    0.9271
+   ],
+   "perm_p": 0.001,
+   "n_pos": 13,
+   "nested_f1": 0.1724,
+   "nested_sensitivity": 0.3846,
+   "nested_specificity": 0.8837,
+   "auprc": 0.2113,
+   "auprc_baseline": 0.0364
+  },
+  "TET2": {
+   "auroc": 0.9473,
+   "auroc_ci": [
+    0.912,
+    0.979
+   ],
+   "perm_p": 0.001,
+   "n_pos": 20,
+   "nested_f1": 0.5714,
+   "nested_sensitivity": 0.6,
+   "nested_specificity": 0.9703,
+   "auprc": 0.5791,
+   "auprc_baseline": 0.056
+  },
+  "TP53": {
+   "auroc": 0.958,
+   "auroc_ci": [
+    0.915,
+    0.9891
+   ],
+   "perm_p": 0.001,
+   "n_pos": 12,
+   "nested_f1": 0.3125,
+   "nested_sensitivity": 0.4167,
+   "nested_specificity": 0.9565,
+   "auprc": 0.5457,
+   "auprc_baseline": 0.0336
+  },
+  "WT1": {
+   "auroc": 0.8091,
+   "auroc_ci": [
+    0.6739,
+    0.9489
+   ],
+   "perm_p": 0.001,
+   "n_pos": 9,
+   "nested_f1": 0.2581,
+   "nested_sensitivity": 0.4444,
+   "nested_specificity": 0.9483,
+   "auprc": 0.2209,
+   "auprc_baseline": 0.0252
+  },
+  "inv(16)_CBFB-MYH11": {
+   "auroc": 0.9971,
+   "auroc_ci": [
+    0.9914,
+    1.0
+   ],
+   "perm_p": 0.001,
+   "n_pos": 11,
+   "nested_f1": 0.6316,
+   "nested_sensitivity": 0.5455,
+   "nested_specificity": 0.9942,
+   "auprc": 0.9271,
+   "auprc_baseline": 0.0308
+  }
+ }
+}

@@ -108,6 +108,7 @@ def _report_file(run: str) -> "Path | None":
 # override (show every dir with a report).
 BOARD_GROUPS = [("predict_", "Held-out validation (sealed test)"),
                 ("trumpp_", "Trumpp/Waclawiczek cohort"),
+                ("leucegene_", "Leucegene (bulk external · n=367)"),
                 ("ingest_", "Uploaded patients")]
 SHOW_ALL = os.environ.get("AMLMM_SHOW_ALL") == "1"
 
@@ -132,13 +133,26 @@ def scan_runs() -> "list[dict]":
         if not hits:
             continue
         rep = _load_json(hits[0])
+        # Hide reports still carrying pre-bulk-caller calls. A few samples (Colorado::AML-05/-06,
+        # Milan::PT01__D14) are no longer in the atlas, so rescore_all_bulk could not recompute their
+        # bulk-equivalent and they kept the old 26-mutation sc predictions — showing them next to
+        # 58-category reports is misleading. Set AMLMM_SHOW_ALL=1 to see them anyway.
+        if not SHOW_ALL and isinstance(rep, dict) and rep.get("mutation_predictions") \
+                and not rep.get("mutation_caller"):
+            continue
         con = rep.get("consensus", {}) if isinstance(rep, dict) else {}
         preds = rep.get("mutation_predictions") if isinstance(rep, dict) else None
+        # GENE-LEVEL validation (gene_validation.py): a gene's variant categories are aggregated to one
+        # gene-level call (present iff any variant is called present) vs the gene's known status. This
+        # scores ~40 genes+cyto units, not just the ~17 categories whose exact variant is known.
         n_correct = n_labeled = None
-        if isinstance(preds, list):             # validation accuracy at a glance (predicted call vs known)
+        vg = rep.get("validation_gene") if isinstance(rep, dict) else None
+        if isinstance(vg, dict) and vg.get("n_labeled"):
+            n_labeled = vg["n_labeled"]; n_correct = vg["n_correct"]
+        elif isinstance(preds, list):           # fallback: variant-level, for reports without a gene pass
             labeled = [p for p in preds if p.get("true_label")]
-            n_labeled = len(labeled)
-            n_correct = sum(1 for p in labeled if p.get("true_label") == p.get("call"))
+            n_labeled = len(labeled) or None
+            n_correct = sum(1 for p in labeled if p.get("true_label") == p.get("call")) if labeled else None
         out.append({
             "run": d.name,
             "group": group,
@@ -193,29 +207,57 @@ def _set_status(run_dir: Path, state, step, message=""):
         pass
 
 
-def dispatch_ingest(name, sample, mutations="", dataset="uploaded"):
-    """Kick off ingest_patient.py for a new sample. Returns {run_id, job_id, mode} or {error}.
-    argv is a list (no shell) so the user-supplied name/sample/mutations cannot inject commands."""
+def _spawn_explainer(run_id, run_dir):
+    """After a dispatched ingest lands, add the AGENT's therapy explanations.
+
+    The pipeline runs via bsub on a COMPUTE node, and compute nodes are firewalled from the LLM gateway
+    (port 4000 answers only on the login node) — so the report would otherwise show deterministic [RULES]
+    text. THIS server runs on the login node, so a watcher spawned from here can reach the gateway.
+    Best-effort: if it fails, the report still has its deterministic explanation."""
+    w = PIPELINE_DIR / "await_and_explain.py"
+    if not w.is_file():
+        return
+    try:
+        subprocess.Popen([PYTHON, str(w), str(run_dir), run_id],
+                         stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT,
+                         cwd=str(PIPELINE_DIR), start_new_session=True)
+    except Exception:  # noqa: BLE001
+        pass
+
+
+def dispatch_ingest(name, sample, mutations="", dataset="uploaded", kind="scrna",
+                    bulk_ref="beataml", bulk_scale="auto"):
+    """Kick off ingest_patient.py for a new sample (single-cell or bulk RNA). Returns {run_id, job_id, mode}
+    or {error}. argv is a list (no shell) so user-supplied fields cannot inject commands."""
     if not INGEST_SCRIPT.is_file():
         return {"error": f"ingest script not found: {INGEST_SCRIPT}"}
     run_id = _slug(name)
     run_dir = RUNS_DIR / run_id
     _set_status(run_dir, "queued", "submitting", name)
-    cmd = [PYTHON, str(INGEST_SCRIPT), "--sample", sample, "--name", name,
-           "--dataset", dataset, "--run-id", run_id, "--out-root", str(RUNS_DIR)]
+    if kind == "bulk":                                    # bulk RNA -> variant-level mutation panel (no atlas load)
+        _br = bulk_ref if bulk_ref in ("beataml", "leucegene", "sc") else "beataml"
+        _bs = bulk_scale if bulk_scale in ("auto", "linear", "log2", "log1p") else "auto"
+        cmd = [PYTHON, str(INGEST_SCRIPT), "--bulk", sample, "--name", name,
+               "--bulk-ref", _br, "--bulk-scale", _bs,
+               "--dataset", dataset, "--run-id", run_id, "--out-root", str(RUNS_DIR)]
+    else:
+        cmd = [PYTHON, str(INGEST_SCRIPT), "--sample", sample, "--name", name,
+               "--dataset", dataset, "--run-id", run_id, "--out-root", str(RUNS_DIR)]
     if mutations.strip():
         cmd += ["--mutations", mutations.strip()]
     log = str(run_dir / "_job.log")
     try:
         if USE_LSF:
-            bsub = ["bsub", "-q", "normal", "-J", f"aml_{run_id}", "-M", LSF_MEM,
-                    "-R", f"rusage[mem={LSF_MEM}]", "-o", log, "-e", log] + cmd
+            mem = "4000" if kind == "bulk" else LSF_MEM      # bulk skips the atlas load -> lighter job
+            bsub = ["bsub", "-q", "normal", "-J", f"aml_{run_id}", "-M", mem,
+                    "-R", f"rusage[mem={mem}]", "-o", log, "-e", log] + cmd
             p = subprocess.run(bsub, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                universal_newlines=True, timeout=90)
             if p.returncode != 0:
                 _set_status(run_dir, "error", "submit", (p.stderr or p.stdout or "bsub failed")[:300])
                 return {"error": (p.stderr or p.stdout or "bsub failed")[:300], "run_id": run_id}
             m = re.search(r"Job <(\d+)>", p.stdout or "")
+            _spawn_explainer(run_id, run_dir)
             return {"run_id": run_id, "job_id": (m.group(1) if m else None), "mode": "lsf"}
         # local fallback: detached background process
         fh = open(log, "w", encoding="utf-8")
@@ -243,14 +285,17 @@ def list_jobs() -> "list[dict]":
 
 
 def list_samples() -> "list[dict]":
-    """Candidate inputs dropped into the inbox dir (10x dirs / .h5ad / 10x .h5)."""
+    """Candidate inputs dropped into the inbox dir: single-cell (10x dirs / .h5ad / 10x .h5) and
+    bulk RNA expression tables (.tsv / .csv / .txt)."""
     out = []
     if INBOX_DIR.is_dir():
         for p in sorted(INBOX_DIR.iterdir()):
             if p.is_dir() and (p / "filtered_feature_bc_matrix.h5").is_file():
-                out.append({"path": str(p), "label": p.name, "kind": "10x dir"})
+                out.append({"path": str(p), "label": p.name, "kind": "10x dir", "input": "scrna"})
             elif p.suffix.lower() in (".h5ad", ".h5"):
-                out.append({"path": str(p), "label": p.name, "kind": p.suffix.lower().lstrip(".")})
+                out.append({"path": str(p), "label": p.name, "kind": p.suffix.lower().lstrip("."), "input": "scrna"})
+            elif p.suffix.lower() in (".tsv", ".csv", ".txt"):
+                out.append({"path": str(p), "label": p.name, "kind": "bulk " + p.suffix.lower().lstrip("."), "input": "bulk"})
     return out
 
 
@@ -278,6 +323,23 @@ class Handler(BaseHTTPRequestHandler):
                 return self._send(500, b"matrix_board.html not found next to gui_server.py",
                                   "text/plain; charset=utf-8")
             return self._send(200, HTML_PATH.read_bytes(), "text/html; charset=utf-8")
+        if path in ("/evidence.html", "/evidence.json", "/evidence_samples.json",
+                    "/mutation_frequency.json", "/reliability.json", "/validation.html", "/validation_stats.json",
+                    "/calibration.html", "/cellstate_localization.json", "/vaf_by_mutation.json"):
+            fp = HERE / path.lstrip("/")
+            if not fp.is_file():
+                return self._send(404, path.encode() + b" not found", "text/plain; charset=utf-8")
+            ctype = "text/html; charset=utf-8" if path.endswith(".html") else "application/json; charset=utf-8"
+            return self._send(200, fp.read_bytes(), ctype)
+        if path.startswith("/val/"):                    # validation assets from ../deliverables (figures, tables)
+            name = os.path.basename(path[len("/val/"):])
+            ext = os.path.splitext(name)[1].lower()
+            ctype = {".png": "image/png", ".pdf": "application/pdf", ".tsv": "text/tab-separated-values; charset=utf-8",
+                     ".md": "text/markdown; charset=utf-8", ".json": "application/json; charset=utf-8"}.get(ext)
+            fp = (HERE.parent / "deliverables" / name)
+            if ctype is None or not fp.is_file():
+                return self._send(404, path.encode() + b" not found", "text/plain; charset=utf-8")
+            return self._send(200, fp.read_bytes(), ctype)
         if path == "/api/runs":
             return self._json({"runs_dir": str(RUNS_DIR), "runs": scan_runs()})
         if path == "/api/report":
@@ -309,8 +371,11 @@ class Handler(BaseHTTPRequestHandler):
         sample = str(body.get("sample") or "").strip()
         if not name or not sample:
             return self._json({"error": "name and sample are required"}, code=400)
+        kind = "bulk" if str(body.get("kind") or "").lower() in ("bulk", "bulk_rna", "bulkrna") else "scrna"
         res = dispatch_ingest(name, sample, str(body.get("mutations") or ""),
-                              str(body.get("dataset") or "uploaded"))
+                              str(body.get("dataset") or "uploaded"), kind=kind,
+                              bulk_ref=str(body.get("bulk_ref") or "beataml"),
+                              bulk_scale=str(body.get("bulk_scale") or "auto"))
         return self._json(res, code=200 if res.get("run_id") and not res.get("error") else 400)
 
     do_HEAD = do_GET

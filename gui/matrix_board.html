@@ -9,12 +9,15 @@
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Exo+2:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg:#0b0c0e; --panel:#131519; --panel2:#181b21; --raise:#1d2128;
-    --line:#23262e; --line2:#1a1d23;
-    --ink:#e7e9ed; --muted:#8b9099; --faint:#585d66;
-    --accent:#caa84a; --accent-dim:#8c7531; --accent-bg:#1c1a12;
-    --present:#cc6058; --present-bg:#1d1311; --absent:#5fa07f; --absent-bg:#10180f;
-    --control:#6f93bd; --control-bg:#0f1620;
+    /* light clinical theme — white paper, one muted gold accent */
+    --bg:#ffffff; --panel:#ffffff; --panel2:#f5f6f8; --raise:#eceef1;
+    --line:#e2e5ea; --line2:#eef0f3; --line3:#cfd4db; --track:#e9ecf0;
+    --ink:#15181c; --muted:#5b6470; --faint:#8b939d;
+    --accent:#8a6a18; --accent-dim:#d9c07a; --accent-bg:#fdf8ea; --accent-hi:#6f5512;
+    --present:#b3382c; --present-bg:#fdeeec; --present-line:#f0c4bd;
+    --absent:#2e7d55; --absent-bg:#edf7f1; --absent-line:#bfe0cd;
+    --control:#3a6ea5; --control-bg:#eff5fc; --control-line:#c4d8ee;
+    --shadow:0 10px 34px rgba(20,28,45,.13);
     --display:'Orbitron',ui-sans-serif,sans-serif;
     --sans:'Exo 2',ui-sans-serif,system-ui,sans-serif;
     --mono:'Share Tech Mono',ui-monospace,monospace;
@@ -24,9 +27,9 @@
   html,body{margin:0;height:100%}
   body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:14px;line-height:1.5;font-weight:300;-webkit-font-smoothing:antialiased}
   a{color:var(--accent);text-decoration:none}
-  ::selection{background:var(--accent-dim);color:#0b0c0e}
+  ::selection{background:var(--accent-dim);color:var(--ink)}
   /* scrollbars */
-  ::-webkit-scrollbar{width:10px;height:10px} ::-webkit-scrollbar-thumb{background:#262a32;border-radius:6px} ::-webkit-scrollbar-track{background:transparent}
+  ::-webkit-scrollbar{width:10px;height:10px} ::-webkit-scrollbar-thumb{background:var(--line3);border-radius:6px} ::-webkit-scrollbar-track{background:transparent}
 
   .topbar{display:flex;align-items:center;gap:16px;padding:11px 20px;background:var(--panel);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10}
   .brand{display:flex;align-items:baseline;gap:11px}
@@ -36,9 +39,9 @@
   .grow{flex:1}
   .btn{font:inherit;font-size:12px;font-weight:500;color:var(--muted);background:transparent;border:1px solid var(--line);
        border-radius:7px;padding:7px 13px;cursor:pointer;transition:.13s;letter-spacing:.02em}
-  .btn:hover{border-color:#33373f;color:var(--ink);background:var(--panel2)}
-  .btn.primary{color:#0b0c0e;background:var(--accent);border-color:var(--accent);font-weight:600}
-  .btn.primary:hover{background:#d8b659;border-color:#d8b659}
+  .btn:hover{border-color:var(--line3);color:var(--ink);background:var(--panel2)}
+  .btn.primary{color:#fff;background:var(--accent);border-color:var(--accent);font-weight:600}
+  .btn.primary:hover{background:var(--accent-hi);border-color:var(--accent-hi)}
   .layout{display:flex;height:calc(100vh - 55px)}
   #sidebar{width:296px;flex:none;border-right:1px solid var(--line);background:var(--panel);overflow-y:auto}
   #board{flex:1;overflow-y:auto;padding:24px 30px 70px}
@@ -48,18 +51,18 @@
   .ritem{display:block;width:100%;text-align:left;border:1px solid transparent;background:transparent;border-radius:9px;
          padding:11px 12px;cursor:pointer;margin-bottom:3px;font:inherit;color:inherit}
   .ritem:hover{background:var(--panel2)}
-  .ritem.active{background:var(--raise);border-color:#2c313a}
+  .ritem.active{background:var(--raise);border-color:var(--line3)}
   .ritem .rk{font-family:var(--mono);font-size:12.5px;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
   .ritem .rmeta{display:flex;align-items:center;gap:7px;margin-top:6px;flex-wrap:wrap}
   .dot{width:7px;height:7px;border-radius:50%;flex:none;display:inline-block}
   .dot.high,.dot.diseased{background:var(--present)} .dot.medium{background:var(--accent)} .dot.low{background:var(--faint)} .dot.control{background:var(--control)}
   .pill{display:inline-flex;align-items:center;gap:5px;font-size:10.5px;border:1px solid var(--line);border-radius:5px;padding:2px 8px;color:var(--muted);background:var(--panel2);white-space:nowrap;font-family:var(--mono);letter-spacing:.03em}
-  .pill.lead{color:var(--ink);border-color:#2e333c}
-  .pill.control{color:var(--control);border-color:#2a3a4d;background:var(--control-bg)}
-  .pill.diseased{color:var(--present);border-color:#3a2420;background:var(--present-bg)}
+  .pill.lead{color:var(--ink);border-color:var(--line3)}
+  .pill.control{color:var(--control);border-color:var(--control-line);background:var(--control-bg)}
+  .pill.diseased{color:var(--present);border-color:var(--present-line);background:var(--present-bg)}
   .pill.accent{color:var(--accent);border-color:var(--accent-dim);background:var(--accent-bg)}
 
-  .dropzone{margin:9px 13px;border:1.5px dashed #2b2f38;border-radius:11px;padding:20px;text-align:center;color:var(--faint);font-size:12px}
+  .dropzone{margin:9px 13px;border:1.5px dashed var(--line3);border-radius:11px;padding:20px;text-align:center;color:var(--faint);font-size:12px}
   .dropzone.hot{border-color:var(--accent);background:var(--accent-bg);color:var(--accent)}
 
   .empty{max-width:580px;margin:11vh auto;text-align:center;color:var(--muted)}
@@ -80,43 +83,58 @@
   .specimen .verdict{font-family:var(--display);font-weight:700;font-size:30px;letter-spacing:.04em;line-height:1.12;margin:7px 0 11px}
   .verdict.control{color:var(--control)} .verdict.diseased{color:var(--ink)}
   .gateline{display:inline-flex;align-items:center;gap:9px;font-size:12.5px;font-weight:500;padding:6px 13px;border-radius:7px;font-family:var(--mono)}
-  .gateline.control{color:var(--control);background:var(--control-bg);border:1px solid #243140}
-  .gateline.diseased{color:var(--present);background:var(--present-bg);border:1px solid #33211e}
+  .gateline.control{color:var(--control);background:var(--control-bg);border:1px solid var(--control-line)}
+  .gateline.diseased{color:var(--present);background:var(--present-bg);border:1px solid var(--present-line)}
   .specimen .gauge-wrap{flex:none;width:230px;border-left:1px solid var(--line);padding-left:22px;display:flex;flex-direction:column;justify-content:center;gap:9px}
   .kv{font-size:11px;color:var(--muted);display:flex;justify-content:space-between;font-family:var(--mono)}
   .kv b{color:var(--ink);font-weight:400}
-  .bar{height:7px;border-radius:5px;background:#1c2027;overflow:hidden}
+  .bar{height:7px;border-radius:5px;background:var(--track);overflow:hidden}
   .bar>span{display:block;height:100%;border-radius:5px;background:var(--accent)}
   .bar>span.present{background:var(--present)} .bar>span.absent{background:var(--absent)} .bar>span.control{background:var(--control)}
 
   /* mutation prediction panel */
   .mlist{display:flex;flex-direction:column;gap:1px}
-  .mrow{display:grid;grid-template-columns:140px 1fr 56px 92px 60px 26px;gap:13px;align-items:center;padding:9px 8px;border-radius:7px;border:1px solid transparent}
+  .mrow{display:grid;grid-template-columns:120px 1fr 46px 78px 40px 48px 22px 20px;gap:11px;align-items:center;padding:9px 8px;border-radius:7px;border:1px solid transparent}
   .mrow:hover{background:var(--panel2);border-color:var(--line)}
   .mrow.open{background:var(--panel2);border-color:var(--line)}
   .mname{font-family:var(--mono);font-size:13.5px;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
   .mprob{font-family:var(--mono);font-size:13px;text-align:right;color:var(--muted)}
   .mcall{font-size:10px;text-transform:uppercase;letter-spacing:.08em;font-weight:600;font-family:var(--mono);text-align:center;border-radius:5px;padding:3px 0}
   .mcall.present{color:var(--present);background:var(--present-bg)} .mcall.absent{color:var(--absent);background:var(--absent-bg)}
+  .mcall.abstain{color:var(--faint);background:transparent;border:1px dashed var(--line);opacity:.9}
+  .imp{color:var(--accent-dim);font-size:8.5px;font-weight:700;margin-left:2px;cursor:help;vertical-align:super;font-family:var(--mono)}
+  .impnote{font-size:10px;color:var(--faint);font-family:var(--mono);margin:7px 0 0;letter-spacing:.03em}
+  .vafrow{margin-top:9px;font-size:11.5px;color:var(--muted);display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+  .vaflbl{font-family:var(--mono);font-size:9.5px;letter-spacing:.12em;color:var(--faint);text-transform:uppercase}
+  .vafnum{font-family:var(--mono);color:var(--ink)}
+  .vstrip{position:relative;height:13px;width:200px;background:var(--track);border-radius:7px;border:1px solid var(--line)}
+  .vdot{position:absolute;top:3.5px;width:5px;height:5px;border-radius:50%;background:var(--control);transform:translateX(-50%);opacity:.75}
+  .vmed{position:absolute;top:-1px;height:15px;width:2px;background:var(--accent);transform:translateX(-50%)}
+  .vscale{font-family:var(--mono);font-size:9px;color:var(--faint)}
+  .vafrow.wait,.vafrow.na{color:var(--faint)}
+  .evlink{display:inline-block;margin-top:8px;font-family:var(--mono);font-size:11px;color:var(--accent);text-decoration:none;border:1px solid var(--accent);border-radius:6px;padding:3px 9px;opacity:.85}
+  .evlink:hover{opacity:1;background:color-mix(in srgb,var(--accent) 14%,transparent)}
   .auc{font-family:var(--mono);font-size:11px;color:var(--faint);text-align:right}
+  .vac{font-family:var(--mono);font-size:11px;color:var(--muted);text-align:right;font-weight:600}
+  .vac.ok{color:var(--absent)} .vac.mid{color:var(--accent)} .vac.bad{color:var(--present)}
   .vchk{text-align:center;font-size:13px;font-family:var(--mono)} .vchk.ok{color:var(--absent)} .vchk.no{color:var(--present)}
   .caret{color:var(--faint);text-align:center;cursor:pointer;font-size:11px;user-select:none}
   .mdetail{grid-column:1/-1;padding:6px 6px 10px;display:none}
   .mrow.open .mdetail{display:block}
   .contrib{display:flex;align-items:center;gap:10px;padding:3px 0;font-size:11.5px}
   .contrib .cn{font-family:var(--mono);min-width:96px;color:var(--muted);white-space:nowrap}
-  .contrib .ct{flex:1;height:5px;background:#1c2027;border-radius:4px;overflow:hidden}
+  .contrib .ct{flex:1;height:5px;background:var(--track);border-radius:4px;overflow:hidden}
   .contrib .ct>span{display:block;height:100%;background:var(--accent-dim)}
   .contrib .cw{font-family:var(--mono);min-width:42px;text-align:right;color:var(--faint)}
   .contrib .cs{font-family:var(--mono);min-width:38px;text-align:right;color:var(--muted)}
-  .legrow{display:grid;grid-template-columns:140px 1fr 56px 92px 60px 26px;gap:13px;padding:0 8px 7px;font-size:9.5px;text-transform:uppercase;letter-spacing:.12em;color:var(--faint);font-family:var(--mono)}
-  .legrow span:nth-child(2),.legrow span:nth-child(3),.legrow span:nth-child(5){text-align:right}
-  .legrow span:nth-child(4){text-align:center}
+  .legrow{display:grid;grid-template-columns:120px 1fr 46px 78px 40px 48px 22px 20px;gap:11px;padding:0 8px 7px;font-size:9.5px;text-transform:uppercase;letter-spacing:.12em;color:var(--faint);font-family:var(--mono)}
+  .legrow span:nth-child(3),.legrow span:nth-child(5),.legrow span:nth-child(6){text-align:right}
+  .legrow span:nth-child(4),.legrow span:nth-child(7){text-align:center}
 
   .banner{display:flex;gap:11px;align-items:flex-start;border-radius:8px;padding:12px 15px;font-size:12.5px;margin-bottom:16px;border:1px solid}
-  .banner.ok{background:var(--absent-bg);border-color:#1d3026;color:#8fc3a8}
-  .banner.warn{background:var(--accent-bg);border-color:#2e2814;color:#d8bd6e}
-  .banner.info{background:var(--control-bg);border-color:#243140;color:#9bb6d4}
+  .banner.ok{background:var(--absent-bg);border-color:var(--absent-line);color:var(--absent)}
+  .banner.warn{background:var(--accent-bg);border-color:var(--accent-dim);color:var(--accent)}
+  .banner.info{background:var(--control-bg);border-color:var(--control-line);color:var(--control)}
   .banner .ic{font-size:14px}
 
   /* witness panel (old patient_panel reports) */
@@ -129,30 +147,47 @@
   .cons{margin-left:auto;font-size:10.5px;font-family:var(--mono)} .cons.agree{color:var(--absent)} .cons.conflict{color:var(--accent)}
   .wbar{display:flex;align-items:center;gap:9px}
   .wbar .wl{font-size:9.5px;color:var(--faint);font-family:var(--mono);text-transform:uppercase;letter-spacing:.08em}
-  .wbar .track{flex:1;height:6px;background:#1c2027;border-radius:4px;overflow:hidden}
+  .wbar .track{flex:1;height:6px;background:var(--track);border-radius:4px;overflow:hidden}
   .wbar .track>span{display:block;height:100%;background:var(--accent-dim)}
   .wbar .wv{font-family:var(--mono);font-size:11.5px;min-width:34px;text-align:right;color:var(--muted)}
-  .wsum{font-size:12px;color:#b7bcc4}
+  .wsum{font-size:12px;color:var(--muted)}
   details.ev{border-top:1px solid var(--line);padding-top:7px}
   details.ev>summary{cursor:pointer;font-size:11px;color:var(--faint);font-family:var(--mono);list-style:none}
   details.ev>summary::-webkit-details-marker{display:none}
   details.ev>summary::before{content:"+ "}  details.ev[open]>summary::before{content:"– "}
-  pre.json{background:#0d0f13;color:#aab3c4;border:1px solid var(--line);border-radius:7px;padding:11px;overflow:auto;font-size:11px;max-height:260px;margin:6px 0 0;font-family:var(--mono)}
+  pre.json{background:var(--panel2);color:var(--muted);border:1px solid var(--line);border-radius:7px;padding:11px;overflow:auto;font-size:11px;max-height:260px;margin:6px 0 0;font-family:var(--mono)}
   .evrow{display:flex;justify-content:space-between;gap:10px;padding:2px 0;border-bottom:1px solid var(--line2);font-size:12px}
   .evrow .k{color:var(--faint)} .evrow .v{font-family:var(--mono);text-align:right;color:var(--muted)}
 
   .foot{color:var(--faint);font-size:11px;margin-top:14px;line-height:1.6;font-family:var(--mono);letter-spacing:.01em}
   .predmeta{display:flex;gap:18px;flex-wrap:wrap;font-family:var(--mono);font-size:11px;color:var(--muted)}
+  /* --- therapy hypotheses + tests-to-run (closes the loop: call -> action) --- */
+  .trow{display:grid;grid-template-columns:190px 1fr;gap:14px;padding:11px 8px;border-top:1px solid var(--line2);align-items:start}
+  .trow:first-of-type,.xrow:first-of-type{border-top:none}
+  .tdrv{font-family:var(--mono);font-size:12px;color:var(--ink);word-break:break-word}
+  .tdrv .sub{display:block;font-size:9.5px;color:var(--faint);margin-top:4px;letter-spacing:.06em}
+  .drug{display:inline-flex;flex-direction:column;gap:2px;border:1px solid var(--line);background:var(--panel2);
+        border-radius:5px;padding:5px 9px;margin:0 6px 6px 0;vertical-align:top}
+  .drug b{font-size:12px;color:var(--ink);font-weight:600}
+  .drug span{font-family:var(--mono);font-size:9.5px;color:var(--faint);letter-spacing:.04em}
+  .why{font-size:11px;color:var(--muted);margin-top:5px;line-height:1.55}
+  .expl{font-size:11.5px;color:var(--ink);margin-top:7px;line-height:1.6;background:var(--panel2);
+        border:1px solid var(--line);border-left:2px solid var(--accent-dim);border-radius:6px;padding:8px 10px}
+  .expl .who{display:inline-block;font-family:var(--mono);font-size:8.5px;letter-spacing:.14em;text-transform:uppercase;
+        color:var(--faint);border:1px solid var(--line);border-radius:4px;padding:1px 5px;margin-right:7px;vertical-align:1px}
+  .expl .who.agent{color:var(--accent);border-color:var(--accent-dim);background:var(--accent-bg)}
+  .xrow{display:grid;grid-template-columns:86px 1fr;gap:14px;padding:9px 8px;border-top:1px solid var(--line2);align-items:start}
+  .xtest{font-size:12.5px;color:var(--ink)}
   .predmeta b{color:var(--accent);font-weight:400}
 
   /* legend + modal */
-  .legendbox{position:fixed;right:20px;top:64px;width:340px;background:var(--panel);border:1px solid var(--line);border-radius:11px;padding:18px;z-index:20;display:none;box-shadow:0 16px 50px rgba(0,0,0,.5)}
+  .legendbox{position:fixed;right:20px;top:64px;width:340px;background:var(--panel);border:1px solid var(--line);border-radius:11px;padding:18px;z-index:20;display:none;box-shadow:var(--shadow)}
   .legendbox.show{display:block}
   .legendbox h3{font-family:var(--display);font-weight:500;letter-spacing:.05em;margin:0 0 10px;font-size:13px;color:var(--ink)}
   .legendbox p{font-size:12px;color:var(--muted);line-height:1.55}
-  .modal-bg{position:fixed;inset:0;background:rgba(0,0,0,.66);display:none;align-items:flex-start;justify-content:center;z-index:30}
+  .modal-bg{position:fixed;inset:0;background:rgba(20,28,45,.34);display:none;align-items:flex-start;justify-content:center;z-index:30}
   .modal-bg.show{display:flex}
-  .modal{background:var(--panel);border:1px solid var(--line);border-radius:12px;width:500px;max-width:94vw;margin-top:8vh;padding:22px 24px;box-shadow:0 20px 60px rgba(0,0,0,.6)}
+  .modal{background:var(--panel);border:1px solid var(--line);border-radius:12px;width:500px;max-width:94vw;margin-top:8vh;padding:22px 24px;box-shadow:var(--shadow)}
   .modal h3{font-family:var(--display);font-weight:500;letter-spacing:.04em;margin:0 0 4px;font-size:15px}
   .modal .sub{color:var(--muted);font-size:12px;margin-bottom:16px}
   .field{margin-bottom:13px}
@@ -161,7 +196,7 @@
   .field input,.field select{width:100%;font:inherit;font-family:var(--mono);font-size:13px;padding:9px 11px;border:1px solid var(--line);border-radius:7px;background:var(--bg);color:var(--ink)}
   .field input:focus,.field select:focus{outline:none;border-color:var(--accent)}
   .modal .actions{display:flex;gap:10px;justify-content:flex-end;margin-top:18px}
-  .modal .err{color:var(--present);font-size:12px;margin-top:11px;display:none;background:var(--present-bg);border:1px solid #33211e;border-radius:6px;padding:8px 11px}
+  .modal .err{color:var(--present);font-size:12px;margin-top:11px;display:none;background:var(--present-bg);border:1px solid var(--present-line);border-radius:6px;padding:8px 11px}
   .jobs{padding:2px 11px 4px}
   .job{border:1px solid var(--line);border-radius:8px;padding:9px 11px;margin-bottom:6px;font-size:12px;background:var(--panel2)}
   .job .jt{display:flex;align-items:center;gap:8px}
@@ -169,7 +204,7 @@
   .job .js{margin-left:auto;font-size:9px;text-transform:uppercase;letter-spacing:.08em;border-radius:4px;padding:2px 6px;font-family:var(--mono)}
   .js.queued,.js.running{color:var(--accent);background:var(--accent-bg)} .js.done{color:var(--absent);background:var(--absent-bg)} .js.error{color:var(--present);background:var(--present-bg)}
   .job .jmsg{color:var(--faint);margin-top:4px;font-size:11px;font-family:var(--mono);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-  .spin{width:10px;height:10px;border:2px solid #2c313a;border-top-color:var(--accent);border-radius:50%;display:inline-block;animation:sp .8s linear infinite}
+  .spin{width:10px;height:10px;border:2px solid var(--line3);border-top-color:var(--accent);border-radius:50%;display:inline-block;animation:sp .8s linear infinite}
   @keyframes sp{to{transform:rotate(360deg)}}
 </style>
 </head>
@@ -178,6 +213,7 @@
   <div class="brand"><b>MATRIX<span class="x">·</span>AML</b><span class="tag">multimodal mutation board</span></div>
   <div class="grow"></div>
   <button class="btn primary" id="addBtn" style="display:none">+ Add patient</button>
+  <a class="btn" href="/validation.html" style="text-decoration:none">Validation ↗</a>
   <button class="btn" id="legendBtn">How to read</button>
   <button class="btn" id="openBtn">Open report…</button>
 </div>
@@ -190,9 +226,14 @@
   <h3>Reading the board</h3>
   <p>Each sample is first run through the <b style="color:var(--control)">control gate</b> — a healthy-vs-diseased
   call. A "control" reads as <i>no mutation</i>; a "diseased" specimen proceeds to mutation calling.</p>
-  <p style="margin-top:9px">Each <b style="color:var(--accent)">mutation prediction</b> is a probability from the
-  deployed combiner: per-modality linSVM models fused with <b>optimized per-mutation modality weights</b>.
-  Expand a row to see which modalities drove the call. <b>AUC</b> is that mutation's sealed held-out reliability.</p>
+  <p style="margin-top:9px">Each <b style="color:var(--accent)">mutation prediction</b> shows a <b>model score</b> from the
+  deployed combiner (per-modality linSVM fused with <b>optimized per-mutation modality weights</b>) — <i>not</i> a
+  literal probability. The raw score is over-confident, so the <b>chance ✓</b> column is the held-out-calibrated
+  empirical chance the call is correct. <b>AUC</b> is that mutation's sealed held-out reliability; a call below the
+  0.65 floor is flagged <span style="color:var(--faint)">⚠ low-confidence</span> (treat as a lead, confirm by sequencing).</p>
+  <p style="margin-top:9px">Expand a row for the modalities that drove the call. <b style="color:var(--accent-dim)">ᴿᴺᴬ</b>-tagged
+  modalities (ADT, GRN, Lipid, Metabolite) are <b>imputed from RNA</b> — RNA-conditioned views, weighted but not
+  independent evidence.</p>
   <p style="margin-top:9px" class="faint small">Validation samples show ✓ / ✗ = predicted call vs the known label.
   Decision-support only.</p>
 </div>
@@ -200,12 +241,19 @@
 
 <div class="modal-bg" id="ingestBg">
   <div class="modal">
-    <h3>Add patient · process an scRNA sample</h3>
-    <div class="sub">scRNA → composition → control gate → mutation predictor → report. Runs as an LSF job; joins the roster when done.</div>
+    <h3>Add patient · single-cell or bulk RNA</h3>
+    <div class="sub">Single-cell → composition → control gate → mutation predictor → full report. Bulk RNA → the variant-level mutation panel (primary caller); no cell-state/cytogenetics without single cells. Runs as an LSF job; joins the roster when done.</div>
+    <div class="field"><label>Input type</label>
+      <select id="ingKind">
+        <option value="scrna">single-cell RNA (10x dir / .h5 / .h5ad)</option>
+        <option value="bulk">bulk RNA (gene × value table: .tsv / .csv / .txt)</option>
+      </select></div>
     <div class="field"><label>Patient name</label><input id="ingName" placeholder="e.g. AML-7"></div>
-    <div class="field"><label>Sample <span class="hint">— cluster path to a 10x dir / filtered_feature_bc_matrix.h5 / .h5ad</span></label>
+    <div class="field"><label>Sample <span class="hint" id="ingSampleHint">— cluster path to a 10x dir / filtered_feature_bc_matrix.h5 / .h5ad</span></label>
       <input id="ingSample" placeholder="/data/…/AML-7/">
       <select id="ingInbox" style="margin-top:7px"><option value="">— pick from inbox —</option></select></div>
+    <div class="field" id="ingBulkOpts" style="display:none"><label>Bulk reference <span class="hint">— z-score cohort for cross-platform calibration</span></label>
+      <select id="ingBulkRef"><option value="beataml">BeatAML — normalized/log2 (default)</option><option value="leucegene">Leucegene — linear RPKM-like</option><option value="sc">atlas single-cell bulk-equivalent</option></select></div>
     <div class="field"><label>Observed mutations <span class="hint">— optional; engages the genetic anchor</span></label>
       <input id="ingMut" placeholder="e.g. TP53, FLT3"></div>
     <div class="field"><label>Dataset label</label><input id="ingDataset" value="uploaded"></div>
@@ -222,15 +270,22 @@ const pct=x=>x==null||isNaN(x)?"–":(x*100).toFixed(0)+"%";
 const num=(x,n=2)=>x==null||isNaN(x)?"–":(+x).toFixed(n);
 const GFAC={deterministic_fact:1,honest_cv:.9,classifier_call:.7,descriptive_aggregate:.5};
 const IFAC={independent:1,rna_derived:.6,imputed_from_RNA:.5,discovery:.7};
+const IMPUTED={ADT:1,GRN:1,Lipid:1,Metabolite:1};   // imputed from RNA — RNA-conditioned views, not independent
+const AUC_FLOOR=0.65;                                 // below this held-out AUC a call is low-confidence (abstain)
 const gfac=g=>g in GFAC?GFAC[g]:.5, ifac=i=>i in IFAC?IFAC[i]:.5;
 const effW=w=>(((w.opinion&&+w.opinion.reliability_weight)||0)*gfac(w.grounding)*ifac(w.independence));
-let CURRENT=null, RUNS=[], SERVER=false, CAPS={}, PREV_ACTIVE=new Set(), LAST_SUBMIT=null, jobTimer=null;
+let CURRENT=null, RUNS=[], SERVER=false, CAPS={}, FREQ={}, REL={}, LOC={}, VAFM={}, VSTATS={}, PREV_ACTIVE=new Set(), LAST_SUBMIT=null, jobTimer=null;
 
 async function boot(){
   try{
     const r=await fetch("/api/runs",{cache:"no-store"}); if(!r.ok) throw 0;
     const j=await r.json(); RUNS=j.runs||[]; SERVER=true; renderRoster(j.runs_dir);
     try{ CAPS=await (await fetch("/api/capabilities",{cache:"no-store"})).json(); }catch(e){ CAPS={}; }
+    try{ FREQ=await (await fetch("/mutation_frequency.json",{cache:"no-store"})).json(); }catch(e){ FREQ={}; }
+    try{ REL=await (await fetch("/reliability.json",{cache:"no-store"})).json(); }catch(e){ REL={}; }
+    try{ LOC=(await (await fetch("/cellstate_localization.json",{cache:"no-store"})).json()).drivers||{}; }catch(e){ LOC={}; }
+    try{ VAFM=(await (await fetch("/vaf_by_mutation.json",{cache:"no-store"})).json()).mutations||{}; }catch(e){ VAFM={}; }
+    try{ VSTATS=(await (await fetch("/validation_stats.json",{cache:"no-store"})).json()).mutations||{}; }catch(e){ VSTATS={}; }
     if(CAPS.ingest){ $("#addBtn").style.display=""; populateInbox(); pollJobs(); }
     const want=new URLSearchParams(location.search).get("run");
     const first=(RUNS.find(x=>x.run===want)||RUNS[0]);
@@ -257,7 +312,7 @@ function rosterItem(r){
   const spec=r.specimen_class, lead=spec||r.leading_hypothesis||"—";
   const cls=spec==="control"?"control":spec==="diseased"?"diseased":(r.overall_confidence||"low");
   const tag=spec?`<span class="pill ${spec}">${esc(spec)}</span>`:`<span class="pill lead">${esc(lead)}</span>`;
-  const acc=r.n_labeled?`<span class="pill accent" title="predicted calls matching known labels">${r.n_correct}/${r.n_labeled} ✓</span>`:"";
+  const acc=r.n_labeled?`<span class="pill accent" title="gene-level validation: for each gene with a known status, the model's variant calls are aggregated to one gene-level call (present if any variant is called present) and compared — ${r.n_correct} of ${r.n_labeled} genes correct">${r.n_correct}/${r.n_labeled} ✓</span>`:"";
   return `<button class="ritem" data-run="${esc(r.run)}"><div class="rk">${esc(r.sample_key||r.run)}</div>
     <div class="rmeta"><span class="dot ${cls}"></span>${tag}${acc}
     ${r.dataset?`<span class="pill">${esc(r.dataset)}</span>`:""}</div></button>`;
@@ -286,11 +341,15 @@ function renderReport(rep){
   if(rep.mode==="mutation_panel" || rep.mutation_predictions){
     parts.push(renderSpecimen(rep));
     parts.push(renderMutations(rep));
+    parts.push(renderTreatments(rep));      // driver -> therapy hypotheses
+    parts.push(renderTests(rep));           // -> what to sequence to close the loop
     parts.push(renderPredMeta(rep));
   } else {
     parts.push(renderWitnessReport(rep));
   }
-  parts.push(`<div class="foot">Decision-support only · mutation calls = deployed combiner (per-modality linSVM ⊕ optimized modality weights, RNA = raw + UDON programs); imputed-from-RNA modalities are weighted, not independent witnesses. Sealed held-out AUC ≈ 0.86.</div>`);
+  parts.push(rep.mutation_caller
+    ? `<div class="foot">Decision-support only · mutation calls = <b>bulk variant-level predictor</b> (BeatAML-trained, one model per category on ${rep.mutation_caller.input==="sc"?"the single-cell bulk-equivalent":"the uploaded bulk RNA"}); predicted from expression, not sequenced — confirm high-confidence calls by DNA. Mean 5-fold CV AUROC ≈ ${rep.mutation_caller.predictor&&rep.mutation_caller.predictor.mean_cv_auroc!=null?num(rep.mutation_caller.predictor.mean_cv_auroc,2):"0.83"}.</div>`
+    : `<div class="foot">Decision-support only · mutation calls = deployed combiner (per-modality linSVM ⊕ optimized modality weights, RNA = raw + UDON programs); imputed-from-RNA modalities are weighted, not independent witnesses. Sealed held-out AUC ≈ 0.86.</div>`);
   const b=$("#board"); b.innerHTML=parts.join(""); b.scrollTop=0; wireMutRows();
 }
 
@@ -315,31 +374,104 @@ function renderSpecimen(rep){
     </div></div></div>`;
 }
 
+/* ---------- calibration: raw probability -> calibrated P(present) (isotonic on held-out) ---------- */
+function calibP(p){
+  const b=REL.bins;
+  if(!b||!b.length||p==null) return null;
+  if(p<=b[0].p) return b[0].present;
+  if(p>=b[b.length-1].p) return b[b.length-1].present;
+  let i=0; while(i<b.length-1 && b[i+1].p<p) i++;
+  const t=(p-b[i].p)/(b[i+1].p-b[i].p); return b[i].present + t*(b[i+1].present-b[i].present);
+}
+/* ---------- cell-state localization: top compartments carrying this driver's signal ---------- */
+function locFor(name){
+  let L=LOC[name];
+  if(!L){const nk=s=>String(s).replace(/[^a-z0-9]/gi,"").toLowerCase();
+    const alt=Object.keys(LOC).find(k=>nk(k)===nk(name)); if(alt)L=LOC[alt];}
+  return (L&&L.top_states&&L.top_states.length)?L.top_states.slice(0,3):null;
+}
+/* ---------- VAF (variant allele frequency ~ clonal burden), per mutation ---------- */
+function vafFor(name){
+  let e=VAFM[name];
+  if(!e){const nk=s=>String(s).replace(/[^a-z0-9]/gi,"").toLowerCase();
+    const alt=Object.keys(VAFM).find(k=>nk(k)===nk(name)); if(alt)e=VAFM[alt];}
+  return e||null;
+}
+function valBadge(name){
+  const s=VSTATS[name]; if(!s) return "";
+  const ci=s.auroc_ci?` <span style="opacity:.65">95% CI ${(+s.auroc_ci[0]).toFixed(2)}–${(+s.auroc_ci[1]).toFixed(2)}</span>`:"";
+  const sig=(s.perm_p!=null&&s.perm_p<0.05);
+  const pstr=s.perm_p!=null?(s.perm_p<=0.001?"p≤0.001":"p="+s.perm_p):"n/a";
+  const badge=sig
+    ?`<span title="AUROC beats a 1000-shuffle label-permutation null — the signal is not chance" style="color:#1a6e1a;font-weight:700">✓ signal real · ${pstr}</span>`
+    :`<span title="did not beat the permutation null — treat as exploratory" style="color:#b06a00;font-weight:700">⚠ not significant</span>`;
+  return `<div class="impnote" style="color:var(--muted)"><b style="letter-spacing:.06em;color:var(--ink)">VALIDATION</b> · single-cell CV-OOF ·
+     AUROC <b style="color:var(--ink)">${s.auroc!=null?(+s.auroc).toFixed(2):"–"}</b>${ci} · ${badge}
+     · <span style="opacity:.85">honest (nested-CV) sens ${(+(s.nested_sensitivity||0)).toFixed(2)} / spec ${(+(s.nested_specificity||0)).toFixed(2)} / F1 ${(+(s.nested_f1||0)).toFixed(2)} · n⁺${s.n_pos}</span>
+     · <a href="/validation.html" target="_blank" style="color:var(--accent)">details ↗</a></div>`;
+}
+function vafBlock(name){
+  const e=vafFor(name); if(!e) return "";
+  if(e.status==="not_applicable")
+    return `<div class="vafrow na"><span class="vaflbl">VAF</span> N/A — cytogenetic / structural lesion (allele fraction undefined)</div>`;
+  if(e.status==="awaiting")
+    return `<div class="vafrow wait"><span class="vaflbl">VAF</span> awaiting — no external DNA-panel VAF yet; slot ready for incoming cohorts</div>`;
+  const vals=e.values||[];
+  const dots=vals.map(v=>`<span class="vdot" style="left:${(v*100).toFixed(1)}%"></span>`).join("");
+  const med=(e.median*100).toFixed(1);
+  return `<div class="vafrow"><span class="vaflbl">VAF</span>
+    <span class="vafnum">median ${e.median.toFixed(2)}</span>
+    <span class="faint" style="font-size:10.5px">IQR ${(e.q1!=null?e.q1.toFixed(2):"?")}–${(e.q3!=null?e.q3.toFixed(2):"?")} · n=${e.n_samples}</span>
+    <span class="vscale">0</span>
+    <span class="vstrip" title="each dot = one sample's variant allele fraction; gold line = median">${dots}<span class="vmed" style="left:${med}%"></span></span>
+    <span class="vscale">1.0</span></div>`;
+}
 /* ---------- mutation predictions ---------- */
 function renderMutations(rep){
-  const preds=rep.mutation_predictions||[];
-  if(!preds.length) return "";
+  const all=rep.mutation_predictions||[];
+  if(!all.length) return "";
+  const screened=all.length;
+  const preds=all.filter(p=>p.call==="present");     // show only the drivers called PRESENT
+  if(!preds.length) return `<div class="card"><h2>Mutation predictions · none called present · ${screened} screened</h2>
+    <div class="small muted">No driver reached its calibrated threshold. ${screened} categories were screened and all came back absent.</div></div>`;
   const rows=preds.map((p,i)=>{
     const prob=p.probability, call=p.call, present=call==="present";
+    const ha=p.heldout_auc;
+    const abstain=(ha==null)||(ha<AUC_FLOOR)||String(p.confidence||"").startsWith("abstain");
+    const abTitle=abstain?`low-confidence — held-out AUC ${ha==null?"n/a":(+ha).toFixed(2)} below the ${AUC_FLOOR} reliability floor${String(p.confidence||"").startsWith("abstain")?" ("+esc(p.confidence)+")":""}; treat as a lead, confirm by sequencing`:"";
     const contribs=(p.contributions||[]).filter(c=>c.weight>0);
+    const hasImp=contribs.some(c=>IMPUTED[c.modality]);
+    const loc=locFor(p.mutation);
     const mx=Math.max(...contribs.map(c=>c.weight),1e-9);
-    const v=p.true_label?`<span class="vchk ${(p.true_label===call)?"ok":"no"}">${p.true_label===call?"✓":"✗"}</span>`:`<span class="vchk"></span>`;
-    const cbars=contribs.map(c=>`<div class="contrib"><span class="cn">${esc(c.modality)}</span>
+    const v=p.true_label?`<span class="vchk ${(p.true_label===call)?"ok":"no"}" title="known: ${esc(p.true_label)} — ${p.true_label===call?"correct":"incorrect"}">${p.true_label===call?"✓":"✗"}</span>`:`<span class="vchk"></span>`;
+    const cp=calibP(prob);
+    const cc=(cp==null)?null:(present?cp:1-cp);
+    const vacStr=(cc!=null)?Math.round(cc*100)+"%":"–";
+    const vacTitle=(cc!=null)?`calibrated chance the call is correct: for a ${present?"present":"absent"} call at model score ${prob==null?"?":pct(prob)}, held-out-calibrated P(present)=${cp==null?"?":pct(cp)} — the raw model score is over-confident, so this is the empirical chance`:"chance-correct n/a";
+    const ccClass=(cc==null)?"":(cc>=0.8?"ok":(cc>=0.55?"mid":"bad"));
+    const cbars=contribs.map(c=>`<div class="contrib"><span class="cn">${esc(c.modality)}${IMPUTED[c.modality]?'<sup class="imp" title="imputed from RNA — an RNA-conditioned view, not independent evidence">RNA</sup>':''}</span>
       <span class="ct"><span style="width:${(c.weight/mx*100).toFixed(0)}%"></span></span>
       <span class="cw">${num(c.weight,2)}</span><span class="cs">${num(c.score,2)}</span></div>`).join("")
       ||'<div class="contrib faint small">no weighted modalities</div>';
-    return `<div class="mrow" data-i="${i}">
+    return `<div class="mrow${abstain?" isab":""}" data-i="${i}">
       <span class="mname">${esc(p.mutation)}</span>
       <span class="bar" style="margin:0"><span class="${present?"present":"absent"}" style="width:${prob==null?0:(prob*100).toFixed(1)}%"></span></span>
       <span class="mprob">${prob==null?"–":pct(prob)}</span>
-      <span class="mcall ${present?"present":"absent"}">${esc(call||"–")}</span>
-      <span class="auc" title="sealed held-out AUC">${p.heldout_auc!=null?num(p.heldout_auc,2):"–"}</span>
+      <span class="mcall ${present?"present":"absent"}${abstain?" abstain":""}" title="${abTitle}">${abstain?"⚠ ":""}${esc(call||"–")}</span>
+      <span class="auc" title="sealed held-out AUC${abstain?" — below reliability floor":""}">${ha!=null?num(ha,2):"–"}</span>
+      <span class="vac ${ccClass}" title="${vacTitle}">${vacStr}</span>
+      ${v}
       <span class="caret" data-caret>▸</span>
-      <div class="mdetail"><div class="faint small mono" style="margin:2px 0 6px;letter-spacing:.06em">MODALITY · weight · score</div>${cbars}</div>
+      <div class="mdetail"><div class="faint small mono" style="margin:2px 0 6px;letter-spacing:.06em">MODALITY · weight · score</div>${cbars}
+        ${hasImp?'<div class="impnote">ᴿᴺᴬ = imputed from RNA — an RNA-conditioned view, weighted but not independent evidence.</div>':''}
+        ${loc?`<div class="impnote" style="color:var(--muted)">signal concentrates in (marrow compartments) ·&nbsp; ${loc.map(esc).join("&nbsp; · &nbsp;")}</div>`:''}
+        ${vafBlock(p.mutation)}
+        ${valBadge(p.mutation)}
+        <a class="evlink" href="/evidence.html?driver=${encodeURIComponent(p.mutation)}&sample=${encodeURIComponent(rep.sample_key||"")}" target="_blank" onclick="event.stopPropagation()">open evidence view — classifiers · markers · patient vs control · where the signal lives ↗</a></div>
     </div>`;}).join("");
-  const npos=preds.filter(p=>p.call==="present").length;
-  return `<div class="card"><h2>Mutation predictions · ${preds.length} drivers · ${npos} called present</h2>
-    <div class="legrow"><span>driver</span><span>probability</span><span></span><span>call</span><span>auc</span><span></span></div>
+  const nab=preds.filter(p=>{const h=p.heldout_auc;return (h==null)||(h<AUC_FLOOR)||String(p.confidence||"").startsWith("abstain");}).length;
+  return `<div class="card"><h2>Mutation predictions · ${preds.length} called present · ${screened} screened${nab?` · ${nab} low-confidence`:""}</h2>
+    <div class="legrow"><span>driver</span><span title="deployed combiner model score — NOT a literal probability">model score</span><span></span><span>call</span><span>auc</span><span title="empirical chance the prediction is correct — held-out accuracy at this score, calibrated; NOT the raw score">chance ✓</span><span title="✓/✗ vs known label">✓</span><span></span></div>
     <div class="mlist">${rows}</div></div>`;
 }
 function wireMutRows(){
@@ -349,7 +481,59 @@ function wireMutRows(){
     r.onclick=()=>{t();const c=r.querySelector("[data-caret]");if(c)c.textContent=r.classList.contains("open")?"▾":"▸";};
   });
 }
+/* ---------- therapy hypotheses (closes the loop: driver -> agent) ---------- */
+function renderTreatments(rep){
+  const tp=rep.treatment_panel||[];
+  if(!tp.length) return "";
+  const nPred=tp.filter(t=>t.predicted).length;
+  const rows=tp.map(t=>{
+    const pill=t.predicted
+      ? `<span class="pill accent" title="inferred from expression — NOT sequenced; confirm before acting">predicted · confirm</span>`
+      : `<span class="pill lead" title="supplied as a known/sequenced call">confirmed · sequenced</span>`;
+    const auc=(t.reliability_auc!=null)?`AUC ${(+t.reliability_auc).toFixed(2)}`:"AUC –";
+    const conf=(t.confidence!=null)?pct(t.confidence):"–";
+    const drugs=(t.drugs||[]).map(d=>
+      `<span class="drug"><b>${esc(d.drug)}</b><span>${esc(d.class||"")}${d.tier?" · "+esc(d.tier):""}</span></span>`
+      +(d.note?`<span class="pill" style="margin:0 6px 6px 0" title="${esc(d.note)}">${esc(d.note)}</span>`:"")).join("");
+    const byAgent=t.explained_by==="agent";
+    const expl=t.explanation?`<div class="expl"><span class="who ${byAgent?"agent":""}" title="${byAgent
+        ?"written by the tumor-board agent, constrained to explain the rule engine's choice — it cannot add or change a drug"
+        :"deterministic explanation (no LLM available)"}">${byAgent?"agent":"rules"}</span>${esc(t.explanation)}</div>`:"";
+    return `<div class="trow">
+      <div class="tdrv">${esc(t.driver)}<span class="sub">score ${conf} · ${auc}</span></div>
+      <div>${pill}<div style="margin-top:8px">${drugs}</div>
+        ${expl}
+        ${t.rationale&&!t.explanation?`<div class="why">${esc(t.rationale)}</div>`:""}</div></div>`;
+  }).join("");
+  return `<div class="card"><h2>Therapy hypotheses · ${tp.length} driver${tp.length===1?"":"s"}${nPred?` · ${nPred} predicted (unconfirmed)`:""} · research decision support</h2>
+    ${rows}${rep.panels_note?`<div class="foot">${esc(rep.panels_note)}</div>`:""}</div>`;
+}
+
+/* ---------- tests to run (closes the loop: what to sequence next) ---------- */
+function renderTests(rep){
+  const tx=rep.tests_panel||[];
+  if(!tx.length) return "";
+  const cls={confirm:"accent",resolve:"control",baseline:"",done:"lead"};
+  const rows=tx.map(t=>`<div class="xrow">
+    <span class="pill ${cls[t.priority]||""}">${esc(t.priority||"—")}</span>
+    <div><div class="xtest">${esc(t.test)}</div>
+      <div class="why">${esc(t.reason||"")}${t.why?` — <span class="faint">${esc(t.why)}</span>`:""}</div></div></div>`).join("");
+  const nc=tx.filter(t=>t.priority==="confirm").length;
+  return `<div class="card"><h2>Tests to run · ${tx.length}${nc?` · ${nc} to confirm a predicted driver`:""}</h2>${rows}</div>`;
+}
+
 function renderPredMeta(rep){
+  const mc=rep.mutation_caller;
+  if(mc){                                            // PRIMARY bulk variant-level caller (bulk RNA or sc bulk-equivalent)
+    const p=mc.predictor||{}, inp=mc.input==="sc"?"single-cell bulk-equivalent":(mc.input||"bulk RNA");
+    return `<div class="card"><h2>Predictor</h2><div class="predmeta">
+      <span>caller <b>bulk variant-level (BeatAML-trained)</b></span>
+      <span>model <b>${esc(p.base_model||"logL2")}</b></span>
+      <span>input <b>${esc(inp)}</b></span>
+      <span>categories <b>${p.n_categories!=null?p.n_categories:"–"}</b></span>
+      <span>mean CV AUROC <b>${p.mean_cv_auroc!=null?num(p.mean_cv_auroc,3):"–"}</b></span>
+      ${p.trained_on?`<span>trained <b>${esc(p.trained_on)}</b></span>`:""}</div></div>`;
+  }
   const p=rep.predictor||{};
   return `<div class="card"><h2>Predictor</h2><div class="predmeta">
     <span>model <b>${esc(p.base_model||"linSVM")} ⊕ optimized weights</b></span>
@@ -370,7 +554,7 @@ function renderWitnessReport(rep){
     </div><div class="gauge-wrap"><div class="kv"><span>confidence</span><b>${esc(c.overall_confidence||"low")}</b></div>
     <div class="kv"><span>concordance</span><b>${pct(+c.concordance||0)}</b></div>
     <div class="bar"><span style="width:${((+c.concordance||0)*100).toFixed(0)}%"></span></div></div></div></div>`;
-  if(c.rationale) h+=`<div class="card"><h2>Arbiter rationale</h2><div class="small" style="color:#b7bcc4;line-height:1.6">${esc(c.rationale)}</div></div>`;
+  if(c.rationale) h+=`<div class="card"><h2>Arbiter rationale</h2><div class="small" style="color:var(--muted);line-height:1.6">${esc(c.rationale)}</div></div>`;
   if(panel.length){
     const cons=c.per_witness_consistency||{};
     const cards=panel.slice().sort((a,b)=>effW(b)-effW(a)).map(w=>{
@@ -389,16 +573,21 @@ function renderWitnessReport(rep){
 /* ---------- ingest ---------- */
 async function populateInbox(){ try{ const j=await (await fetch("/api/samples",{cache:"no-store"})).json();
   const sel=$("#ingInbox"); if(!sel) return;
-  sel.innerHTML=`<option value="">— pick from inbox (${(j.samples||[]).length}) —</option>`+(j.samples||[]).map(s=>`<option value="${esc(s.path)}">${esc(s.label)} (${esc(s.kind)})</option>`).join("");
+  sel.innerHTML=`<option value="">— pick from inbox (${(j.samples||[]).length}) —</option>`+(j.samples||[]).map(s=>`<option value="${esc(s.path)}" data-input="${esc(s.input||'scrna')}">${esc(s.label)} (${esc(s.kind)})</option>`).join("");
 }catch(e){} }
-function openIngest(){ $("#ingErr").style.display="none"; $("#ingestBg").classList.add("show"); $("#ingName").focus(); }
+function syncIngKind(){ const bulk=$("#ingKind").value==="bulk";
+  $("#ingBulkOpts").style.display=bulk?"":"none";
+  $("#ingSampleHint").textContent=bulk?"— cluster path to a bulk expression table (gene × value: .tsv / .csv / .txt)"
+                                       :"— cluster path to a 10x dir / filtered_feature_bc_matrix.h5 / .h5ad"; }
+function openIngest(){ $("#ingErr").style.display="none"; $("#ingestBg").classList.add("show"); syncIngKind(); $("#ingName").focus(); }
 function closeIngest(){ $("#ingestBg").classList.remove("show"); }
 async function submitIngest(){
   const name=$("#ingName").value.trim(), sample=$("#ingSample").value.trim(), err=$("#ingErr");
-  if(!name||!sample){ err.textContent="Name and sample path are required."; err.style.display="block"; return; }
+  const kind=$("#ingKind").value, bulk_ref=$("#ingBulkRef").value;
+  if(!name||!sample){ err.textContent="Name and "+(kind==="bulk"?"bulk file path":"sample path")+" are required."; err.style.display="block"; return; }
   const go=$("#ingGo"); go.disabled=true; go.textContent="Submitting…";
   try{ const res=await (await fetch("/api/ingest",{method:"POST",headers:{"Content-Type":"application/json"},
-      body:JSON.stringify({name,sample,mutations:$("#ingMut").value,dataset:$("#ingDataset").value.trim()||"uploaded"})})).json();
+      body:JSON.stringify({name,sample,kind,bulk_ref,mutations:$("#ingMut").value,dataset:$("#ingDataset").value.trim()||"uploaded"})})).json();
     if(res.error){ err.textContent=res.error; err.style.display="block"; }
     else{ LAST_SUBMIT=res.run_id; closeIngest(); $("#ingName").value=$("#ingSample").value=$("#ingMut").value=""; pollJobs(); }
   }catch(e){ err.textContent=String(e.message||e); err.style.display="block"; }
@@ -427,7 +616,9 @@ $("#openBtn").onclick=()=>$("#fileInput").click();
 $("#fileInput").onchange=e=>{ const f=e.target.files[0]; if(f) readFile(f); };
 $("#legendBtn").onclick=()=>$("#legend").classList.toggle("show");
 $("#addBtn").onclick=openIngest; $("#ingCancel").onclick=closeIngest; $("#ingGo").onclick=submitIngest;
-$("#ingInbox").onchange=e=>{ if(e.target.value) $("#ingSample").value=e.target.value; };
+$("#ingKind").onchange=syncIngKind;
+$("#ingInbox").onchange=e=>{ const o=e.target.selectedOptions[0]; if(e.target.value){ $("#ingSample").value=e.target.value;
+  if(o&&o.dataset.input){ $("#ingKind").value=o.dataset.input; syncIngKind(); } } };
 $("#ingestBg").addEventListener("click",e=>{ if(e.target.id==="ingestBg") closeIngest(); });
 document.addEventListener("keydown",e=>{ if(e.key==="Escape"){ $("#legend").classList.remove("show"); closeIngest(); } });
 boot();

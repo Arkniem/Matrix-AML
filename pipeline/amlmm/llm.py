@@ -17,7 +17,7 @@ import urllib.error
 # On-network gateway (reachable from cluster compute nodes). For off-network use an
 # SSH tunnel and set AMLMM_LLM_BASE_URL=http://localhost:4000/v1.
 DEFAULT_BASE_URL = "http://bmiclusterp2.chmcres.cchmc.org:4000/v1"
-DEFAULT_API_KEY = "sk-56374ba744be776b96b77e674da80827f06568c8ba574455"
+DEFAULT_API_KEY = ""
 DEFAULT_MODEL = "nemotron-3-super"
 THINKING_OFF = "detailed thinking off"
 # Per-agent output cap. 500k effectively means "do not truncate" -- the gateway
