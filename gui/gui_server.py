@@ -108,6 +108,7 @@ def _report_file(run: str) -> "Path | None":
 # override (show every dir with a report).
 BOARD_GROUPS = [("predict_", "Held-out validation (sealed test)"),
                 ("trumpp_", "Trumpp/Waclawiczek cohort"),
+                ("gse_", "GSE281087 (single-cell external · n=15)"),
                 ("leucegene_", "Leucegene (bulk external · n=367)"),
                 ("ingest_", "Uploaded patients")]
 SHOW_ALL = os.environ.get("AMLMM_SHOW_ALL") == "1"
@@ -137,8 +138,10 @@ def scan_runs() -> "list[dict]":
         # Milan::PT01__D14) are no longer in the atlas, so rescore_all_bulk could not recompute their
         # bulk-equivalent and they kept the old 26-mutation sc predictions — showing them next to
         # 58-category reports is misleading. Set AMLMM_SHOW_ALL=1 to see them anyway.
+        # `predictor` is the multimodal trainer's stamp, `mutation_caller` the bulk caller's — a report
+        # carrying EITHER is current; only ones with neither are pre-rescore leftovers.
         if not SHOW_ALL and isinstance(rep, dict) and rep.get("mutation_predictions") \
-                and not rep.get("mutation_caller"):
+                and not rep.get("mutation_caller") and not rep.get("predictor"):
             continue
         con = rep.get("consensus", {}) if isinstance(rep, dict) else {}
         preds = rep.get("mutation_predictions") if isinstance(rep, dict) else None

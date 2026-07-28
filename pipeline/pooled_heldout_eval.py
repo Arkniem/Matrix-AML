@@ -57,7 +57,8 @@ def metrics(tp, fp, fn, tn):
                 precision=round(pr, 4) if pr is not None else None,
                 f1=round(f1, 4) if f1 is not None else None, accuracy=round(acc, 4))
 
-COH = [("predict_*", "sealed held-out scRNA"), ("trumpp_*", "Trumpp/Waclawiczek")]
+COH = [("predict_*", "sealed held-out scRNA"), ("trumpp_*", "Trumpp/Waclawiczek"),
+       ("gse_*", "GSE281087 (panel-honest)")]
 out, grand = {}, [0, 0, 0, 0]
 for pat, lab in COH:
     agg, ns, nc = collect(pat, lab)
